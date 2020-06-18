@@ -9,6 +9,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     mxStatusBar();
-    return ExampleCardBanner().mxMaterialApp(title: 'zeeshan');
+    return mxColumn.list([
+      ExampleCardBanner().mxMaterialApp(title: 'zeeshan').toMaterial(),
+    ]);
   }
 }
