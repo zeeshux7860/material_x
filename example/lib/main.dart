@@ -26,8 +26,6 @@ class _HomePageState extends State<HomePage> {
             setState(() {});
           },
           dropdownValue: "two")
-    ]).mxScaffold(
-      appBar: "example Dropdown".text().mxAppBar()
-    );
+    ]).mxScaffold(appBar: "example Dropdown".text().mxAppBar());
   }
 }

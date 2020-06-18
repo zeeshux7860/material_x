@@ -32,7 +32,7 @@ Get this extension & get more feature from Material_X
 Get alots of shortcut features with its snippet features
 with More shortcut feature 
 
-"[Material-X Extension](https://pub.dev/packages/material_x)
+[Material-X Extension](https://pub.dev/packages/material_x)
 
 Note: Material-X is not directly and/or indirectly associated/affiliated with Flutter or Google LLC. 
 
