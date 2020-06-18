@@ -1,7 +1,8 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:material_x/material_x.dart';
+import 'package:material_x/src/Text/h_tag.dart';
+import 'package:material_x/src/Text/text_material.dart';
 
 extension Components on String {
   // default setting  heightunexpand 50.0

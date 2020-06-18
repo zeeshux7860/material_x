@@ -1,7 +1,8 @@
-# Getting Started Material_X:
  
 
 ![material-x](https://user-images.githubusercontent.com/45489310/84867226-7143ae80-b098-11ea-93f4-a817e5c49dca.png)
+
+# Getting Started Material_X:
 
 Good news to all Flutter Developers .
 
