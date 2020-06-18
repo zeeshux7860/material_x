@@ -247,5 +247,34 @@ extension MxListViews on List<Widget> {
     );
   }
 
-  // ··· spaceEvenly
+  Widget mxCustomScrollView({
+    Key key,
+    Axis scrollDirection = Axis.vertical,
+    bool reverse = false,
+    ScrollController controller,
+    bool primary,
+    ScrollPhysics physics,
+    bool shrinkWrap = false,
+    Key center,
+    double anchor = 0.0,
+    double cacheExtent,
+    int semanticChildCount,
+    DragStartBehavior dragStartBehavior = DragStartBehavior.start,
+  }) {
+    return CustomScrollView(
+      anchor: anchor ?? 0.0,
+      cacheExtent: cacheExtent,
+      center: center,
+      controller: controller,
+      dragStartBehavior: dragStartBehavior ?? DragStartBehavior.start,
+      key: key,
+      physics: physics,
+      primary: primary,
+      reverse: reverse ?? false,
+      scrollDirection: scrollDirection ?? Axis.vertical,
+      semanticChildCount: semanticChildCount,
+      shrinkWrap: shrinkWrap ?? false,
+      slivers: this,
+    );
+  }
 }

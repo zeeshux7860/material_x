@@ -1,16 +1,31 @@
 import 'package:material_x/material_x.dart';
 
-import 'example/CardBanner.dart';
-
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    mxStatusBar();
-    return mxColumn.list([
-      ExampleCardBanner().mxMaterialApp(title: 'zeeshan').toMaterial(),
-    ]);
+    return HomePage().mxMaterialApp();
+  }
+}
+
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return mxListView.list([
+      ["one", "two", "three"].mxDropdownLabel(
+          name: "null",
+          onChanged: (v) {
+            setState(() {});
+          },
+          dropdownValue: "ali imam")
+    ]).mxScaffold();
   }
 }

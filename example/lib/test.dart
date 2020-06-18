@@ -4,13 +4,14 @@ class OKK extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-      children: <Widget>[
-        Center(
-          child: Text("data"),
-        ),
-        (context, l) {}.mxListVB(itemCount: 10)
-      ],
+        body: Container(
+      height: 100,
+      child: ListView.builder(
+          itemCount: 10,
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (context, index) {
+            return Text("data");
+          }),
     ));
   }
 }
@@ -18,6 +19,9 @@ class OKK extends StatelessWidget {
 class OKKS extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return mxColumn.list(["data".text().toCenter()]).mxScaffold();
+    return (context, index) {}
+        .mxListVBH(itemCount: 10)
+        .mxContainer(height: 100)
+        .mxScaffold();
   }
 }

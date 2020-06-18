@@ -624,4 +624,107 @@ extension Components on String {
   String capitalize() {
     return "${this[0].toUpperCase()}${this.substring(1)}";
   }
+   Widget mxTooltips({
+
+
+  /// The height of the tooltip's [child].
+  ///
+  /// If the [child] is null, then this is the tooltip's intrinsic height.
+  final double height,
+
+  /// The amount of space by which to inset the tooltip's [child].
+  ///
+  /// Defaults to 16.0 logical pixels in each direction.
+  final EdgeInsetsGeometry padding,
+
+  /// The empty space that surrounds the tooltip.
+  ///
+  /// Defines the tooltip's outer [Container.margin]. By default, a
+  /// long tooltip will span the width of its window. If long enough,
+  /// a tooltip might also span the window's height. This property allows
+  /// one to define how much space the tooltip must be inset from the edges
+  /// of their display window.
+  ///
+  /// If this property is null, then [TooltipThemeData.margin] is used.
+  /// If [TooltipThemeData.margin] is also null, the default margin is
+  /// 0.0 logical pixels on all sides.
+  final EdgeInsetsGeometry margin,
+
+  /// The vertical gap between the widget and the displayed tooltip.
+  ///
+  /// When [preferBelow] is set to true and tooltips have sufficient space to
+  /// display themselves, this property defines how much vertical space
+  /// tooltips will position themselves under their corresponding widgets.
+  /// Otherwise, tooltips will position themselves above their corresponding
+  /// widgets with the given offset.
+  final double verticalOffset,
+
+  /// Whether the tooltip defaults to being displayed below the widget.
+  ///
+  /// Defaults to true. If there is insufficient space to display the tooltip in
+  /// the preferred direction, the tooltip will be displayed in the opposite
+  /// direction.
+  final bool preferBelow,
+
+  /// Whether the tooltip's [message] should be excluded from the semantics
+  /// tree.
+  ///
+  /// Defaults to false. A tooltip will add a [Semantics.label] that is set to
+  /// [Tooltip.message]. Set this property to true if the app is going to
+  /// provide its own custom semantics label.
+  final bool excludeFromSemantics,
+
+  /// The widget below this widget in the tree.
+  ///
+  /// {@macro flutter.widgets.child}
+  final Widget child,
+
+  /// Specifies the tooltip's shape and background color.
+  ///
+  /// The tooltip shape defaults to a rounded rectangle with a border radius of
+  /// 4.0. Tooltips will also default to an opacity of 90% and with the color
+  /// [Colors.grey[700]] if [ThemeData.brightness] is [Brightness.dark], and
+  /// [Colors.white] if it is [Brightness.light].
+  final Decoration decoration,
+
+  /// The style to use for the message of the tooltip.
+  ///
+  /// If null, the message's [TextStyle] will be determined based on
+  /// [ThemeData]. If [ThemeData.brightness] is set to [Brightness.dark],
+  /// [ThemeData.textTheme.bodyText2] will be used with [Colors.white]. Otherwise,
+  /// if [ThemeData.brightness] is set to [Brightness.light],
+  /// [ThemeData.textTheme.bodyText2] will be used with [Colors.black].
+  final TextStyle textStyle,
+
+  /// The length of time that a pointer must hover over a tooltip's widget
+  /// before the tooltip will be shown.
+  ///
+  /// Once the pointer leaves the widget, the tooltip will immediately
+  /// disappear.
+  ///
+  /// Defaults to 0 milliseconds (tooltips are shown immediately upon hover).
+  final Duration waitDuration,
+
+  /// The length of time that the tooltip will be shown after a long press
+  /// is released.
+  ///
+  /// Defaults to 1.5 seconds.
+  final Duration showDuration,
+  final Key key,
+   }){
+    return Tooltip(message: this,
+    child: child,
+    decoration: decoration,
+    excludeFromSemantics: excludeFromSemantics,
+    height: height,
+    key: key,
+    margin: margin,
+    padding: padding,
+    preferBelow: preferBelow,
+    showDuration: showDuration,
+    textStyle: textStyle,
+    verticalOffset: verticalOffset,
+    waitDuration: waitDuration,
+    );
+  }
 }

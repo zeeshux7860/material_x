@@ -105,7 +105,83 @@ extension Widgets on Widget {
       key: key,
     );
   }
+
+  Widget mxNestedScrollView({
+    /// An object that can be used to control the position to which the outer
+    /// scroll view is scrolled.
+    final ScrollController controller,
+
+    /// The axis along which the scroll view scrolls.
+    ///
+    /// Defaults to [Axis.vertical].
+    final Axis scrollDirection,
+
+    /// Whether the scroll view scrolls in the reading direction.
+    ///
+    /// For example, if the reading direction is left-to-right and
+    /// [scrollDirection] is [Axis.horizontal], then the scroll view scrolls from
+    /// left to right when [reverse] is false and from right to left when
+    /// [reverse] is true.
+    ///
+    /// Similarly, if [scrollDirection] is [Axis.vertical], then the scroll view
+    /// scrolls from top to bottom when [reverse] is false and from bottom to top
+    /// when [reverse] is true.
+    ///
+    /// Defaults to false.
+    final bool reverse,
+
+    /// How the scroll view should respond to user input.
+    ///
+    /// For example, determines how the scroll view continues to animate after the
+    /// user stops dragging the scroll view (providing a custom implementation of
+    /// [ScrollPhysics.createBallisticSimulation] allows this particular aspect of
+    /// the physics to be overridden).
+    ///
+    /// Defaults to matching platform conventions.
+    ///
+    /// The [ScrollPhysics.applyBoundaryConditions] implementation of the provided
+    /// object should not allow scrolling outside the scroll extent range
+    /// described by the [ScrollMetrics.minScrollExtent] and
+    /// [ScrollMetrics.maxScrollExtent] properties passed to that method. If that
+    /// invariant is not maintained, the nested scroll view may respond to user
+    /// scrolling erratically.
+    final ScrollPhysics physics,
+
+    /// A builder for any widgets that are to precede the inner scroll views (as
+    /// given by [body]).
+    ///
+    /// Typically this is used to create a [SliverAppBar] with a [TabBar].
+    @required final NestedScrollViewHeaderSliversBuilder headerSliverBuilder,
+
+    /// The widget to show inside the [NestedScrollView].
+    ///
+    /// Typically this will be [TabBarView].
+    ///
+    /// The [body] is built in a context that provides a [PrimaryScrollController]
+    /// that interacts with the [NestedScrollView]'s scroll controller. Any
+    /// [ListView] or other [Scrollable]-based widget inside the [body] that is
+    /// intended to scroll with the [NestedScrollView] should therefore not be
+    /// given an explicit [ScrollController], instead allowing it to default to
+    /// the [PrimaryScrollController] provided by the [NestedScrollView].
+    final Widget body,
+
+    /// {@macro flutter.widgets.scrollable.dragStartBehavior}
+    final DragStartBehavior dragStartBehavior,
+    final Key key,
+  }) {
+    return NestedScrollView(
+      body: this,
+      headerSliverBuilder: headerSliverBuilder,
+      controller: controller,
+      dragStartBehavior: dragStartBehavior ?? DragStartBehavior.start,
+      key: key,
+      physics: physics,
+      reverse: reverse,
+      scrollDirection: scrollDirection ?? Axis.vertical,
+    );
+  }
 }
+
 
 extension AppBarMxs on Widget {
 // AppBar
@@ -207,15 +283,29 @@ extension AppBarMxs on Widget {
   }
 
   mxDialog(context,
-      {bool barrierDismissible,
-      bool useRootNavigator,
-      Widget Function(BuildContext) builder}) {
+      {final bool barrierDismissible = true,
+      final bool useRootNavigator = true,
+      final Widget Function(BuildContext) builder}) {
     return showDialog(
         context: context,
         barrierDismissible: barrierDismissible,
         useRootNavigator: useRootNavigator,
         builder: builder,
         child: this);
+  }
+}
+
+extension FunctionWidget on Widget Function(BuildContext) {
+  mxDialogBuilder(context,
+      {final bool barrierDismissible = true,
+      final bool useRootNavigator = true,
+      final Widget child}) {
+    return showDialog(
+        context: context,
+        barrierDismissible: barrierDismissible,
+        useRootNavigator: useRootNavigator,
+        builder: this,
+        child: child);
   }
 }
 
@@ -331,6 +421,28 @@ extension StringsMx on String {
       textAlign: textAlign,
       textDirection: textDirection,
       textWidthBasis: textWidthBasis,
+    );
+  }
+
+  Widget mxTFD(
+      {final double fontSize,
+      final TextEditingController controller,
+      final Color color,
+      final double lableSize,
+      final Color textColor,
+      final bool obscureText,
+      final Key key,
+      final int maxline}) {
+    return TextFiledMaterialD(
+      name: this,
+      color: color,
+      fontSize: fontSize,
+      lableSize: lableSize,
+      obscureText: obscureText,
+      textColor: textColor,
+      controller: controller,
+      key: key,
+      maxline: maxline ?? 3,
     );
   }
 
