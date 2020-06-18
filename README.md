@@ -20,4 +20,21 @@ import 'package:material_x/material_x.dart';
 
 ### Example
 
-![carbon](https://user-images.githubusercontent.com/45489310/84996757-52621c80-b16b-11ea-9096-f3f58bd72…
+![carbon](https://user-images.githubusercontent.com/45489310/84996757-52621c80-b16b-11ea-9096-f3f58bd72858.png)
+
+# Material_X VS Code Extension:
+
+Get this extension & get more feature from Material_X
+
+### Open VS Code -> Go to extensions -> Search 'Material-X'
+
+Get alots of shortcut features with its snippet features
+with More shortcut feature 
+
+"[Material-X Extension](https://pub.dev/packages/material_x)
+
+Note: Material-X is not directly and/or indirectly associated/affiliated with Flutter or Google LLC. 
+
+# Copyright-and-license 
+
+Code and documentation Copyright 2020 Zeeshux7860. Code released under the [Apache License](https://creativecommons.org/licenses/by/3.0/). Docs released under Creative Commons.
