@@ -5,10 +5,7 @@ import 'package:material_x/src/Text/h_tag.dart';
 import 'package:material_x/src/Text/text_material.dart';
 
 extension Components on String {
-  // default setting  heightunexpand 50.0
-  ///CrossAxisAlignment  crossAxisAlignment = CrossAxisAlignment.center,
-  /// MainAxisAlignment  mainAxisAlignment = MainAxisAlignment.start,
-
+ 
   Widget h1TextBold(
       {Color color = Colors.white, FontWeight fontWeight = FontWeight.bold}) {
     return H1(

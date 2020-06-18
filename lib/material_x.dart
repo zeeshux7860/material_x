@@ -57,7 +57,7 @@ export 'src/Extension/SnackBar.dart';
 export 'src/Extension/InkWell.dart';
 export 'src/Extension/Column.dart';
 export 'src/Extension/Row.dart';
-export 'src/Extension/String.dart';
+export 'src/Extension/Strings.dart';
 export 'src/Extension/Widget_String.dart';
 export 'src/Extension/Padding.dart';
 export 'src/Context/size.dart';
