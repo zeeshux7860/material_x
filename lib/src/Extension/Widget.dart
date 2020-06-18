@@ -354,6 +354,4 @@ extension MxNew on Widget {
       width: width,
     );
   }
-
- 
 }

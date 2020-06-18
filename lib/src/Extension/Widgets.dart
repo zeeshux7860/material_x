@@ -182,7 +182,6 @@ extension Widgets on Widget {
   }
 }
 
-
 extension AppBarMxs on Widget {
 // AppBar
   PreferredSizeWidget mxAppBar(

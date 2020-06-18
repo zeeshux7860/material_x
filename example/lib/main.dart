@@ -21,11 +21,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return mxListView.list([
       ["one", "two", "three"].mxDropdownLabel(
-          name: "null",
+          name: "zeshan",
           onChanged: (v) {
             setState(() {});
           },
-          dropdownValue: "ali imam")
-    ]).mxScaffold();
+          dropdownValue: "two")
+    ]).mxScaffold(
+      appBar: "example Dropdown".text().mxAppBar()
+    );
   }
 }

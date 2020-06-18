@@ -26,6 +26,7 @@ class Textmaterial extends StatelessWidget {
     );
   }
 }
+
 class TextFiledMaterialD extends StatelessWidget {
   final String name;
   final double fontSize;

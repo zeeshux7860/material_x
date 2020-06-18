@@ -20,8 +20,8 @@ class MxDropdownLabel extends StatefulWidget {
     this.lableSize,
     this.list,
     this.onChanged,
-    this.dropdownValue, this.style,
-    
+    this.dropdownValue,
+    this.style,
   }) : super(key: key);
 
   @override
@@ -54,7 +54,7 @@ class _MxDropdownLabelState extends State<MxDropdownLabel> {
               icon: Container(),
               iconSize: 24,
               elevation: 16,
-               style: widget.style,
+              style: widget.style,
               underline: Container(
                 height: 2,
                 // color: Colors.deepPurpleAccent,
