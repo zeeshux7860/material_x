@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
 extension Snackbar on Widget {
+  /// The primary content of the snack bar.
+  ///
+  /// Typically a [Text] widget.
   Widget mxSnackBar({
-    /// The primary content of the snack bar.
-    ///
-    /// Typically a [Text] widget.
-    final Widget content,
-
     /// The Snackbar's background color. If not specified it will use
     /// [ThemeData.snackBarTheme.backgroundColor]. If that is not specified
     /// it will default to a dark variation of [ColorScheme.surface] for light
@@ -72,7 +70,7 @@ extension Snackbar on Widget {
     // API for Scaffold.showSnackBar():
   }) {
     return SnackBar(
-      content: content,
+      content: this,
       action: action,
       animation: animation,
       backgroundColor: backgroundColor,

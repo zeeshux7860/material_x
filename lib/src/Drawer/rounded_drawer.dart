@@ -67,7 +67,7 @@ class MxRoundedCornerDrawer extends StatelessWidget {
             ),
             new Column(
               children: <Widget>[
-                MxExpansionTile(
+                MxExpansionTiles(
                   expansionTileSubTitle: expansionTileSubTitle,
                   expansionTileSubTitleColor: expansionTileSubTitleColor,
                   expansionTileTitle: expansionTileTitle,

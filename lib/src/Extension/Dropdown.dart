@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:material_x/material_x.dart';
 
-class MxDropdownLabel extends StatefulWidget {
+class MxDropdownLab extends StatefulWidget {
   final String name;
   final double fontSize;
   final Color color;
@@ -11,7 +10,7 @@ class MxDropdownLabel extends StatefulWidget {
   final void Function(String) onChanged;
   final String dropdownValue;
   final TextStyle style;
-  const MxDropdownLabel({
+  const MxDropdownLab({
     Key key,
     this.name,
     this.color,
@@ -25,10 +24,10 @@ class MxDropdownLabel extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _MxDropdownLabelState createState() => _MxDropdownLabelState();
+  _MxDropdownLabState createState() => _MxDropdownLabState();
 }
 
-class _MxDropdownLabelState extends State<MxDropdownLabel> {
+class _MxDropdownLabState extends State<MxDropdownLab> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -84,7 +83,7 @@ extension Dropdowns on List<String> {
     @required final void Function(String) onChanged,
     @required final String dropdownValue,
   }) {
-    return MxDropdownLabel(
+    return MxDropdownLab(
       color: color,
       fontSize: fontSize,
       key: key,

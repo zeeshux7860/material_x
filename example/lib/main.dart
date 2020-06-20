@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
           onChanged: (v) {
             setState(() {});
           },
-          dropdownValue: "two")
+          dropdownValue: "two"),
     ]).mxScaffold(appBar: "example Dropdown".text().mxAppBar());
   }
 }
