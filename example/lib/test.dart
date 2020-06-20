@@ -15,13 +15,3 @@ class OKK extends StatelessWidget {
     ));
   }
 }
-
-class OKKS extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return (context, index) {}
-        .mxListVBH(itemCount: 10)
-        .mxContainer(height: 100)
-        .mxScaffold();
-  }
-}

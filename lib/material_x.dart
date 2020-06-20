@@ -96,4 +96,5 @@ export 'src/Modules/Column.dart';
 export 'src/Modules/Row.dart';
 export 'src/Modules/ListView.dart';
 export 'src/Modules/Stack.dart';
+export 'src/Modules/TabBar.dart';
 export 'src/Extension/Dropdown.dart';

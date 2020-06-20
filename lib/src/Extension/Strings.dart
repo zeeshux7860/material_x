@@ -5,7 +5,6 @@ import 'package:material_x/src/Text/h_tag.dart';
 import 'package:material_x/src/Text/text_material.dart';
 
 extension Components on String {
- 
   Widget h1TextBold(
       {Color color = Colors.white, FontWeight fontWeight = FontWeight.bold}) {
     return H1(
@@ -723,6 +722,37 @@ extension Components on String {
       textStyle: textStyle,
       verticalOffset: verticalOffset,
       waitDuration: waitDuration,
+    );
+  }
+
+  /// The widget to be used as the tab's label.
+  ///
+  /// Usually a [Text] widget, possibly wrapped in a [Semantics] widget.
+  ///
+  /// Must not be used in combination with [text].
+  Widget mxTabText({
+    final Key key,
+
+    /// The text to display as the tab's label.
+    ///
+    /// Must not be used in combination with [child].
+    final Widget child,
+
+    /// An icon to display as the tab's label.
+    final Widget icon,
+
+    /// The margin added around the tab's icon.
+    ///
+    /// Only useful when used in combination with [icon], and either one of
+    /// [text] or [child] is non-null.
+    final EdgeInsetsGeometry iconMargin,
+  }) {
+    return Tab(
+      child: child,
+      icon: icon,
+      key: key,
+      text: this,
+      iconMargin: iconMargin,
     );
   }
 }

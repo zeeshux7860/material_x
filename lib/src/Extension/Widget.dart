@@ -354,4 +354,79 @@ extension MxNew on Widget {
       width: width,
     );
   }
+
+  Widget mxChip({
+    final Widget avatar,
+    final Widget label,
+    final TextStyle labelStyle,
+    final EdgeInsetsGeometry labelPadding,
+    final ShapeBorder shape,
+    final Clip clipBehavior,
+    final FocusNode focusNode,
+    final bool autofocus,
+    final Color backgroundColor,
+    final EdgeInsetsGeometry padding,
+    final VisualDensity visualDensity,
+    final Widget deleteIcon,
+    final VoidCallback onDeleted,
+    final Color deleteIconColor,
+    final String deleteButtonTooltipMessage,
+    final MaterialTapTargetSize materialTapTargetSize,
+    final double elevation,
+    final Color shadowColor,
+    final Key key,
+  }) {
+    return Chip(
+      key: key,
+      label: this,
+      avatar: avatar,
+      labelStyle: labelStyle,
+      labelPadding: labelPadding,
+      deleteIcon: deleteIcon,
+      onDeleted: onDeleted,
+      deleteIconColor: deleteIconColor,
+      deleteButtonTooltipMessage: deleteButtonTooltipMessage,
+      shape: shape,
+      clipBehavior: clipBehavior ?? Clip.none,
+      focusNode: focusNode,
+      autofocus: autofocus ?? true,
+      backgroundColor: backgroundColor,
+      padding: padding,
+      visualDensity: visualDensity,
+      materialTapTargetSize: materialTapTargetSize,
+      elevation: elevation ?? 0.0,
+      shadowColor: shadowColor,
+    );
+  }
+
+  /// The text to display as the tab's label.
+  ///
+  /// Must not be used in combination with [child].
+  Widget mxTab({
+    final Key key,
+
+    /// The widget to be used as the tab's label.
+    ///
+    /// Usually a [Text] widget, possibly wrapped in a [Semantics] widget.
+    ///
+    /// Must not be used in combination with [text].
+    final String text,
+
+    /// An icon to display as the tab's label.
+    final Widget icon,
+
+    /// The margin added around the tab's icon.
+    ///
+    /// Only useful when used in combination with [icon], and either one of
+    /// [text] or [child] is non-null.
+    final EdgeInsetsGeometry iconMargin,
+  }) {
+    return Tab(
+      child: this,
+      icon: icon,
+      key: key,
+      text: text,
+      iconMargin: iconMargin,
+    );
+  }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:material_x/material_x.dart';
 
-extension MxTabbar on Widget {
+extension MxTabbars on Widget {
   Widget mxDTController({int length, int initialIndex = 0}) {
     return DefaultTabController(
         initialIndex: initialIndex, length: length, child: this);
@@ -12,7 +12,7 @@ extension MxTabbar on Widget {
 ///
 /// The length of this list must match the [controller]'s [TabController.length]
 /// and the length of the [TabBarView.children] list.
-extension MxTabBar on List<Widget> {
+extension MxTabBarss on List<Widget> {
   Widget mxTabBar(
       {TabController controller,
 
