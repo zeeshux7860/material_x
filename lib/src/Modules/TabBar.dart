@@ -167,7 +167,7 @@ class MxTabBar {
   /// interfere with the default tap handler.
   final ValueChanged<int> onTap;
 
-  MxTabBar(
+  MxTabBar({
       this.key,
       this.controller,
       this.isScrollable,
@@ -182,7 +182,7 @@ class MxTabBar {
       this.labelPadding,
       this.unselectedLabelStyle,
       this.dragStartBehavior,
-      this.onTap);
+      this.onTap});
 
   Widget list(List<Widget> list) {
     return TabBar(
