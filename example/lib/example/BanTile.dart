@@ -12,10 +12,10 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
       // first --------------------------------
       BanTile(
         leftTile:
-            Icons.arrow_back_ios.mxIconTile().mcIconButton(onPressed: () {}),
+            Icons.arrow_back_ios.mxIconTile().mxIconButton(onPressed: () {}),
         centerTitle: "CenterTitle".textMaterialColorWhite(),
         rightTile:
-            Icons.arrow_forward_ios.mxIconTile().mcIconButton(onPressed: () {}),
+            Icons.arrow_forward_ios.mxIconTile().mxIconButton(onPressed: () {}),
         body: <Widget>[
           10.0.sizedHeight(),
           H2(
@@ -34,11 +34,11 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
       BanTile(
         leftTile: Icons.arrow_back_ios
             .mxIconTile(color: Colors.black)
-            .mcIconButton(onPressed: () {}),
+            .mxIconButton(onPressed: () {}),
         centerTitle: "CenterTitle".textMaterialColorBlack(),
         rightTile: Icons.arrow_forward_ios
             .mxIconTile(color: Colors.black)
-            .mcIconButton(onPressed: () {}),
+            .mxIconButton(onPressed: () {}),
         body: <Widget>[
           10.0.sizedHeight(),
           "https://image.freepik.com/free-vector/colorful-abstract-background_23-2148468383.jpg"
@@ -58,11 +58,11 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
       BanTile(
         leftTile: Icons.arrow_back_ios
             .mxIconTile(color: Colors.white)
-            .mcIconButton(onPressed: () {}),
+            .mxIconButton(onPressed: () {}),
         centerTitle: "CenterTitle".textMaterialColorWhite(),
         rightTile: Icons.arrow_forward_ios
             .mxIconTile(color: Colors.white)
-            .mcIconButton(onPressed: () {}),
+            .mxIconButton(onPressed: () {}),
         body: <Widget>[
           10.0.sizedHeight(),
           H2(
@@ -87,11 +87,11 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
       BanTile(
         leftTile: Icons.arrow_back_ios
             .mxIconTile(color: Colors.white)
-            .mcIconButton(onPressed: () {}),
+            .mxIconButton(onPressed: () {}),
         centerTitle: "CenterTitle".textMaterialColorWhite(),
         rightTile: Icons.arrow_forward_ios
             .mxIconTile(color: Colors.white)
-            .mcIconButton(onPressed: () {}),
+            .mxIconButton(onPressed: () {}),
         body: <Widget>[
           10.0.sizedHeight(),
           H2(
@@ -125,11 +125,11 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
       BanTile(
         leftTile: Icons.arrow_back_ios
             .mxIconTile(color: Colors.white)
-            .mcIconButton(onPressed: () {}),
+            .mxIconButton(onPressed: () {}),
         centerTitle: "CenterTitle".textMaterialColorWhite(),
         rightTile: Icons.arrow_forward_ios
             .mxIconTile(color: Colors.white)
-            .mcIconButton(onPressed: () {}),
+            .mxIconButton(onPressed: () {}),
         body: <Widget>[
           10.0.sizedHeight(),
           H2(

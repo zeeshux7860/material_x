@@ -116,7 +116,7 @@ extension StfulStless on Widget {
         child: this);
   }
 
-  Widget mcIconButton({
+  Widget mxIconButton({
     Key key,
 
     /// The size of the icon inside the button.
