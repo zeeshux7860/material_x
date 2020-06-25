@@ -20,6 +20,7 @@ class MxTransactiontTile extends StatelessWidget {
       this.title})
       : super(key: key);
 
+  @override
   Widget build(BuildContext context) {
     return ListTile(
       onTap: () {
@@ -29,9 +30,9 @@ class MxTransactiontTile extends StatelessWidget {
       title: title,
       subtitle: subtitle,
       trailing: <Widget>[
-        trailing1 == null ? Container() : trailing1,
+        trailing1 ?? Container(),
         middleSpace.sizedHeight(),
-        trailing2 == null ? Container() : trailing2
+        trailing2 ?? Container()
       ].mxcolumnCC(),
     );
   }

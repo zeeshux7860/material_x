@@ -30,22 +30,25 @@ class MaterialXButton extends StatelessWidget {
           boxShadow: [
             BoxShadow(
                 color: color.withOpacity(0.4),
-                blurRadius: elavation == null ? 10.0 : elavation,
-                spreadRadius: spreadRadius == null ? 0.0 : spreadRadius,
+                blurRadius: elavation == null ? 10.0 : elavation ?? 10.0,
+                spreadRadius: spreadRadius == null ? 0.0 : spreadRadius ?? 0.0,
 
                 /// if u want elavation so pass value more tham 5
                 offset: elavation == null ? Offset(0, 0) : Offset(0, 8)),
           ],
           color: color,
-          borderRadius: BorderRadius.circular(rounded == null ? 0 : rounded)),
-      child: new Material(
+          borderRadius:
+              BorderRadius.circular(rounded == null ? 0 : rounded ?? 0)),
+      child: Material(
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(rounded == null ? 0 : rounded)),
+            borderRadius:
+                BorderRadius.circular(rounded == null ? 0 : rounded ?? 0)),
         color: color,
-        child: new InkWell(
-          borderRadius: BorderRadius.circular(rounded == null ? 0 : rounded),
+        child: InkWell(
+          borderRadius:
+              BorderRadius.circular(rounded == null ? 0 : rounded ?? 0),
           onTap: onTap,
-          child: new Center(child: child),
+          child: Center(child: child),
         ),
       ),
     );

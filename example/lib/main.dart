@@ -20,12 +20,12 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return mxListView.list([
-      ["one", "two", "three"].mxDropdownLabel(
-          name: "zeshan",
+      ['one', 'two', 'three'].mxDropdownLabel(
+          name: 'zeshan',
           onChanged: (v) {
             setState(() {});
           },
-          dropdownValue: "two"),
-    ]).mxScaffold(appBar: "example Dropdown".text().mxAppBar());
+          dropdownValue: 'two'),
+    ]).mxScaffold(appBar: 'example Dropdown'.text().mxAppBar());
   }
 }

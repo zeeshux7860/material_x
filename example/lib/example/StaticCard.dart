@@ -11,7 +11,7 @@ class ExampleStaticCard extends StatelessWidget {
               blurRadius: 12.0,
               shadowColor: Colors.red,
               icon: Icons.ac_unit,
-              title: "Text".text(),
+              title: 'Text'.text(),
               value: '105.0'.h1TextBold(color: Colors.black),
               cicleColor: Colors.red)
           .toCenter(),
@@ -25,7 +25,7 @@ class ExampleStaticCard extends StatelessWidget {
         child: Icons.ac_unit
             .mxIcon(color: Colors.blue)
             .circleAvatar(backgroundColor: Colors.white, radius: 25.0),
-        title: "Text".text(style: TextStyle(color: Colors.white)),
+        title: 'Text'.text(style: TextStyle(color: Colors.white)),
         value: '105.0'.h1TextBold(color: Colors.white),
       ).toCenter(),
       10.0.sizedHeight(),
@@ -38,7 +38,7 @@ class ExampleStaticCard extends StatelessWidget {
         child: Icons.ac_unit
             .mxIcon(color: Colors.black, size: 25.0)
             .circleAvatar(backgroundColor: Colors.white, radius: 30.0),
-        // title: "Text".text(),
+        // title: 'Text'.text(),
         value: '105.0'.h2TextBold(color: Colors.white),
       ).toCenter(),
     ].mxcolumnCC().mxScaffold(

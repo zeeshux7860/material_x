@@ -38,12 +38,14 @@ class MxStaticCard extends StatelessWidget {
           color: bgColor != null ? Colors.transparent : bgColor,
           shape: RoundedRectangleBorder(
               borderRadius:
-                  BorderRadius.circular(rounded == null ? 0 : rounded)),
+                  BorderRadius.circular(rounded == null ? 0 : rounded ?? 0)),
           child: InkWell(
               onTap: onTap,
               child: Padding(
-                padding: padding == null ? EdgeInsets.all(10.0) : padding,
-                child: new Column(
+                padding: padding == null
+                    ? EdgeInsets.all(10.0)
+                    : padding ?? EdgeInsets.all(10.0),
+                child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
@@ -56,7 +58,7 @@ class MxStaticCard extends StatelessWidget {
                         color: cicleColor,
                       ),
                     ),
-                    new SizedBox(
+                    SizedBox(
                       height: 10.0,
                     ),
                     title,
@@ -72,12 +74,13 @@ class MxStaticCard extends StatelessWidget {
                 color: shadowColor == null
                     ? Colors.white
                     : shadowColor.withOpacity(0.4),
-                blurRadius: blurRadius == null ? 0 : blurRadius,
-                spreadRadius: spreadRadius == null ? 0.0 : spreadRadius,
+                blurRadius: blurRadius == null ? 0 : blurRadius ?? 0,
+                spreadRadius: spreadRadius == null ? 0.0 : spreadRadius ?? 0,
                 offset: Offset(0, 9)),
           ],
           // color: shadowColor,
-          borderRadius: BorderRadius.circular(rounded == null ? 0 : rounded)),
+          borderRadius:
+              BorderRadius.circular(rounded == null ? 0 : rounded ?? 0)),
     );
   }
 }
@@ -116,12 +119,14 @@ class MxCustomStatic extends StatelessWidget {
           color: bgColor != null ? Colors.transparent : bgColor,
           shape: RoundedRectangleBorder(
               borderRadius:
-                  BorderRadius.circular(rounded == null ? 0 : rounded)),
+                  BorderRadius.circular(rounded == null ? 0 : rounded ?? 0)),
           child: InkWell(
               onTap: onTap,
               child: Padding(
-                padding: padding == null ? EdgeInsets.all(10.0) : padding,
-                child: new Column(
+                padding: padding == null
+                    ? EdgeInsets.all(10.0)
+                    : padding ?? EdgeInsets.all(10.0),
+                child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
@@ -131,7 +136,10 @@ class MxCustomStatic extends StatelessWidget {
                         ? Container(
                             width: 1,
                           )
-                        : title,
+                        : title ??
+                            Container(
+                              width: 1,
+                            ),
                     value
                   ],
                 ),
@@ -141,7 +149,8 @@ class MxCustomStatic extends StatelessWidget {
           color: bgColor,
           boxShadow: boxShadow,
           // color: shadowColor,
-          borderRadius: BorderRadius.circular(rounded == null ? 0 : rounded)),
+          borderRadius:
+              BorderRadius.circular(rounded == null ? 0 : rounded ?? 0)),
     );
   }
 }

@@ -94,7 +94,7 @@ extension MxNew on Widget {
       double buttonHeight = 30,
       double rounded,
       Function onTap}) {
-    return new MaterialXButton(
+    return MaterialXButton(
       color: buttonColor,
       width: buttonWidth,
       height: buttonHeight,

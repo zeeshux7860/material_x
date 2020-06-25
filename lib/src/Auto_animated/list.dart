@@ -329,7 +329,7 @@ class MxlbAnimatedState extends State<MxlbAnimated>
     if (widget.separatorBuilder != null) {
       childDelegate = SliverChildBuilderDelegate(
         (BuildContext context, int index) {
-          final int itemIndex = index ~/ 2;
+          final itemIndex = index ~/ 2;
           Widget widget;
           if (index.isEven) {
             widget = _itemBuilder(context, itemIndex);

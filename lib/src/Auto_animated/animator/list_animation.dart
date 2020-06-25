@@ -35,13 +35,13 @@ mixin ListAnimation<T extends StatefulWidget> on State<T> {
 
   @protected
   ActiveItem removeActiveItemAt(List<ActiveItem> items, int itemIndex) {
-    final int i = binarySearch(items, ActiveItem.index(itemIndex));
+    final i = binarySearch(items, ActiveItem.index(itemIndex));
     return i == -1 ? null : items.removeAt(i);
   }
 
   @protected
   ActiveItem activeItemAt(List<ActiveItem> items, int itemIndex) {
-    final int i = binarySearch(items, ActiveItem.index(itemIndex));
+    final i = binarySearch(items, ActiveItem.index(itemIndex));
     return i == -1 ? null : items[i];
   }
 
@@ -53,8 +53,8 @@ mixin ListAnimation<T extends StatefulWidget> on State<T> {
   // and removed from outgoingItems when the remove animation finishes.
   @protected
   int indexToItemIndex(int index) {
-    int itemIndex = index;
-    for (ActiveItem item in outgoingItems) {
+    var itemIndex = index;
+    for (var item in outgoingItems) {
       if (item.itemIndex <= itemIndex) {
         itemIndex += 1;
       } else {
@@ -74,25 +74,24 @@ mixin ListAnimation<T extends StatefulWidget> on State<T> {
     assert(index != null && index >= 0);
     assert(duration != null);
 
-    final int itemIndex = indexToItemIndex(index);
+    final itemIndex = indexToItemIndex(index);
     assert(itemIndex >= 0 && itemIndex <= itemsCount);
 
     // Increment the incoming and outgoing item indices to account
     // for the insertion.
-    for (ActiveItem item in incomingItems) {
+    for (var item in incomingItems) {
       if (item.itemIndex >= itemIndex) {
         item.itemIndex += 1;
       }
     }
-    for (ActiveItem item in outgoingItems) {
+    for (var item in outgoingItems) {
       if (item.itemIndex >= itemIndex) {
         item.itemIndex += 1;
       }
     }
 
-    final AnimationController controller =
-        AnimationController(duration: duration, vsync: vsync);
-    final ActiveItem incomingItem = ActiveItem.incoming(controller, itemIndex);
+    final controller = AnimationController(duration: duration, vsync: vsync);
+    final incomingItem = ActiveItem.incoming(controller, itemIndex);
     setState(() {
       incomingItems
         ..add(incomingItem)
@@ -128,16 +127,14 @@ mixin ListAnimation<T extends StatefulWidget> on State<T> {
     assert(builder != null);
     assert(duration != null);
 
-    final int itemIndex = indexToItemIndex(index);
+    final itemIndex = indexToItemIndex(index);
     assert(itemIndex >= 0 && itemIndex < itemsCount);
     assert(activeItemAt(outgoingItems, itemIndex) == null);
 
-    final ActiveItem incomingItem =
-        removeActiveItemAt(incomingItems, itemIndex);
-    final AnimationController controller = incomingItem?.controller ??
+    final incomingItem = removeActiveItemAt(incomingItems, itemIndex);
+    final controller = incomingItem?.controller ??
         AnimationController(duration: duration, value: 1.0, vsync: vsync);
-    final ActiveItem outgoingItem =
-        ActiveItem.outgoing(controller, itemIndex, builder);
+    final outgoingItem = ActiveItem.outgoing(controller, itemIndex, builder);
     setState(() {
       outgoingItems
         ..add(outgoingItem)
@@ -151,12 +148,12 @@ mixin ListAnimation<T extends StatefulWidget> on State<T> {
 
       // Decrement the incoming and outgoing item indices to account
       // for the removal.
-      for (ActiveItem item in incomingItems) {
+      for (var item in incomingItems) {
         if (item.itemIndex > outgoingItem.itemIndex) {
           item.itemIndex -= 1;
         }
       }
-      for (ActiveItem item in outgoingItems) {
+      for (var item in outgoingItems) {
         if (item.itemIndex > outgoingItem.itemIndex) {
           item.itemIndex -= 1;
         }

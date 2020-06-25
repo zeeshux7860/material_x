@@ -71,7 +71,7 @@ class _CrowdTileState extends State<CrowdTile> {
                   scale: scale,
                   elevation: 2,
                   pagerHeight: widget.pagerHeight,
-                  child: new Image.network(
+                  child: Image.network(
                     'https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg',
                     fit: BoxFit.cover,
                   ),

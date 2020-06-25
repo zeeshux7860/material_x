@@ -5,7 +5,7 @@
 ///            $table->timestamps();
 ///        });
 String dbStructure(String dbname, String databaseStructure) {
-  String db = """<?php
+  var db = """<?php
 
 use Illuminate\\Database\\Migrations\\Migration;
 use Illuminate\\Database\\Schema\\Blueprint;
@@ -44,6 +44,6 @@ class ${dbname.firstCapitalize()} extends Migration
 
 extension StringExtensions on String {
   String firstCapitalize() {
-    return "${this[0].toUpperCase()}${this.substring(1)}";
+    return '${this[0].toUpperCase()}${substring(1)}';
   }
 }

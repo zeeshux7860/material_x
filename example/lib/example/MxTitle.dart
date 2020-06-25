@@ -14,7 +14,7 @@ class _ExampleMxTitleState extends State<ExampleMxTitle> {
         centerTitle: true,
         brightness: Brightness.light,
         backgroundColor: Colors.white,
-        title: "Title".textMaterialColorBlack(),
+        title: 'Title'.textMaterialColorBlack(),
       ),
       body: <Widget>[
         MxTitle(
@@ -22,16 +22,16 @@ class _ExampleMxTitleState extends State<ExampleMxTitle> {
           title: 'MxTitle',
         ),
         HeaderTitle(
-          title: "HeaderWidget title".mxCardTileTitle(color: Colors.black),
-          subtitle: "HeaderTitle suvtitle".textMaterialColorblueGrey(),
+          title: 'HeaderWidget title'.mxCardTileTitle(color: Colors.black),
+          subtitle: 'HeaderTitle suvtitle'.textMaterialColorblueGrey(),
         ),
         HeaderTitle(
           title: <Widget>[
             Icons.add.mxIconTile(color: Colors.red, size: 30),
             10.0.sizedWidth(),
-            "Row use ".h1TextBold(color: Colors.black)
+            'Row use '.h1TextBold(color: Colors.black)
           ].mxRow(),
-          subtitle: "HeaderTitle suvtitle".textMaterialColorblueGrey(),
+          subtitle: 'HeaderTitle suvtitle'.textMaterialColorblueGrey(),
         ),
       ].mxcolumnCC(),
     );

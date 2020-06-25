@@ -10,30 +10,30 @@ class FullDrawer extends StatelessWidget {
       drawer: MxDrawerFullWidth(
         backgrounCcolor: Colors.red,
         children: <Widget>[
-          new ListTile(
+          ListTile(
             onTap: () {},
             leading: CircleAvatar(
               backgroundColor: Colors.white,
-              child: new Icon(
+              child: Icon(
                 Icons.remove,
                 color: Colors.black,
               ),
             ),
-            title: new Textmaterial(
+            title: Textmaterial(
               color: Colors.white,
               fontsize: 25,
               text: 'Hello World',
             ),
           ),
-          new ListTile(
+          ListTile(
             onTap: () {
               MxRoutePage(context, RoundedDrawer()).exitPush(RoundedDrawer());
             },
-            leading: new Icon(
+            leading: Icon(
               Icons.remove,
               color: Colors.white,
             ),
-            title: new Textmaterial(
+            title: Textmaterial(
               color: Colors.white,
               fontsize: 25,
               text: 'Page SizeTransition',

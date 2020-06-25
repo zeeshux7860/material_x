@@ -29,8 +29,8 @@ class ExampleGradientCardBanner extends StatelessWidget {
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
                 .textMaterialColorWhite()
                 .mxExpandableText(
-                    expand: "More details".textMaterialColorWhite(),
-                    unexpand: "Less details".textMaterialColorWhite(),
+                    expand: 'More details'.textMaterialColorWhite(),
+                    unexpand: 'Less details'.textMaterialColorWhite(),
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start),
       )

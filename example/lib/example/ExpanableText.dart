@@ -11,7 +11,7 @@ class _ExampleExpanableTextState extends State<ExampleExpanableText> {
     return <Widget>[
       // normal
 
-      "Normal ExapandableText"
+      'Normal ExapandableText'
           .h2TextBold(color: Colors.black)
           .mxltp(l: 20.0, t: 20.0),
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
@@ -20,15 +20,15 @@ class _ExampleExpanableTextState extends State<ExampleExpanableText> {
           .mxap(value: 20.0),
 
       // container
-      "Container ExapandableText"
+      'Container ExapandableText'
           .h2TextBold(color: Colors.black)
           .mxltp(l: 20.0, t: 20.0),
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
           .textMaterialColorWhite()
           .mxExpandableText(
               heightunexpand: 100,
-              expand: "More Details".textMaterialColorWhite(),
-              unexpand: "Less Details".textMaterialColorWhite(),
+              expand: 'More Details'.textMaterialColorWhite(),
+              unexpand: 'Less Details'.textMaterialColorWhite(),
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start)
           .mxap(value: 20.0)
@@ -47,12 +47,12 @@ class _ExampleExpanableTextState extends State<ExampleExpanableText> {
               expand: <Widget>[
                 Icons.more_horiz.mxIcon(),
                 10.0.sizedWidth(),
-                "more".text()
+                'more'.text()
               ].mxRowEE().mxContainer(),
               unexpand: <Widget>[
                 Icons.more_horiz.mxIcon(),
                 10.0.sizedWidth(),
-                "less".text()
+                'less'.text()
               ].mxRowEE().mxContainer(),
               crossAxisAlignment: CrossAxisAlignment.end,
               mainAxisAlignment: MainAxisAlignment.end)
@@ -65,11 +65,11 @@ class _ExampleExpanableTextState extends State<ExampleExpanableText> {
               margin: EdgeInsets.all(20.0)),
     ].mxListView().mxScaffold(
           backgroundColor: Colors.white,
-          appBar: new AppBar(
+          appBar: AppBar(
             brightness: Brightness.light,
             centerTitle: true,
             backgroundColor: Colors.white,
-            title: "Material X ExpandableText ".textMaterialColorBlack(),
+            title: 'Material X ExpandableText '.textMaterialColorBlack(),
           ),
         );
   }

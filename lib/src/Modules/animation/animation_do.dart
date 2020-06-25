@@ -1958,7 +1958,7 @@ class _SwingState extends State<Swing> with SingleTickerProviderStateMixin {
     return AnimatedBuilder(
         animation: controller,
         builder: (BuildContext context, Widget child) {
-          double angle = (animationRotation1.value != -0.5)
+          var angle = (animationRotation1.value != -0.5)
               ? animationRotation1.value
               : (animationRotation2.value != 0.5)
                   ? animationRotation2.value

@@ -54,7 +54,7 @@ extension MxSliverLists on Widget Function(
 }
 
 extension SilverpaddinngMx on Widget {
-  mxsp(
+  SliverPadding mxsp(
     EdgeInsetsGeometry padding,
   ) {
     return SliverPadding(

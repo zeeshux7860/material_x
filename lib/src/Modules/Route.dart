@@ -13,49 +13,48 @@ class MxRoutePage {
 
   MxRoutePage(this.context, this.child);
 
-  sizeTransitionPush() {
+  dynamic sizeTransitionPush() {
     Navigator.push(context, MxSizeRoute(page: child));
   }
 
-  cupertinoPagePush() {
+  dynamic cupertinoPagePush() {
     Navigator.push(context, CupertinoPageRoute(builder: (context) => child));
   }
 
-  materialPagePush() {
+  dynamic materialPagePush() {
     Navigator.push(context, MaterialPageRoute(builder: (context) => child));
   }
 
-  slideRightPush() {
+  dynamic slideRightPush() {
     Navigator.push(context, MXRightRoute(page: child));
   }
 
-  slideLeftPush() {
+  dynamic slideLeftPush() {
     Navigator.push(context, MXLeftRoute(page: child));
   }
 
-  slideTopPush() {
+  dynamic slideTopPush() {
     Navigator.push(context, MXTopRoute(page: child));
   }
 
-  slideLBottomPush() {
+  dynamic slideLBottomPush() {
     Navigator.push(context, MXBottomRoute(page: child));
   }
 
-  scalePush() {
+  dynamic scalePush() {
     Navigator.push(context, MXScaleRoute(page: child));
   }
 
-  rotationPush() {
+  dynamic rotationPush() {
     Navigator.push(context, MXRotationRoute(page: child));
   }
 
-  fadePush() {
+  dynamic fadePush() {
     Navigator.push(context, MXFadeRoute(page: child));
   }
 
-  exitPush(exitPageChild) {
+  dynamic exitPush(exitPageChild) {
     Navigator.push(
         context, MXEnterExitRoute(enterPage: child, exitPage: exitPageChild));
-    print("20");
   }
 }

@@ -5,7 +5,7 @@ class ExampleMaterialXButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return <Widget>[
       MaterialXButton(
-        child: "Submit".textMaterialColorWhite(),
+        child: 'Submit'.textMaterialColorWhite(),
         color: Colors.red,
         height: 50.0,
         width: mxwidth(context),
@@ -15,7 +15,7 @@ class ExampleMaterialXButton extends StatelessWidget {
         spreadRadius: 10,
       ),
       50.0.sizedHeight(),
-      "Submit".textMaterialColorWhite().mxButton(
+      'Submit'.textMaterialColorWhite().mxButton(
             color: Color(0xFF3d6dfe),
             height: 50.0,
             width: mxwidth(context),

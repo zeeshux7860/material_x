@@ -2,7 +2,7 @@ class LaravelTableGet {
   final String tableName;
 
   LaravelTableGet(this.tableName);
-  getPagination() {
+  Null Function() getPagination() {
     return () {};
   }
 }

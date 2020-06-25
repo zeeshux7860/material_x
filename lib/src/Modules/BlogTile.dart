@@ -47,13 +47,13 @@ class MxBlogTile extends StatelessWidget {
       color: backSideBackgroundColor,
       margin: margin,
       borderRadius: backBorderRadius,
-      child: new Card(
+      child: Card(
         shape: shape,
         color: color,
         elevation: cardElevation,
         child: Column(
           children: <Widget>[
-            new MxContainer(
+            MxContainer(
               rounded: rounded,
               onTap: onTap,
               child: child,
@@ -61,7 +61,7 @@ class MxBlogTile extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               image: image,
             ),
-            new ListTile(
+            ListTile(
               onTap: tileOnTap,
               title: title,
               subtitle: subTitle,

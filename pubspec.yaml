@@ -16,7 +16,9 @@ dependencies:
   flutter_widgets: ^0.1.12
   process_run: ^0.10.10+1
   console_cmd: ^1.0.5
+
 dev_dependencies:
+  pedantic: ^1.9.0
   flutter_test:
     sdk: flutter
 

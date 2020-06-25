@@ -19,17 +19,17 @@ class MxProgressLoading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return progressName == null
-        ? new Container()
-        : new ListTile(
+        ? Container()
+        : ListTile(
             onTap: () {},
-            title: new Textmaterial(
+            title: Textmaterial(
               text: progressName,
               color: progressNameColor,
             ),
             subtitle: LinearProgressIndicator(
               backgroundColor: progressBackgroundColor,
-              value: progressValue == null ? 0.0 : progressValue,
-              valueColor: new AlwaysStoppedAnimation<Color>(progressColor),
+              value: progressValue ?? 0.0,
+              valueColor: AlwaysStoppedAnimation<Color>(progressColor),
             ));
   }
 }

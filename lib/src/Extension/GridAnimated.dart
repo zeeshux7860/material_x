@@ -198,7 +198,7 @@ extension ZMx on Function(BuildContext, int, Animation<double>) {
     Duration showItemDuration = const Duration(milliseconds: 300),
     EdgeInsetsGeometry padding = const EdgeInsets.all(0.0),
     bool reAnimateOnVisibility = false,
-    Axis scrollDirection: Axis.vertical,
+    Axis scrollDirection = Axis.vertical,
     @required int itemCount,
   }) {
     return MxlbAnimated(

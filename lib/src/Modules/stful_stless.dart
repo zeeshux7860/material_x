@@ -263,7 +263,7 @@ extension StfulStless on Widget {
 
 extension ComponentsIconData on IconData {
   Widget mxIconTile({double size = 15, Color color = Colors.white}) {
-    return new Icon(
+    return Icon(
       this,
       size: size,
       color: color,
@@ -275,7 +275,7 @@ extension ComponentsIconData on IconData {
       Color color = Colors.grey,
       Color activeColor = Colors.red,
       bool value}) {
-    return new Icon(
+    return Icon(
       this,
       size: size,
       color: value ? activeColor : color,
@@ -324,20 +324,20 @@ extension ComponentsIconData on IconData {
     Widget text,
     Color badgeColor = Colors.red,
   }) {
-    return new Stack(
+    return Stack(
       children: <Widget>[
-        new IconButton(
+        IconButton(
           icon: Icon(this),
           onPressed: onPressed,
           color: iconColor,
         ),
         badgeValue != 0
-            ? new Positioned(
+            ? Positioned(
                 right: 11,
                 top: 11,
-                child: new Container(
+                child: Container(
                     padding: EdgeInsets.all(2),
-                    decoration: new BoxDecoration(
+                    decoration: BoxDecoration(
                       color: badgeColor,
                       borderRadius: BorderRadius.circular(6),
                     ),
@@ -347,7 +347,7 @@ extension ComponentsIconData on IconData {
                     ),
                     child: text),
               )
-            : new Container()
+            : Container()
       ],
     );
   }
@@ -426,7 +426,7 @@ extension Lableicon on Widget {
       spreadRadius: spreadRadius,
       width: width,
       child:
-          <Widget>[this.mxap(value: 5), 10.0.sizedHeight(), lable].mxcolumn(),
+          <Widget>[mxap(value: 5), 10.0.sizedHeight(), lable].mxcolumn(),
     );
   }
 }

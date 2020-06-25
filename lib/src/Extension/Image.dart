@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:material_x/material_x.dart';
 
-extension imageString on String {
+extension ImageString on String {
   Widget mxImageAsset({
     Map<String, String> headers,
 

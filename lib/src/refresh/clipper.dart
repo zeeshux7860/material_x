@@ -16,7 +16,7 @@ class CurveHillClipper extends CustomClipper<Path> {
 
   @override
   Path getClip(Size size) {
-    var path = new Path();
+    var path = Path();
     if (peakHeight == null && peakWidth == null) {
       if (size.height > centreHeight) {
         if (curveHeight > (size.height - centreHeight)) {

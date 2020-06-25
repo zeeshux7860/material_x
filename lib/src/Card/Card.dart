@@ -47,19 +47,19 @@ class MxCardBanner extends StatelessWidget {
             : MainAxisAlignment.spaceAround,
         children: <Widget>[
           Flexible(
-            child: new Column(
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                title == null ? Container() : title,
+                title == null ? Container() : title ?? Container(),
                 5.0.sizedHeight(),
-                subTitle == null ? new Container() : subTitle,
+                subTitle == null ? Container() : subTitle ?? Container(),
                 10.0.sizedHeight(),
-                button == null ? new Container() : button
+                button == null ? Container() : button ?? Container()
               ],
             ),
           ),
-          rightSideChild == null ? Container() : rightSideChild
+          rightSideChild == null ? Container() : rightSideChild ?? Container()
         ],
       ),
     );

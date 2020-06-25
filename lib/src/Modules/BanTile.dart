@@ -14,14 +14,14 @@ class BanTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return <Widget>[
       <Widget>[
-        leftTile == null ? Container() : leftTile,
+        leftTile ?? Container(),
 
         //"Monday 27 july 2000".textMaterialColorWhite(),
-        centerTitle == null ? Container() : centerTitle,
-        rightTile == null ? Container() : rightTile,
+        centerTitle ?? Container(),
+        rightTile ?? Container(),
       ].mxRowCSB(),
       //  25.0.sizedHeight(),
-      body == null ? Container() : body,
+      body ?? Container(),
       //20.0.sizedHeight(),
     ].mxcolumn();
   }

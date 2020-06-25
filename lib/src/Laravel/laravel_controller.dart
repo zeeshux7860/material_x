@@ -1,5 +1,5 @@
 String dbController(String dbname, String data) {
-  String text = """<?php
+  var text = '''<?php
 
 namespace App\\Http\\Controllers\\Api;
 
@@ -13,6 +13,6 @@ class ${dbname[0].toUpperCase()}${dbname.substring(1)}Controller extends Control
 {
    $data
 }
-""";
+''';
   return text;
 }

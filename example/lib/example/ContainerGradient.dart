@@ -7,7 +7,7 @@ class ExampleContainerGradient extends StatelessWidget {
       MxContainerGradient(
         height: 200.0,
         width: mxwidth(context),
-        child: "test".textMaterialColorWhite(fontsize: 25.0).toCenter(),
+        child: 'test'.textMaterialColorWhite(fontsize: 25.0).toCenter(),
         gradient: [Colors.orange, Colors.red].mxLGClamp(
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
@@ -22,7 +22,7 @@ class ExampleContainerGradient extends StatelessWidget {
         rounded: 10.0,
         height: 200.0,
         width: mxwidth(context),
-        child: "test".textMaterialColorWhite(fontsize: 25.0).toCenter(),
+        child: 'test'.textMaterialColorWhite(fontsize: 25.0).toCenter(),
         gradient: [Colors.pink, Colors.indigo].mxLGClamp(
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
@@ -35,7 +35,7 @@ class ExampleContainerGradient extends StatelessWidget {
             bottomRight: Radius.elliptical(100, 100)),
         height: 200.0,
         width: mxwidth(context),
-        child: "test".textMaterialColorWhite(fontsize: 25.0).toCenter(),
+        child: 'test'.textMaterialColorWhite(fontsize: 25.0).toCenter(),
         gradient: [Color(0xFF65FDF0), Color(0xFF1D6FA3)].mxLGClamp(
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,

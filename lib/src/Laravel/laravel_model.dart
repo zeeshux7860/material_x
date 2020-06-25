@@ -1,7 +1,7 @@
 import '../../laravel.dart';
 
 String laravelModel(String dbname, List<String> fillable, List<String> hidden) {
-  String text = """<?php
+  var text = """<?php
 
 namespace App;
 
@@ -19,7 +19,7 @@ class ${dbname[0].toUpperCase()}${dbname.substring(1)} extends Model
 }
 
 List<String> makeModel({List<String> list}) {
-  List<String> model = List();
+  var model = <String>[];
   list.forEach((element) {
     var data = mxBetweenText(element, "'", "'");
     model.add("'$data'");

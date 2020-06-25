@@ -1,20 +1,20 @@
 import 'dart:collection';
-import 'dart:convert' as Convert;
+import 'dart:convert' as convert;
 import 'dart:math';
 import 'package:json_ast/json_ast.dart'
     show ArrayNode, LiteralNode, Node, ObjectNode, Settings, parse;
 
 import 'package:dart_style/dart_style.dart';
 
-dartGenerate(String name, String value) async {
-  final createGenerator = new ModelGenerator(name);
+Future<DartCode> dartGenerate(String name, String value) async {
+  final createGenerator = ModelGenerator(name);
 
-  DartCode darcode = createGenerator.generateDartClasses(value);
+  var darcode = createGenerator.generateDartClasses(value);
 
   return darcode;
 }
 
-const Map<String, bool> PRIMITIVE_TYPES = const {
+const Map<String, bool> PRIMITIVE_TYPES = {
   'int': true,
   'double': true,
   'String': true,
@@ -38,8 +38,8 @@ class MergeableListType {
 }
 
 MergeableListType mergeableListType(List<dynamic> list) {
-  ListType t = ListType.Null;
-  bool isAmbigous = false;
+  var t = ListType.Null;
+  var isAmbigous = false;
   list.forEach((e) {
     ListType inferredType;
     if (e.runtimeType == 'int') {
@@ -62,8 +62,8 @@ MergeableListType mergeableListType(List<dynamic> list) {
 String camelCase(String text) {
   String capitalize(Match m) =>
       m[0].substring(0, 1).toUpperCase() + m[0].substring(1);
-  String skip(String s) => "";
-  return text.splitMapJoin(new RegExp(r'[a-zA-Z0-9]+'),
+  String skip(String s) => '';
+  return text.splitMapJoin(RegExp(r'[a-zA-Z0-9]+'),
       onMatch: capitalize, onNonMatch: skip);
 }
 
@@ -74,104 +74,103 @@ String camelCaseFirstLower(String text) {
   return '$firstChar$rest';
 }
 
-decodeJSON(String rawJson) {
-  return Convert.json.decode(rawJson);
+dynamic decodeJSON(String rawJson) {
+  return convert.json.decode(rawJson);
 }
 
 WithWarning<Map> mergeObj(Map obj, Map other, String path) {
-  List<Warning> warnings = new List<Warning>();
-  final Map clone = Map.from(obj);
+  var warnings = <Warning>[];
+  final clone = Map.from(obj);
   other.forEach((k, v) {
     if (clone[k] == null) {
       clone[k] = v;
     } else {
-      final String otherType = getTypeName(v);
-      final String t = getTypeName(clone[k]);
+      final otherType = getTypeName(v);
+      final t = getTypeName(clone[k]);
       if (t != otherType) {
         if (t == 'int' && otherType == 'double') {
           // if double was found instead of int, assign the double
           clone[k] = v;
         } else if (clone[k].runtimeType != 'double' && v.runtimeType != 'int') {
           // if types are not equal, then
-          warnings.add(newAmbiguousType('$path/$k'));
+          warnings.add(AmbiguousType('$path/$k'));
         }
       } else if (t == 'List') {
-        List l = List.from(clone[k]);
+        var l = List.from(clone[k]);
         l.addAll(other[k]);
         final mergeableType = mergeableListType(l);
         if (ListType.Object == mergeableType.listType) {
-          WithWarning<Map> mergedList = mergeObjectList(l, '$path');
+          var mergedList = mergeObjectList(l, '$path');
           warnings.addAll(mergedList.warnings);
           clone[k] = List.filled(1, mergedList.result);
         } else {
-          if (l.length > 0) {
+          if (l.isNotEmpty) {
             clone[k] = List.filled(1, l[0]);
           }
           if (mergeableType.isAmbigous) {
-            warnings.add(newAmbiguousType('$path/$k'));
+            warnings.add(AmbiguousType('$path/$k'));
           }
         }
       } else if (t == 'Class') {
-        WithWarning<Map> mergedObj = mergeObj(clone[k], other[k], '$path/$k');
+        var mergedObj = mergeObj(clone[k], other[k], '$path/$k');
         warnings.addAll(mergedObj.warnings);
         clone[k] = mergedObj.result;
       }
     }
   });
-  return new WithWarning(clone, warnings);
+  return WithWarning(clone, warnings);
 }
 
 WithWarning<Map> mergeObjectList(List<dynamic> list, String path,
     [int idx = -1]) {
-  List<Warning> warnings = new List<Warning>();
-  Map obj = new Map();
+  var warnings = <Warning>[];
+  var obj = {};
   for (var i = 0; i < list.length; i++) {
     final toMerge = list[i];
     if (toMerge is Map) {
       toMerge.forEach((k, v) {
-        final String t = getTypeName(obj[k]);
+        final t = getTypeName(obj[k]);
         if (obj[k] == null) {
           obj[k] = v;
         } else {
-          final String otherType = getTypeName(v);
+          final otherType = getTypeName(v);
           if (t != otherType) {
             if (t == 'int' && otherType == 'double') {
               // if double was found instead of int, assign the double
               obj[k] = v;
             } else if (t != 'double' && otherType != 'int') {
               // if types are not equal, then
-              int realIndex = i;
+              var realIndex = i;
               if (idx != -1) {
                 realIndex = idx - i;
               }
-              final String ambiguosTypePath = '$path[$realIndex]/$k';
-              warnings.add(newAmbiguousType(ambiguosTypePath));
+              final ambiguosTypePath = '$path[$realIndex]/$k';
+              warnings.add(AmbiguousType(ambiguosTypePath));
             }
           } else if (t == 'List') {
-            List l = List.from(obj[k]);
-            final int beginIndex = l.length;
+            var l = List.from(obj[k]);
+            final beginIndex = l.length;
             l.addAll(v);
             // bug is here
             final mergeableType = mergeableListType(l);
             if (ListType.Object == mergeableType.listType) {
-              WithWarning<Map> mergedList =
-                  mergeObjectList(l, '$path[$i]/$k', beginIndex);
+              var mergedList = mergeObjectList(l, '$path[$i]/$k', beginIndex);
               warnings.addAll(mergedList.warnings);
               obj[k] = List.filled(1, mergedList.result);
             } else {
-              if (l.length > 0) {
+              if (l.isNotEmpty) {
                 obj[k] = List.filled(1, l[0]);
               }
               if (mergeableType.isAmbigous) {
-                warnings.add(newAmbiguousType('$path[$i]/$k'));
+                warnings.add(AmbiguousType('$path[$i]/$k'));
               }
             }
           } else if (t == 'Class') {
-            int properIndex = i;
+            var properIndex = i;
             if (idx != -1) {
               properIndex = i - idx;
             }
-            WithWarning<Map> mergedObj = mergeObj(
+            var mergedObj = mergeObj(
               obj[k],
               v,
               '$path[$properIndex]/$k',
@@ -183,10 +182,10 @@ WithWarning<Map> mergeObjectList(List<dynamic> list, String path,
       });
     }
   }
-  return new WithWarning(obj, warnings);
+  return WithWarning(obj, warnings);
 }
 
-isPrimitiveType(String typeName) {
+bool isPrimitiveType(String typeName) {
   final isPrimitive = PRIMITIVE_TYPES[typeName];
   if (isPrimitive == null) {
     return false;
@@ -197,7 +196,7 @@ isPrimitiveType(String typeName) {
 String fixFieldName(String name,
     {TypeDefinition typeDef, bool privateField = false}) {
   var properName = name;
-  if (name.startsWith('_') || name.startsWith(new RegExp(r'[0-9]'))) {
+  if (name.startsWith('_') || name.startsWith(RegExp(r'[0-9]'))) {
     final firstCharType = typeDef.name.substring(0, 1).toLowerCase();
     properName = '$firstCharType$name';
   }
@@ -230,7 +229,7 @@ String getTypeName(dynamic obj) {
 Node navigateNode(Node astNode, String path) {
   Node node;
   if (astNode is ObjectNode) {
-    final ObjectNode objectNode = astNode;
+    final objectNode = astNode;
     final propertyNode = objectNode.children.firstWhere((final prop) {
       return prop.key.value == path;
     }, orElse: () {
@@ -241,8 +240,8 @@ Node navigateNode(Node astNode, String path) {
     }
   }
   if (astNode is ArrayNode) {
-    final ArrayNode arrayNode = astNode;
-    final index = int.tryParse(path) ?? null;
+    final arrayNode = astNode;
+    final index = int.tryParse(path);
     if (index != null && arrayNode.children.length > index) {
       node = arrayNode.children[index];
     }
@@ -250,11 +249,11 @@ Node navigateNode(Node astNode, String path) {
   return node;
 }
 
-final _pattern = RegExp(r"([0-9]+)\.{0,1}([0-9]*)e(([-0-9]+))");
+final _pattern = RegExp(r'([0-9]+)\.{0,1}([0-9]*)e(([-0-9]+))');
 
 bool isASTLiteralDouble(Node astNode) {
   if (astNode != null && astNode is LiteralNode) {
-    final LiteralNode literalNode = astNode;
+    final literalNode = astNode;
     final containsPoint = literalNode.raw.contains('.');
     final containsExponent = literalNode.raw.contains('e');
     if (containsPoint || containsExponent) {
@@ -291,9 +290,9 @@ bool _isDoubleWithExponential(String integer, String comma, String exponent) {
   return false;
 }
 
-const String emptyListWarn = "list is empty";
-const String ambiguousListWarn = "list is ambiguous";
-const String ambiguousTypeWarn = "type is ambiguous";
+const String emptyListWarn = 'list is empty';
+const String ambiguousListWarn = 'list is ambiguous';
+const String ambiguousTypeWarn = 'type is ambiguous';
 
 class Warning {
   final String warning;
@@ -302,16 +301,16 @@ class Warning {
   Warning(this.warning, this.path);
 }
 
-Warning newEmptyListWarn(String path) {
-  return new Warning(emptyListWarn, path);
+Warning EmptyListWarn(String path) {
+  return Warning(emptyListWarn, path);
 }
 
-Warning newAmbiguousListWarn(String path) {
-  return new Warning(ambiguousListWarn, path);
+Warning AmbiguousListWarn(String path) {
+  return Warning(ambiguousListWarn, path);
 }
 
-Warning newAmbiguousType(String path) {
-  return new Warning(ambiguousTypeWarn, path);
+Warning AmbiguousType(String path) {
+  return Warning(ambiguousTypeWarn, path);
 }
 
 class WithWarning<T> {
@@ -328,12 +327,12 @@ class TypeDefinition {
   bool _isPrimitive = false;
 
   factory TypeDefinition.fromDynamic(dynamic obj, Node astNode) {
-    bool isAmbiguous = false;
+    var isAmbiguous = false;
     final type = getTypeName(obj);
     if (type == 'List') {
       List<dynamic> list = obj;
       String elemType;
-      if (list.length > 0) {
+      if (list.isNotEmpty) {
         elemType = getTypeName(list[0]);
         for (dynamic listVal in list) {
           if (elemType != getTypeName(listVal)) {
@@ -343,36 +342,34 @@ class TypeDefinition {
         }
       } else {
         // when array is empty insert Null just to warn the user
-        elemType = "Null";
+        elemType = 'Null';
       }
-      return new TypeDefinition(type,
+      return TypeDefinition(type,
           astNode: astNode, subtype: elemType, isAmbiguous: isAmbiguous);
     }
-    return new TypeDefinition(type, astNode: astNode, isAmbiguous: isAmbiguous);
+    return TypeDefinition(type, astNode: astNode, isAmbiguous: isAmbiguous);
   }
 
   TypeDefinition(this.name, {this.subtype, this.isAmbiguous, Node astNode}) {
     if (subtype == null) {
-      _isPrimitive = isPrimitiveType(this.name);
-      if (this.name == 'int' && isASTLiteralDouble(astNode)) {
-        this.name = 'double';
+      _isPrimitive = isPrimitiveType(name);
+      if (name == 'int' && isASTLiteralDouble(astNode)) {
+        name = 'double';
       }
     } else {
       _isPrimitive = isPrimitiveType('$name<$subtype>');
     }
-    if (isAmbiguous == null) {
-      isAmbiguous = false;
-    }
+    isAmbiguous ??= false;
   }
 
   //bool operator ==(other) {
   bool operator(other) {
     if (other is TypeDefinition) {
-      TypeDefinition otherTypeDef = other;
-      return this.name == otherTypeDef.name &&
-          this.subtype == otherTypeDef.subtype &&
-          this.isAmbiguous == otherTypeDef.isAmbiguous &&
-          this._isPrimitive == otherTypeDef._isPrimitive;
+      var otherTypeDef = other;
+      return name == otherTypeDef.name &&
+          subtype == otherTypeDef.subtype &&
+          isAmbiguous == otherTypeDef.isAmbiguous &&
+          _isPrimitive == otherTypeDef._isPrimitive;
     }
     return false;
   }
@@ -382,8 +379,8 @@ class TypeDefinition {
   bool get isPrimitiveList => _isPrimitive && name == 'List';
 
   String _buildParseClass(String expression) {
-    final properType = subtype != null ? subtype : name;
-    return 'new $properType.fromJson($expression)';
+    final properType = subtype ?? name;
+    return ' $properType.fromJson($expression)';
   }
 
   String _buildToJsonClass(String expression) {
@@ -395,17 +392,17 @@ class TypeDefinition {
     final fieldKey =
         fixFieldName(key, typeDef: this, privateField: privateField);
     if (isPrimitive) {
-      if (name == "List") {
+      if (name == 'List') {
         return "$fieldKey = json['$key'].cast<$subtype>();";
       }
       return "$fieldKey = json['$key'];";
-    } else if (name == "List" && subtype == "DateTime") {
+    } else if (name == 'List' && subtype == 'DateTime') {
       return "$fieldKey = json['$key'].map((v) => DateTime.tryParse(v));";
-    } else if (name == "DateTime") {
+    } else if (name == 'DateTime') {
       return "$fieldKey = DateTime.tryParse(json['$key']);";
     } else if (name == 'List') {
       // list of class
-      return "if (json['$key'] != null) {\n\t\t\t$fieldKey = new List<$subtype>();\n\t\t\tjson['$key'].forEach((v) { $fieldKey.add(new $subtype.fromJson(v)); });\n\t\t}";
+      return "if (json['$key'] != null) {\n\t\t\t$fieldKey =  List<$subtype>();\n\t\t\tjson['$key'].forEach((v) { $fieldKey.add( $subtype.fromJson(v)); });\n\t\t}";
     } else {
       // class
       return "$fieldKey = json['$key'] != null ? ${_buildParseClass(jsonKey)} : null;";
@@ -444,18 +441,18 @@ class Dependency {
 class ClassDefinition {
   final String _name;
   final bool _privateFields;
-  final Map<String, TypeDefinition> fields = new Map<String, TypeDefinition>();
+  final Map<String, TypeDefinition> fields = <String, TypeDefinition>{};
 
   String get name => _name;
   bool get privateFields => _privateFields;
 
   List<Dependency> get dependencies {
-    final dependenciesList = new List<Dependency>();
+    final dependenciesList = <Dependency>[];
     final keys = fields.keys;
     keys.forEach((k) {
       final f = fields[k];
       if (!f.isPrimitive) {
-        dependenciesList.add(new Dependency(k, f));
+        dependenciesList.add(Dependency(k, f));
       }
     });
     return dependenciesList;
@@ -465,19 +462,19 @@ class ClassDefinition {
 
   bool operator(other) {
     if (other is ClassDefinition) {
-      ClassDefinition otherClassDef = other;
-      return this.isSubsetOf(otherClassDef) && otherClassDef.isSubsetOf(this);
+      var otherClassDef = other;
+      return isSubsetOf(otherClassDef) && otherClassDef.isSubsetOf(this);
     }
     return false;
   }
 
   bool isSubsetOf(ClassDefinition other) {
-    final List<String> keys = this.fields.keys.toList();
-    final int len = keys.length;
-    for (int i = 0; i < len; i++) {
-      TypeDefinition otherTypeDef = other.fields[keys[i]];
+    final keys = fields.keys.toList();
+    final len = keys.length;
+    for (var i = 0; i < len; i++) {
+      var otherTypeDef = other.fields[keys[i]];
       if (otherTypeDef != null) {
-        TypeDefinition typeDef = this.fields[keys[i]];
+        var typeDef = fields[keys[i]];
         if (typeDef != otherTypeDef) {
           return false;
         }
@@ -488,13 +485,13 @@ class ClassDefinition {
     return true;
   }
 
-  hasField(TypeDefinition otherField) {
+  bool hasField(TypeDefinition otherField) {
     return fields.keys
             .firstWhere((k) => fields[k] == otherField, orElse: () => null) !=
         null;
   }
 
-  addField(String name, TypeDefinition typeDef) {
+  dynamic addField(String name, TypeDefinition typeDef) {
     fields[name] = typeDef;
   }
 
@@ -510,7 +507,7 @@ class ClassDefinition {
       final f = fields[key];
       final fieldName =
           fixFieldName(key, typeDef: f, privateField: privateFields);
-      final sb = new StringBuffer();
+      final sb = StringBuffer();
       sb.write('\t');
       _addTypeDef(f, sb);
       sb.write(' $fieldName;');
@@ -525,7 +522,7 @@ class ClassDefinition {
           fixFieldName(key, typeDef: f, privateField: false);
       final privateFieldName =
           fixFieldName(key, typeDef: f, privateField: true);
-      final sb = new StringBuffer();
+      final sb = StringBuffer();
       sb.write('\t');
       _addTypeDef(f, sb);
       sb.write(
@@ -537,7 +534,7 @@ class ClassDefinition {
   }
 
   String get _defaultPrivateConstructor {
-    final sb = new StringBuffer();
+    final sb = StringBuffer();
     sb.write('\t$name({');
     var i = 0;
     var len = fields.keys.length - 1;
@@ -566,7 +563,7 @@ class ClassDefinition {
   }
 
   String get _defaultConstructor {
-    final sb = new StringBuffer();
+    final sb = StringBuffer();
     sb.write('\t$name({');
     var i = 0;
     var len = fields.keys.length - 1;
@@ -585,7 +582,7 @@ class ClassDefinition {
   }
 
   String get _jsonParseFunc {
-    final sb = new StringBuffer();
+    final sb = StringBuffer();
     sb.write('\t$name');
     sb.write('.fromJson(Map<String, dynamic> json) {\n');
     fields.keys.forEach((k) {
@@ -596,9 +593,9 @@ class ClassDefinition {
   }
 
   String get _jsonGenFunc {
-    final sb = new StringBuffer();
+    final sb = StringBuffer();
     sb.write(
-        '\tMap<String, dynamic> toJson() {\n\t\tfinal Map<String, dynamic> data = new Map<String, dynamic>();\n');
+        '\tMap<String, dynamic> toJson() {\n\t\tfinal Map<String, dynamic> data =  Map<String, dynamic>();\n');
     fields.keys.forEach((k) {
       sb.write('\t\t${fields[k].toJsonExpression(k, privateFields)}\n');
     });
@@ -607,6 +604,7 @@ class ClassDefinition {
     return sb.toString();
   }
 
+  @override
   String toString() {
     if (privateFields) {
       return 'class $name {\n$_fieldList\n\n$_defaultPrivateConstructor\n\n$_gettersSetters\n\n$_jsonParseFunc\n\n$_jsonGenFunc\n}\n';
@@ -619,7 +617,7 @@ class ClassDefinition {
 class DartCode extends WithWarning<String> {
   DartCode(String result, List<Warning> warnings) : super(result, warnings);
 
-  String get code => this.result;
+  String get code => result;
 }
 
 /// A Hint is a user type correction.
@@ -633,25 +631,25 @@ class Hint {
 class ModelGenerator {
   final String _rootClassName;
   final bool _privateFields;
-  List<ClassDefinition> allClasses = new List<ClassDefinition>();
-  final Map<String, String> sameClassMapping = new HashMap<String, String>();
+  List<ClassDefinition> allClasses = <ClassDefinition>[];
+  final Map<String, String> sameClassMapping = HashMap<String, String>();
   List<Hint> hints;
 
   ModelGenerator(this._rootClassName, [this._privateFields = false, hints]) {
     if (hints != null) {
       this.hints = hints;
     } else {
-      this.hints = new List<Hint>();
+      this.hints = <Hint>[];
     }
   }
 
   Hint _hintForPath(String path) {
-    return this.hints.firstWhere((h) => h.path == path, orElse: () => null);
+    return hints.firstWhere((h) => h.path == path, orElse: () => null);
   }
 
   List<Warning> _generateClassDefinition(
       String className, dynamic jsonRawDynamicData, String path, Node astNode) {
-    List<Warning> warnings = new List<Warning>();
+    var warnings = <Warning>[];
     if (jsonRawDynamicData is List) {
       // if first element is an array, start in the first element.
       final node = navigateNode(astNode, '0');
@@ -659,28 +657,27 @@ class ModelGenerator {
     } else {
       final Map<dynamic, dynamic> jsonRawData = jsonRawDynamicData;
       final keys = jsonRawData.keys;
-      ClassDefinition classDefinition =
-          new ClassDefinition(className, _privateFields);
+      var classDefinition = ClassDefinition(className, _privateFields);
       keys.forEach((key) {
         TypeDefinition typeDef;
         final hint = _hintForPath('$path/$key');
         final node = navigateNode(astNode, key);
         if (hint != null) {
-          typeDef = new TypeDefinition(hint.type, astNode: node);
+          typeDef = TypeDefinition(hint.type, astNode: node);
         } else {
-          typeDef = new TypeDefinition.fromDynamic(jsonRawData[key], node);
+          typeDef = TypeDefinition.fromDynamic(jsonRawData[key], node);
         }
         if (typeDef.name == 'Class') {
           typeDef.name = camelCase(key);
         }
         if (typeDef.name == 'List' && typeDef.subtype == 'Null') {
-          warnings.add(newEmptyListWarn('$path/$key'));
+          warnings.add(EmptyListWarn('$path/$key'));
         }
         if (typeDef.subtype != null && typeDef.subtype == 'Class') {
           typeDef.subtype = camelCase(key);
         }
         if (typeDef.isAmbiguous) {
-          warnings.add(newAmbiguousListWarn('$path/$key'));
+          warnings.add(AmbiguousListWarn('$path/$key'));
         }
         classDefinition.addField(key, typeDef);
       });
@@ -703,7 +700,7 @@ class ModelGenerator {
             // into a single one
             dynamic toAnalyze;
             if (!dependency.typeDef.isAmbiguous) {
-              WithWarning<Map> mergeWithWarning = mergeObjectList(
+              var mergeWithWarning = mergeObjectList(
                   jsonRawData[dependency.name], '$path/${dependency.name}');
               toAnalyze = mergeWithWarning.result;
               warnings.addAll(mergeWithWarning.warnings);
@@ -734,8 +731,8 @@ class ModelGenerator {
   DartCode generateUnsafeDart(String rawJson) {
     final jsonRawData = decodeJSON(rawJson);
     final astNode = parse(rawJson, Settings());
-    List<Warning> warnings =
-        _generateClassDefinition(_rootClassName, jsonRawData, "", astNode);
+    var warnings =
+        _generateClassDefinition(_rootClassName, jsonRawData, '', astNode);
     // after generating all classes, replace the omited similar classes.
     allClasses.forEach((c) {
       final fieldsKeys = c.fields.keys;
@@ -746,8 +743,7 @@ class ModelGenerator {
         }
       });
     });
-    return new DartCode(
-        allClasses.map((c) => c.toString()).join('\n'), warnings);
+    return DartCode(allClasses.map((c) => c.toString()).join('\n'), warnings);
   }
 
   /// generateDartClasses will generate all classes and append one after another
@@ -755,8 +751,8 @@ class ModelGenerator {
   /// formatted JSON string. If the generated dart is invalid it will throw an error.
   DartCode generateDartClasses(String rawJson) {
     final unsafeDartCode = generateUnsafeDart(rawJson);
-    final formatter = new DartFormatter();
-    return new DartCode(
+    final formatter = DartFormatter();
+    return DartCode(
         formatter.format(unsafeDartCode.code), unsafeDartCode.warnings);
   }
 }
