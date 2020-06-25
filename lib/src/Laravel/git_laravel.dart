@@ -10,14 +10,6 @@ var shell = Shell();
 var context = "";
 
 laravelStarts({String path, String projectName}) async {
-  var ok = File(path + '\\.env.example').openRead();
-  ok
-      .transform(utf8.decoder) // Decode bytes to UTF-8.
-      .transform(new LineSplitter()) // Convert stream to individual lines.
-      .listen((String line) {
-    context = context + line + '\n';
-  });
-
   print("Laravel start downloading.....");
 
   await shell
@@ -40,6 +32,15 @@ DB_PASSWORD= //if your database password then enter here\nNow setup your databas
         "--------------------------------------------------------------------------------");
 
     createFile(path + '/$projectName', context, '.env');
+    File file = new File(path + '/$projectName/' + '.env');
+    var ok = File(path + '\\$projectName\\.env.example').openRead();
+    ok
+        .transform(utf8.decoder) // Decode bytes to UTF-8.
+        .transform(new LineSplitter()) // Convert stream to individual lines.
+        .listen((String line) async {
+      await file.writeAsString(line + '\n', mode: FileMode.append);
+      // context = context + line + '\n';
+    });
     print(
         "Go to here  $path + '/$projectName' .env\nSetup database configration");
     ANSIPrinter().printRGB("Now Start your localhost server and mysql server ",
@@ -56,7 +57,7 @@ laravelDone({String path, String projectName}) async {
   ANSIPrinter().printRGB("Laravel start installing dependency",
       bGray: 1.0, fColor: 0xff4BB543);
   await shell.cd(path + '/$projectName').run('composer update').then((a) {
-    shell.cd(path + '/$projectName').run('php artisan migrate').then((a) {
+    shell.cd(path + '/$projectName').run('''php artisan migrate ''').then((a) {
       shell
           .cd(path + '/$projectName')
           .run('php artisan passport:install')

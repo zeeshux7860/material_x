@@ -155,3 +155,23 @@ extension StringExtension on String {
     return "${this[0].toUpperCase()}${this.substring(1)}";
   }
 }
+
+String mxBetweenText(String text, String start, String end) {
+  var str = text.toString();
+
+  final startIndex = str.indexOf(start);
+  final endIndex = str.indexOf(end, startIndex + start.length);
+
+  return str.substring(startIndex + start.length, endIndex);
+}
+
+
+
+List<String> laraveRequiredValidation({List<String> list}) {
+  List<String> model = List();
+  list.forEach((element) {
+    var data = mxBetweenText(element, "'", "'");
+    model.add("'$data' => 'required'");
+  });
+  return model;
+}

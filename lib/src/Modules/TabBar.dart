@@ -167,8 +167,8 @@ class MxTabBar {
   /// interfere with the default tap handler.
   final ValueChanged<int> onTap;
 
-  MxTabBar({
-      this.key,
+  MxTabBar(
+      {this.key,
       this.controller,
       this.isScrollable,
       this.indicatorColor,

@@ -42,8 +42,8 @@ extension LaravelString on String {
     return "echo " + this + ';';
   }
 
-  String toStoreVariable(variable) {
-    String text = "\$$variable = $this;";
+  String toStoreVariable({variablename}) {
+    String text = "\$$variablename = '$this';";
     return text;
   }
 
