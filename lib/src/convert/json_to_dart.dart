@@ -93,7 +93,7 @@ WithWarning<Map> mergeObj(Map obj, Map other, String path) {
           clone[k] = v;
         } else if (clone[k].runtimeType != 'double' && v.runtimeType != 'int') {
           // if types are not equal, then
-          warnings.add(AmbiguousType('$path/$k'));
+          warnings.add(sambiguousType('$path/$k'));
         }
       } else if (t == 'List') {
         var l = List.from(clone[k]);
@@ -108,7 +108,7 @@ WithWarning<Map> mergeObj(Map obj, Map other, String path) {
             clone[k] = List.filled(1, l[0]);
           }
           if (mergeableType.isAmbigous) {
-            warnings.add(AmbiguousType('$path/$k'));
+            warnings.add(sambiguousType('$path/$k'));
           }
         }
       } else if (t == 'Class') {
@@ -145,7 +145,7 @@ WithWarning<Map> mergeObjectList(List<dynamic> list, String path,
                 realIndex = idx - i;
               }
               final ambiguosTypePath = '$path[$realIndex]/$k';
-              warnings.add(AmbiguousType(ambiguosTypePath));
+              warnings.add(sambiguousType(ambiguosTypePath));
             }
           } else if (t == 'List') {
             var l = List.from(obj[k]);
@@ -162,7 +162,7 @@ WithWarning<Map> mergeObjectList(List<dynamic> list, String path,
                 obj[k] = List.filled(1, l[0]);
               }
               if (mergeableType.isAmbigous) {
-                warnings.add(AmbiguousType('$path[$i]/$k'));
+                warnings.add(sambiguousType('$path[$i]/$k'));
               }
             }
           } else if (t == 'Class') {
@@ -301,15 +301,15 @@ class Warning {
   Warning(this.warning, this.path);
 }
 
-Warning EmptyListWarn(String path) {
+Warning eemptyListWarn(String path) {
   return Warning(emptyListWarn, path);
 }
 
-Warning AmbiguousListWarn(String path) {
+Warning aambiguousListWarn(String path) {
   return Warning(ambiguousListWarn, path);
 }
 
-Warning AmbiguousType(String path) {
+Warning sambiguousType(String path) {
   return Warning(ambiguousTypeWarn, path);
 }
 
@@ -671,13 +671,13 @@ class ModelGenerator {
           typeDef.name = camelCase(key);
         }
         if (typeDef.name == 'List' && typeDef.subtype == 'Null') {
-          warnings.add(EmptyListWarn('$path/$key'));
+          warnings.add(eemptyListWarn('$path/$key'));
         }
         if (typeDef.subtype != null && typeDef.subtype == 'Class') {
           typeDef.subtype = camelCase(key);
         }
         if (typeDef.isAmbiguous) {
-          warnings.add(AmbiguousListWarn('$path/$key'));
+          warnings.add(aambiguousListWarn('$path/$key'));
         }
         classDefinition.addField(key, typeDef);
       });

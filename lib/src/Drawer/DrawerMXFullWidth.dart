@@ -12,9 +12,9 @@ class MxDrawerFullWidth extends StatelessWidget {
     return SizedBox(
       width: MediaQuery.of(context).size.width, //20.0,
       child: Drawer(
-        child:  MxContainer(
+        child: MxContainer(
           color: backgrounCcolor,
-          child:  ListView(
+          child: ListView(
             padding: EdgeInsets.only(top: 0.0),
             children: <Widget>[
               AppBar(
@@ -26,10 +26,10 @@ class MxDrawerFullWidth extends StatelessWidget {
                       Navigator.pop(context);
                     }),
               ),
-               SizedBox(
+              SizedBox(
                 height: 100,
               ),
-               Column(
+              Column(
                 children: children ?? <Widget>[],
               )
             ],
