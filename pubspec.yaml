@@ -1,10 +1,10 @@
 name: material_x
 description: A new Flutter package you can develop attractive and/or create UI are you interested to learn documentation....
-version: 0.5.3
+version: 0.5.5
 homepage: https://github.com/zeeshux7860/material_x
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.8.0 <3.0.0"
 
 dependencies:
   flutter:
