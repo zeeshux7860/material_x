@@ -97,3 +97,15 @@ class LaravelSaveData {
     return tablename + '::' + "->create(array($array))";
   }
 }
+
+String response200(dynamic data) {
+  return "return response($data, 200)";
+}
+
+String response401(dynamic data) {
+  return "return response($data, 401)";
+}
+
+String response404(dynamic data) {
+  return "return response($data, 404)";
+}
