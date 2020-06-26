@@ -68,3 +68,14 @@ laravelDone({String path, String projectName}) async {
     });
   });
 }
+
+laravelMigrate({String path}) {
+  ANSIPrinter().printRGB("Now Every thing is done :) Great ",
+      breakLine: true, bGray: 1.0, fColor: 0xff4BB543);
+  shell.cd(path).run('''php artisan migrate ''').then((a) {
+    shell.cd(path).run('php artisan passport:install').then((a) {
+      ANSIPrinter().printRGB("Now Every thing is done :) Great ",
+          breakLine: true, bGray: 1.0, fColor: 0xff4BB543);
+    });
+  });
+}

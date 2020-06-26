@@ -7,20 +7,18 @@ class LaravelGetData {
   }
 
   String where(String filed, String operators, String value) {
-    var fil = "'$filed'";
     var op = operators == '' ? '' : "'$operators'" + ',';
-    return "${tableName.firstCapitalize()}" + '::where($fil,$op$value)';
+    return "${tableName.firstCapitalize()}" + '::where($filed,$op$value)';
   }
 
   String getDataPaginate({final int value = 5}) {
     return "${tableName.firstCapitalize()}" + '::paginate($value)';
   }
 
-  String whereExists(String filed, String operators, String value) {
-    var fil = "'$filed'";
+  String whereExists(String filed, String operators, dynamic value) {
     var op = operators == '' ? '' : "'$operators'" + ',';
     return "${tableName.firstCapitalize()}" +
-        '::where($fil,$op$value)->exists()';
+        '::where($filed,$op$value)->exists()';
   }
 }
 
@@ -29,14 +27,13 @@ extension StringExtensionsa on String {
     return "${this[0].toUpperCase()}${this.substring(1)}";
   }
 
-  String laravelDone() {
+  String close() {
     return this + ';';
   }
 
   String where(String filed, String operators, String value) {
-    var fil = "'$filed'";
     var op = operators == '' ? '' : "'$operators'" + ',';
-    return '$this->where($fil,$op$value)';
+    return '$this->where($filed,$op$value)';
   }
 
   String exists() {
@@ -49,5 +46,54 @@ extension StringExtensionsa on String {
 
   String paginate({final int value = 5}) {
     return "$this->paginate($value)";
+  }
+
+  String limit({final int value = 5}) {
+    return "$this->limit($value)";
+  }
+
+  String first({final int value = 5}) {
+    return "$this->first()";
+  }
+
+  String find({final int value = 1}) {
+    return "$this->find($value)";
+  }
+
+  String orderBy() {
+    return "$this->orderBy()";
+  }
+
+  String save() {
+    return "->save()";
+  }
+}
+
+String laravelArray(List list) {
+  //print(list.toString().substring(0, list.toString().length - list.toString().length + 1));
+
+  var array = list.toString().replaceAll('[', '').replaceAll(']', '');
+  return "$array";
+}
+
+String laravelGetRequestKeyValue(requestKey) {
+  return "request->$requestKey";
+}
+
+String laravelSaveValue(keyName, value) {
+  return "'$keyName' => $value";
+}
+
+class LaravelSaveData {
+  final String tablename;
+
+  LaravelSaveData(this.tablename);
+
+  String save() {
+    return tablename + '::' + "save()";
+  }
+
+  String create(String array) {
+    return tablename + '::' + "->create(array($array))";
   }
 }
