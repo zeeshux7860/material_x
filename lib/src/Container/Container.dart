@@ -41,20 +41,15 @@ class MxContainer extends StatelessWidget {
           color: Colors.transparent,
           shape: RoundedRectangleBorder(
               borderRadius: borderRadius == null
-                  ? BorderRadius.circular(rounded == null ? 0 : rounded ?? 0)
-                  : borderRadius ??
-                      BorderRadius.circular(
-                          rounded == null ? 0 : rounded ?? 0)),
+                  ? BorderRadius.circular(rounded == null ? 0 : rounded)
+                  : borderRadius),
           child: InkWell(
               borderRadius: borderRadius == null
-                  ? BorderRadius.circular(rounded == null ? 0 : rounded ?? 0)
-                  : borderRadius ??
-                      BorderRadius.circular(rounded == null ? 0 : rounded ?? 0),
+                  ? BorderRadius.circular(rounded == null ? 0 : rounded)
+                  : borderRadius,
               onTap: onTap,
               child: Padding(
-                padding: padding == null
-                    ? EdgeInsets.all(10.0)
-                    : padding ?? EdgeInsets.all(10.0),
+                padding: padding == null ? EdgeInsets.all(10.0) : padding,
                 child: child,
               ))),
       height: height,
@@ -67,15 +62,14 @@ class MxContainer extends StatelessWidget {
                 color: shadowColor == null
                     ? Colors.transparent
                     : shadowColor.withOpacity(0.4),
-                blurRadius: blurRadius == null ? 0 : blurRadius ?? 0,
-                spreadRadius: spreadRadius == null ? 0.0 : spreadRadius ?? 0.0,
-                offset: offset == null ? Offset(0, 0) : offset ?? Offset(0, 0)),
+                blurRadius: blurRadius == null ? 0 : blurRadius,
+                spreadRadius: spreadRadius == null ? 0.0 : spreadRadius,
+                offset: offset == null ? Offset(0, 0) : offset),
           ],
           // color: shadowColor,
           borderRadius: borderRadius == null
-              ? BorderRadius.circular(rounded == null ? 0 : rounded ?? 0)
-              : borderRadius ??
-                  BorderRadius.circular(rounded == null ? 0 : rounded ?? 0)),
+              ? BorderRadius.circular(rounded == null ? 0 : rounded)
+              : borderRadius),
     );
   }
 }

@@ -20,19 +20,18 @@ class MxExpansionTiles extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return expansionTileTitle == null
-        ? Container()
+        ? new Container()
         : ExpansionTile(
-            title: H2(
+            title: new H2(
               text: expansionTileTitle,
               color: expansionTileTitleColor,
             ),
-            subtitle: H5(
+            subtitle: new H5(
               text: expansionTileSubTitle,
               color: expansionTileSubTitleColor,
             ),
-            children: expansionchildren == null
-                ? <Widget>[]
-                : expansionchildren ?? <Widget>[]);
+            children:
+                expansionchildren == null ? <Widget>[] : expansionchildren);
   }
 }
 

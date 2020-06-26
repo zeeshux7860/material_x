@@ -24,7 +24,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               selectedColor: Colors.black,
               unSelectedColor: Colors.red,
               selected: isActive,
-              text: 'Home')
+              text: "Home")
           .bounce(),
       MXListTile(
               onTap: () {
@@ -40,7 +40,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               selectedColor: Colors.black,
               unSelectedColor: Colors.red,
               selected: isActive,
-              text: 'Home')
+              text: "Home")
           .mxContainer(
               margin: EdgeInsets.all(10),
               color: Colors.white,
@@ -61,7 +61,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               selectedColor: Colors.white,
               unSelectedColor: Colors.red,
               selected: isActive,
-              text: 'Home')
+              text: "Home")
           .mxContainer(
               margin: EdgeInsets.all(10),
               color: Color(0xFF3d6dfe),
@@ -83,7 +83,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               unSelectedColor: Colors.red,
               selected: isActive,
               trailing: Icons.add.mxIconTile(size: 30),
-              text: 'Home')
+              text: "Home")
           .mxContainer(
               margin: EdgeInsets.all(10),
               color: Colors.black,
@@ -91,7 +91,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               shadowColor: Colors.black,
               blurRadius: 12),
       MXListTile(
-              subtitle: 'Text'.textMaterialColorWhite(),
+              subtitle: "Text".textMaterialColorWhite(),
               onTap: () {
                 setState(() {
                   if (isActive) {
@@ -106,7 +106,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               selectedColor: Colors.white,
               unSelectedColor: Colors.red,
               selected: isActive,
-              text: 'Home')
+              text: "Home")
           .mxContainerGradient(
               margin: EdgeInsets.all(10),
               gradient: [Colors.red, Colors.pink].mxLGClamp(
@@ -117,7 +117,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               shadowColor: Colors.grey,
               blurRadius: 12),
       MXListTile(
-              subtitle: 'Text'.textMaterialColorWhite(),
+              subtitle: "Text".textMaterialColorWhite(),
               onTap: () {
                 setState(() {
                   if (isActive) {
@@ -135,7 +135,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               trailing: MaterialXButton(
                   color: Colors.white,
                   rounded: 5,
-                  child: 'Add'.textMaterialColorBlack(),
+                  child: "Add".textMaterialColorBlack(),
                   onTap: () {
                     setState(() {
                       if (isActive) {
@@ -147,7 +147,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
                   },
                   width: 100,
                   height: 30),
-              text: 'Home')
+              text: "Home")
           .mxContainerGradient(
               margin: EdgeInsets.all(10),
               gradient: [Colors.orange, Colors.red].mxLGrepeated(
@@ -159,8 +159,8 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               blurRadius: 12),
     ].mxcolumnCC().mxap(value: 10).mxScaffold(
           backgroundColor: Colors.white,
-          appBar: AppBar(
-            title: 'MXListTile'.textMaterialColorBlack(),
+          appBar: new AppBar(
+            title: "MXListTile".textMaterialColorBlack(),
             brightness: Brightness.light,
             centerTitle: true,
             backgroundColor: Colors.white,

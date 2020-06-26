@@ -53,23 +53,22 @@ class TextFiledMaterialD extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Padding(
+        new Padding(
           padding: EdgeInsets.only(left: 20.0, top: 10.0, bottom: 5.0),
-          child: Text(
+          child: new Text(
             'Enter Your ' + name,
             style: TextStyle(
-              fontSize: lableSize == null ? 15.0 : lableSize ?? 15.0,
+              fontSize: lableSize == null ? 15.0 : lableSize,
             ),
           ),
         ),
-        Container(
+        new Container(
           margin: EdgeInsets.all(10.0),
-          color: color == null ? Colors.grey[100] : color ?? Colors.grey[100],
-          child: TextFormField(
+          color: color == null ? Colors.grey[100] : color,
+          child: new TextFormField(
             style: TextStyle(
               fontSize: fontSize,
-              color:
-                  textColor == null ? Colors.black : textColor ?? Colors.black,
+              color: textColor == null ? Colors.black : textColor,
             ),
             validator: (value) {
               if (value.isEmpty) {
@@ -79,13 +78,11 @@ class TextFiledMaterialD extends StatelessWidget {
             },
             maxLines: maxline,
             controller: controller,
-            obscureText: obscureText == null ? false : obscureText ?? false,
+            obscureText: obscureText == null ? false : obscureText,
             decoration: InputDecoration(
                 hintStyle: TextStyle(
                     fontSize: fontSize,
-                    color: textColor == null
-                        ? Colors.black
-                        : textColor ?? Colors.black),
+                    color: textColor == null ? Colors.black : textColor),
                 contentPadding:
                     EdgeInsets.only(left: 10.0, right: 5.0, bottom: 5.0),
                 hintText: ' ' + name,

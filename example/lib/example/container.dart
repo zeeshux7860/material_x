@@ -9,8 +9,8 @@ class _ExampleContainerState extends State<ExampleContainer> {
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      'image Container'.h1TextBold(color: Colors.black).mxltp(l: 20.0, t: 20.0),
-      'text'.textMaterialColorWhite().toCenter().mxContainer(
+      "image Container".h1TextBold(color: Colors.black).mxltp(l: 20.0, t: 20.0),
+      "text".textMaterialColorWhite().toCenter().mxContainer(
           onTap: () {},
           margin: EdgeInsets.all(20.0),
           color: Colors.orange,
@@ -18,24 +18,24 @@ class _ExampleContainerState extends State<ExampleContainer> {
           blurRadius: 12,
           rounded: 10,
           image:
-              'https://image.freepik.com/free-psd/tropical-foliage-background_53876-91352.jpg'
+              "https://image.freepik.com/free-psd/tropical-foliage-background_53876-91352.jpg"
                   .decorationINToCover(),
           width: mxwidth(context) // auto detect full width
           ),
-      'Normal Container'
+      "Normal Container"
           .h1TextBold(color: Colors.black)
           .mxltp(l: 20.0, t: 20.0),
-      'text'.textMaterialColorWhite().toCenter().mxContainer(
+      "text".textMaterialColorWhite().toCenter().mxContainer(
           onTap: () {},
           margin: EdgeInsets.all(20.0),
           color: Colors.pink,
           height: 200,
           width: mxwidth(context) // auto detect full width
           ),
-      'Feature Container'
+      "Feature Container"
           .h1TextBold(color: Colors.black)
           .mxltp(l: 20.0, t: 20.0),
-      'text'.textMaterialColorWhite().toCenter().mxContainer(
+      "text".textMaterialColorWhite().toCenter().mxContainer(
           onTap: () {},
           rounded: 20.0,
           shadowColor: Colors.black,
@@ -45,10 +45,10 @@ class _ExampleContainerState extends State<ExampleContainer> {
           blurRadius: 5,
           width: mxwidth(context) // auto detect full width
           ),
-      'Elliptical Container'
+      "Elliptical Container"
           .h1TextBold(color: Colors.black)
           .mxltp(l: 20.0, t: 20.0),
-      'text'.textMaterialColorWhite().toCenter().mxContainer(
+      "text".textMaterialColorWhite().toCenter().mxContainer(
           onTap: () {},
           margin: EdgeInsets.all(20.0),
           color: Colors.orange,
@@ -62,11 +62,11 @@ class _ExampleContainerState extends State<ExampleContainer> {
           ),
     ].mxListView().mxScaffold(
           backgroundColor: Colors.white,
-          appBar: AppBar(
+          appBar: new AppBar(
             brightness: Brightness.light,
             centerTitle: true,
             backgroundColor: Colors.white,
-            title: 'Material X Container '.textMaterialColorBlack(),
+            title: "Material X Container ".textMaterialColorBlack(),
           ),
         );
   }

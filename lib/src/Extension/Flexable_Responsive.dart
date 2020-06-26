@@ -4,7 +4,7 @@ extension ColoumRes on Widget {
   Widget mxFlexableRes(bool condition,
       {FlexFit fit = FlexFit.loose, int flex = 1, Key key}) {
     if (condition) {
-      return mxFlexable(fit: fit, flex: flex, key: key);
+      return this.mxFlexable(fit: fit, flex: flex, key: key);
     } else {
       return this;
     }

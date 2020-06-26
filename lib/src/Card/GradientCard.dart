@@ -47,19 +47,19 @@ class MxGradientCardBanner extends StatelessWidget {
             : MainAxisAlignment.spaceAround,
         children: <Widget>[
           Flexible(
-            child: Column(
+            child: new Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                title == null ? Container() : title ?? Container(),
+                title == null ? Container() : title,
                 5.0.sizedHeight(),
-                subTitle == null ? Container() : subTitle ?? Container(),
+                subTitle == null ? new Container() : subTitle,
                 10.0.sizedHeight(),
-                button == null ? Container() : button ?? Container()
+                button == null ? new Container() : button
               ],
             ),
           ),
-          rightSideChild == null ? Container() : rightSideChild ?? Container()
+          rightSideChild == null ? Container() : rightSideChild
         ],
       ),
     );

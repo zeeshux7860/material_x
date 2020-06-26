@@ -1,7 +1,7 @@
 extension ListLaravel on List {
-  String dblist() {
+  dblist() {
     var db = '';
-    forEach((element) {
+    this.forEach((element) {
       db = db + element + '\n';
     });
     return db;

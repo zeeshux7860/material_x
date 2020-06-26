@@ -20,14 +20,14 @@ class MXEnterExitRoute extends PageRouteBuilder {
               Stack(
             children: <Widget>[
               SlideTransition(
-                position: Tween<Offset>(
+                position: new Tween<Offset>(
                   begin: const Offset(0.0, 0.0),
                   end: const Offset(-1.0, 0.0),
                 ).animate(animation),
                 child: exitPage,
               ),
               SlideTransition(
-                position: Tween<Offset>(
+                position: new Tween<Offset>(
                   begin: const Offset(1.0, 0.0),
                   end: Offset.zero,
                 ).animate(animation),

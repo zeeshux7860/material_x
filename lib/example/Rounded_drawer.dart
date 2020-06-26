@@ -23,9 +23,9 @@ class RoundedDrawer extends StatelessWidget {
             color: Colors.pink,
             height: 30,
             width: 200,
-            child: 'Profile Setup'.textMaterialColorWhite(),
+            child: "Profile Setup".textMaterialColorWhite(),
           ),
-          SizedBox(
+          new SizedBox(
             height: 15,
           ),
           MaterialXButton(
@@ -36,9 +36,9 @@ class RoundedDrawer extends StatelessWidget {
             spreadRadius: 0.0,
             elavation: 1.0,
             rounded: 12,
-            child: 'Logout'.textMaterialColorWhite(),
+            child: "Logout".textMaterialColorWhite(),
           ),
-          SizedBox(
+          new SizedBox(
             height: 30,
           ),
         ],
@@ -49,7 +49,7 @@ class RoundedDrawer extends StatelessWidget {
             icon: Icons.dashboard,
             iconSize: 40,
             selected: true,
-            text: 'DashBoard',
+            text: "DashBoard",
             unSelectedColor: Colors.grey,
           ),
           MXListTile(
@@ -58,7 +58,7 @@ class RoundedDrawer extends StatelessWidget {
             icon: Icons.account_balance,
             iconSize: 40,
             selected: false,
-            text: 'My Account',
+            text: "My Account",
             unSelectedColor: Colors.grey,
           ),
           MXListTile(
@@ -67,17 +67,17 @@ class RoundedDrawer extends StatelessWidget {
             icon: Icons.table_chart,
             iconSize: 40,
             selected: false,
-            text: 'Transaction',
+            text: "Transaction",
             unSelectedColor: Colors.grey,
           ),
           MXListTile(
-            trailing: Icon(Icons.adb),
+            trailing: new Icon(Icons.adb),
             onTap: () {},
             selectedColor: Colors.pink,
             icon: Icons.settings,
             iconSize: 40,
             selected: false,
-            text: 'Setting',
+            text: "Setting",
             unSelectedColor: Colors.grey,
           ),
         ],
@@ -91,7 +91,7 @@ class RoundedDrawer extends StatelessWidget {
             icon: Icons.dashboard,
             iconSize: 40,
             selected: false,
-            text: 'Term & condition...',
+            text: "Term & condition...",
             unSelectedColor: Colors.grey,
           ),
           Divider(
@@ -111,7 +111,7 @@ class RoundedDrawer extends StatelessWidget {
               rounded: 10,
             ),
             selected: false,
-            text: 'Account Status',
+            text: "Account Status",
             unSelectedColor: Colors.grey,
           ),
           Divider(
@@ -119,7 +119,7 @@ class RoundedDrawer extends StatelessWidget {
           ),
         ],
       ),
-      appBar: AppBar(
+      appBar: new AppBar(
         title: Textmaterial(
           text: 'Rounded Drawer example',
         ),

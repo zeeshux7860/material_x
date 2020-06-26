@@ -1,18 +1,18 @@
 extension LaravelFunction on List {
   String toFuntions(String functionName, {final bool request = false}) {
-    var val = '';
-    forEach((element) {
+    String val = "";
+    this.forEach((element) {
       val = val + element;
     });
-    var requests = request ? 'Request \$request' : '';
-    var text = ''' public function $functionName($requests){\n $val}''';
+    String requests = request ? "Request \$request" : "";
+    String text = """ public function $functionName($requests){\n $val}""";
     return text;
   }
 }
 
 extension LaravelValidation on List {
   String toValidator({String request}) {
-    var text = '''Validator::make($request, $this)''';
+    String text = """Validator::make($request, $this)""";
     return text;
   }
 }
@@ -23,7 +23,7 @@ extension LaravelString on String {
   }
 
   String toVariable() {
-    return '\$$this';
+    return "\$$this";
   }
 
   String toStringReturn() {
@@ -35,22 +35,22 @@ extension LaravelString on String {
   }
 
   String toIntegerReturn() {
-    return 'echo $this;';
+    return "echo $this;";
   }
 
   String toBoolReturn() {
-    return 'echo ' + this + ';';
+    return "echo " + this + ';';
   }
 
   String toStoreVariable({variablename}) {
-    var text = "\$$variablename = '$this';";
+    String text = "\$$variablename = '$this';";
     return text;
   }
 
   /// Default error code is 401
   /// Default variable name is $validator
   String toValidate({String customMessage}) {
-    var text = """\$validator = $this;
+    String text = """\$validator = $this;
     
      if (\$validator->fails()) {
             return response()->json(['response_code' => 401, 'error' => \$validator->errors(), $customMessage], 401);
@@ -60,7 +60,7 @@ extension LaravelString on String {
 }
 
 String requestall() {
-  return '\$request->all()';
+  return "\$request->all()";
 }
 
 // class Laravel {
@@ -81,11 +81,11 @@ class Condition {
       {this.trueValue, this.falseValue});
 
   String check() {
-    var text = '''if($condition1 $operator $condition2){
+    String text = """if($condition1 $operator $condition2){
       $trueValue
     }else{
       $falseValue
-    }''';
+    }""";
     return text;
   }
 }

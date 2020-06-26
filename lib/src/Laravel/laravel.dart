@@ -143,16 +143,16 @@ String string(value) {
   return "\$table->morphs('$value');";
 }
 
-dynamic createFile(String path, String content, String fileNameWithExtension) {
-  Directory(path).createSync(recursive: true);
+createFile(String path, String content, String fileNameWithExtension) {
+  new Directory(path).createSync(recursive: true);
   File(path + '/' + fileNameWithExtension).writeAsStringSync(content);
   ANSIPrinter()
-      .printRGB('Created $path/$fileNameWithExtension', fColor: 0xff4BB543);
+      .printRGB("Created $path/$fileNameWithExtension", fColor: 0xff4BB543);
 }
 
 extension StringExtension on String {
   String firstCapitalize() {
-    return '${this[0].toUpperCase()}${substring(1)}';
+    return "${this[0].toUpperCase()}${this.substring(1)}";
   }
 }
 
@@ -165,8 +165,10 @@ String mxBetweenText(String text, String start, String end) {
   return str.substring(startIndex + start.length, endIndex);
 }
 
+
+
 List<String> laraveRequiredValidation({List<String> list}) {
-  List<String> model;
+  List<String> model = List();
   list.forEach((element) {
     var data = mxBetweenText(element, "'", "'");
     model.add("'$data' => 'required'");

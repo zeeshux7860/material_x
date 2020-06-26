@@ -10,7 +10,7 @@ class ExampleFlexible extends StatefulWidget {
 class _ExampleFlexibleState extends State<ExampleFlexible> {
   @override
   Widget build(BuildContext context) {
-    var menu = <Widget>[
+    List<Widget> menu = [
       MxCustomStatic(
         onTap: () {},
         rounded: 10.0,

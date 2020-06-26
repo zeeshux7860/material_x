@@ -45,7 +45,7 @@ class MxCardTile extends StatelessWidget {
           image: image,
           child: boxChild,
         ),
-        subtitle: Row(
+        subtitle: new Row(
           mainAxisAlignment: subtitle1 == null
               ? MainAxisAlignment.start
               : subtitle2 == null
@@ -53,8 +53,8 @@ class MxCardTile extends StatelessWidget {
                   : MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
-            subtitle1 == null ? Container() : subtitle1 ?? Container(),
-            subtitle2 == null ? Container() : subtitle2 ?? Container()
+            subtitle1 == null ? Container() : subtitle1,
+            subtitle2 == null ? Container() : subtitle2
           ],
         ),
       ),

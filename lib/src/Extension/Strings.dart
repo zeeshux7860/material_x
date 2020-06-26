@@ -140,7 +140,7 @@ extension Components on String {
       maxRadius: maxRadius,
       minRadius: minRadius,
       radius: radius,
-      backgroundImage: NetworkImage(this),
+      backgroundImage: new NetworkImage(this),
     );
   }
 
@@ -161,7 +161,7 @@ extension Components on String {
       maxRadius: maxRadius,
       minRadius: minRadius,
       radius: radius,
-      backgroundImage: AssetImage(this),
+      backgroundImage: new AssetImage(this),
     );
   }
 
@@ -182,7 +182,7 @@ extension Components on String {
       maxRadius: maxRadius,
       minRadius: minRadius,
       radius: radius,
-      backgroundImage: FileImage(File(this)),
+      backgroundImage: new FileImage(File(this)),
     );
   }
 
@@ -619,7 +619,7 @@ extension Components on String {
   }
 
   String capitalize() {
-    return '${this[0].toUpperCase()}${substring(1)}';
+    return "${this[0].toUpperCase()}${this.substring(1)}";
   }
 
   Widget mxTooltips({

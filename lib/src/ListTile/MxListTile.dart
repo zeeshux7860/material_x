@@ -44,7 +44,7 @@ class _MXListTileState extends State<MXListTile> {
           subtitle: widget.subtitle,
           onTap: widget.onTap,
           trailing: widget.trailing,
-          title: Textmaterial(
+          title: new Textmaterial(
             text: widget.text,
             fontWeight: widget.fontWeight,
           ),

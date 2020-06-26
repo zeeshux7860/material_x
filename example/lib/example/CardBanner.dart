@@ -16,8 +16,8 @@ class ExampleCardBanner extends StatelessWidget {
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
                 .textMaterialColorWhite()
                 .mxExpandableText(
-                    expand: 'More details'.textMaterialColorWhite(),
-                    unexpand: 'Less details'.textMaterialColorWhite(),
+                    expand: "More details".textMaterialColorWhite(),
+                    unexpand: "Less details".textMaterialColorWhite(),
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start),
       ).fadeIn().toCenter(),
@@ -36,14 +36,14 @@ class ExampleCardBanner extends StatelessWidget {
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
                 .textMaterialColorWhite()
                 .mxExpandableText(
-                    expand: 'More details'.textMaterialColorWhite(),
-                    unexpand: 'Less details'.textMaterialColorWhite(),
+                    expand: "More details".textMaterialColorWhite(),
+                    unexpand: "Less details".textMaterialColorWhite(),
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start),
       ).fadeIn().toCenter(),
       MxCardBanner(
         rightSideChild:
-            'https://raw.githubusercontent.com/zeeshux7860/material_x/master/example/logo.png'
+            "https://raw.githubusercontent.com/zeeshux7860/material_x/master/example/logo.png"
                 .mxImageNetwork()
                 .mxap(value: 10.0)
                 .circleAvatar(radius: 35, backgroundColor: Colors.white),
@@ -57,7 +57,7 @@ class ExampleCardBanner extends StatelessWidget {
         subTitle:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
                 .textMaterialColorWhite(),
-        button: 'Know More'.textMaterialColorBlack().cardBannerButton(
+        button: "Know More".textMaterialColorBlack().cardBannerButton(
             buttonColor: Colors.white, onTap: () {}, rounded: 5),
       ).fadeIn().toCenter(),
     ].mxListView().mxScaffold(

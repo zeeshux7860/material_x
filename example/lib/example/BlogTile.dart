@@ -17,14 +17,14 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
         onTap: () {},
         backrounded: 10,
         shape: BorderRadius.circular(10).mxShapeBorder(),
-        leading: 'Z'
+        leading: "Z"
             .textMaterialColorWhite()
             .circleAvatar(backgroundColor: Colors.black, radius: 25),
-        title: 'Image Editor Pro'.textMaterialColorBlack(),
-        subTitle: 'Goto PubDev Check'.textMaterial(),
+        title: "Image Editor Pro".textMaterialColorBlack(),
+        subTitle: "Goto PubDev Check".textMaterial(),
         trailing: '10 min ago'.textMaterial(),
         image:
-            'https://user-images.githubusercontent.com/55942632/77652902-fedd9980-6f94-11ea-96d5-d31657590893.png'
+            "https://user-images.githubusercontent.com/55942632/77652902-fedd9980-6f94-11ea-96d5-d31657590893.png"
                 .decorationINToCover(),
       ),
       MxBlogTile(
@@ -37,16 +37,16 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
         onTap: () {},
         backrounded: 10,
         shape: BorderRadius.circular(10).mxShapeBorder(),
-        leading: 'Z'
+        leading: "Z"
             .textMaterialColorWhite()
             .circleAvatar(backgroundColor: Colors.white, radius: 25),
-        title: 'Image Editor Pro'.textMaterialColorWhite(),
-        subTitle: 'Goto PubDev Check'.textMaterial(color: Colors.grey[50]),
+        title: "Image Editor Pro".textMaterialColorWhite(),
+        subTitle: "Goto PubDev Check".textMaterial(color: Colors.grey[50]),
         trailing: '10 min ago'.textMaterial(
           color: Colors.white,
         ),
         image:
-            'https://user-images.githubusercontent.com/45489310/78457255-b9d4f980-765d-11ea-8d17-78bb21297de6.png'
+            "https://user-images.githubusercontent.com/45489310/78457255-b9d4f980-765d-11ea-8d17-78bb21297de6.png"
                 .decorationINToCover(),
       ),
       MxBlogTile(
@@ -58,25 +58,25 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
         onTap: () {},
         backrounded: 10,
         shape: BorderRadius.circular(10).mxShapeBorder(),
-        leading: 'Z'
+        leading: "Z"
             .textMaterial(fontWeight: FontWeight.bold, color: Colors.black)
             .circleAvatar(backgroundColor: Colors.white, radius: 25),
-        title: 'Image Editor Pro'.textMaterialColorWhite(),
-        subTitle: 'Goto PubDev Check'.textMaterial(color: Colors.grey[50]),
+        title: "Image Editor Pro".textMaterialColorWhite(),
+        subTitle: "Goto PubDev Check".textMaterial(color: Colors.grey[50]),
         trailing: '10 min ago'.textMaterial(
           color: Colors.white,
         ),
         image:
-            'https://user-images.githubusercontent.com/55942632/77652902-fedd9980-6f94-11ea-96d5-d31657590893.png'
+            "https://user-images.githubusercontent.com/55942632/77652902-fedd9980-6f94-11ea-96d5-d31657590893.png"
                 .decorationINToCover(),
       ),
     ].mxListView().mxap(value: 10.0).mxScaffold(
           backgroundColor: Colors.white,
-          appBar: AppBar(
+          appBar: new AppBar(
             brightness: Brightness.light,
             centerTitle: true,
             backgroundColor: Colors.white,
-            title: 'BlogTile '.textMaterialColorBlack(),
+            title: "BlogTile ".textMaterialColorBlack(),
           ),
         );
   }

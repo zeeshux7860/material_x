@@ -281,7 +281,7 @@ extension AppBarMxs on Widget {
   //   );
   // }
 
-  Future mxDialog(context,
+  mxDialog(context,
       {final bool barrierDismissible = true,
       final bool useRootNavigator = true,
       final Widget Function(BuildContext) builder}) {
@@ -295,7 +295,7 @@ extension AppBarMxs on Widget {
 }
 
 extension FunctionWidget on Widget Function(BuildContext) {
-  Future mxDialogBuilder(context,
+  mxDialogBuilder(context,
       {final bool barrierDismissible = true,
       final bool useRootNavigator = true,
       final Widget child}) {
@@ -468,7 +468,7 @@ extension StringsMx on String {
   }
 }
 
-extension LListViewBuilder on Function(BuildContext context, int index) {
+extension listViewBuilder on Function(BuildContext context, int index) {
   Widget mxListVB({
     Key key,
     Axis scrollDirection = Axis.vertical,
@@ -585,8 +585,8 @@ extension AnimationMxs on Widget {
   Widget mxExpandableText(
       {CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center,
       MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
-      Widget expand = const Text('More Details'),
-      Widget unexpand = const Text('less Details'),
+      Widget expand = const Text("More Details"),
+      Widget unexpand = const Text("less Details"),
       double heightunexpand = 50.0}) {
     return ExpandableText(
       this,
@@ -718,7 +718,7 @@ extension Win on String {
       margin: EdgeInsets.all(10.0),
       rounded: 10,
       color: Colors.grey[100],
-      child: TextFormField(
+      child: new TextFormField(
         style: TextStyle(
           fontSize: 20,
           color: Colors.black,
@@ -730,7 +730,7 @@ extension Win on String {
           return null;
         },
         controller: controller,
-        obscureText: obscureText ?? false,
+        obscureText: obscureText == null ? false : obscureText,
         decoration: InputDecoration(
             hintStyle: TextStyle(fontSize: 20, color: Colors.black),
             contentPadding:
@@ -800,7 +800,7 @@ extension Wins on Widget {
       Color color,
       Function onTap,
       BorderRadiusGeometry borderRadius}) {
-    return mxContainer(
+    return this.mxContainer(
         padding: EdgeInsets.zero,
         blurRadius: elevation ?? 10,
         color: color ?? Colors.white,

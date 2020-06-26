@@ -10,14 +10,14 @@ class ExampleCardBarButton extends StatelessWidget {
         eleavation: 10,
         shadowColor: Colors.black,
         title: Icons.android.mxIconTile(color: Colors.white, size: 30),
-        subtitle: 'Zeeshan'.textMaterialColorWhite(),
+        subtitle: "Zeeshan".textMaterialColorWhite(),
       ).toCenter(),
       20.0.sizedHeight(),
       CardBarButton(
         onTap: () {},
         color: Colors.red,
         title: Icons.android.mxIconTile(color: Colors.white, size: 30),
-        subtitle: 'Zeeshan'.textMaterialColorWhite(),
+        subtitle: "Zeeshan".textMaterialColorWhite(),
       ).toCenter(),
     ].mxcolumnCC().mxScaffold(
         backgroundColor: Colors.white,

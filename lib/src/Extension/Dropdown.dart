@@ -34,12 +34,12 @@ class _MxDropdownLabState extends State<MxDropdownLab> {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Padding(
+        new Padding(
           padding: EdgeInsets.only(left: 10.0, top: 10.0, bottom: 5.0),
-          child: Text(
+          child: new Text(
             'Select ' + widget.name,
             style: TextStyle(
-              fontSize: widget.lableSize ?? 15.0,
+              fontSize: widget.lableSize == null ? 15.0 : widget.lableSize,
             ),
           ),
         ),
@@ -47,7 +47,7 @@ class _MxDropdownLabState extends State<MxDropdownLab> {
             width: 100,
             padding: EdgeInsets.only(left: 10),
             margin: EdgeInsets.all(10.0),
-            color: widget.color ?? Colors.grey[100],
+            color: widget.color == null ? Colors.grey[100] : widget.color,
             child: DropdownButton(
               value: widget.dropdownValue,
               icon: Container(),

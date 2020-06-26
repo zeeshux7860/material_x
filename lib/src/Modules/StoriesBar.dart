@@ -35,18 +35,18 @@ class MxStorieBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return MxContainer(
         color: color,
-        child: Column(
+        child: new Column(
           children: <Widget>[
-            CircleAvatar(
+            new CircleAvatar(
               radius: circleRadius,
               backgroundColor: circleColor,
               backgroundImage: backgroundImage,
               child: InkWell(onTap: onTap, child: child),
             ),
-            SizedBox(
-              height: verticalSpace ?? 5,
+            new SizedBox(
+              height: verticalSpace == null ? 5 : verticalSpace,
             ),
-            Textmaterial(
+            new Textmaterial(
               text: text,
               fontsize: fontSize,
               fontWeight: fontWeight,

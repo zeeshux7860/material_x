@@ -4,35 +4,35 @@ class ExampleText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      'Text all parm'.text(),
+      "Text all parm".text(),
       5.0.sizedHeight(),
       Textmaterial(
-        text: 'Textmaterial()',
+        text: "Textmaterial()",
         fontsize: 20,
       ),
       5.0.sizedHeight(),
-      '.textMaterial()'.textMaterial(fontsize: 20),
+      ".textMaterial()".textMaterial(fontsize: 20),
       5.0.sizedHeight(),
-      '.textMaterialColorBlack()'.textMaterialColorBlack(fontsize: 20),
+      ".textMaterialColorBlack()".textMaterialColorBlack(fontsize: 20),
       5.0.sizedHeight(),
-      '.textMaterialColorCyan()'.textMaterialColorCyan(fontsize: 20),
+      ".textMaterialColorCyan()".textMaterialColorCyan(fontsize: 20),
       5.0.sizedHeight(),
-      '.textMaterialColoramber()'.textMaterialColoramber(fontsize: 20),
+      ".textMaterialColoramber()".textMaterialColoramber(fontsize: 20),
       5.0.sizedHeight(),
-      '.textMaterialColordeepOrange()'
+      ".textMaterialColordeepOrange()"
           .textMaterialColordeepOrange(fontsize: 20),
       5.0.sizedHeight(),
-      '.textMaterialColorblue()'.textMaterialColorblue(fontsize: 20),
+      ".textMaterialColorblue()".textMaterialColorblue(fontsize: 20),
       5.0.sizedHeight(),
-      '.textMaterialColorgreen()'.textMaterialColorgreen(fontsize: 20),
+      ".textMaterialColorgreen()".textMaterialColorgreen(fontsize: 20),
       5.0.sizedHeight(),
-      '.textMaterialColorlightBlue()'.textMaterialColorlightBlue(fontsize: 20),
+      ".textMaterialColorlightBlue()".textMaterialColorlightBlue(fontsize: 20),
       5.0.sizedHeight(),
-      '.textMaterialColorindigo()'.textMaterialColorindigo(fontsize: 20),
+      ".textMaterialColorindigo()".textMaterialColorindigo(fontsize: 20),
       5.0.sizedHeight(),
-      '.textMaterialColorpink()'.textMaterialColorpink(fontsize: 20),
+      ".textMaterialColorpink()".textMaterialColorpink(fontsize: 20),
       5.0.sizedHeight(),
-      '.textMaterialColorteal()'.textMaterialColorteal(fontsize: 20),
+      ".textMaterialColorteal()".textMaterialColorteal(fontsize: 20),
     ].mxcolumnSS().mxap(value: 20.0).mxScaffold(
         backgroundColor: Colors.white,
         appBar: 'Demo Text'.textMaterialColorBlack().mxAppBar(

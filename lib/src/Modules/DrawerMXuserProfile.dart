@@ -30,13 +30,13 @@ class MxDrawerUserProfileBlur extends StatelessWidget {
           filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
           child: Container(
             margin: margin,
-            child: ListTile(
-              title: Textmaterial(
+            child: new ListTile(
+              title: new Textmaterial(
                 text: userName,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
-              subtitle: Textmaterial(
+              subtitle: new Textmaterial(
                 text: emailUpperCase == null
                     ? userEmail
                     : emailUpperCase ? userEmail.toUpperCase() : userEmail,
@@ -45,7 +45,7 @@ class MxDrawerUserProfileBlur extends StatelessWidget {
               ),
               leading: CircleAvatar(
                 radius: 30,
-                backgroundImage: NetworkImage(photoUrl),
+                backgroundImage: new NetworkImage(photoUrl),
               ),
             ),
             color: Colors.black.withOpacity(0),
@@ -54,7 +54,7 @@ class MxDrawerUserProfileBlur extends StatelessWidget {
       width: width,
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: NetworkImage(photoUrl), fit: BoxFit.cover)),
+              image: new NetworkImage(photoUrl), fit: BoxFit.cover)),
     );
   }
 }

@@ -53,7 +53,7 @@ class MxRoundedCornerDrawer extends StatelessWidget {
       borderRadius: borderRadius,
       child: Drawer(
         elevation: elevation,
-        child: ListView(
+        child: new ListView(
           padding: EdgeInsets.all(0.0),
           children: <Widget>[
             // MX UserProfile
@@ -65,7 +65,7 @@ class MxRoundedCornerDrawer extends StatelessWidget {
               emailUpperCase: emailUpperCase,
               photoUrl: photoUrl,
             ),
-            Column(
+            new Column(
               children: <Widget>[
                 MxExpansionTiles(
                   expansionTileSubTitle: expansionTileSubTitle,
@@ -89,11 +89,11 @@ class MxRoundedCornerDrawer extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(
+            new SizedBox(
               height: 100,
             ),
-            Column(
-              children: bottomMenu ?? <Widget>[],
+            new Column(
+              children: bottomMenu == null ? <Widget>[] : bottomMenu,
             )
           ],
         ),

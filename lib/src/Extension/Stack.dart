@@ -63,6 +63,6 @@ extension Lists on List<Widget> {
   }
 }
 
-dynamic back(context) {
+back(context) {
   Navigator.pop(context);
 }

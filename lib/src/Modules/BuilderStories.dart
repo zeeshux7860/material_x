@@ -35,10 +35,10 @@ class MxStoriesBuilder extends StatelessWidget {
       : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MxContainer(
+    return new MxContainer(
         height: backGroundHeight,
         color: backGroundColor,
-        child: ListView(
+        child: new ListView(
           scrollDirection: Axis.horizontal,
           children: <Widget>[
             MxStorieBar(
@@ -51,7 +51,7 @@ class MxStoriesBuilder extends StatelessWidget {
                 textColor: addtextColor,
                 fontWeight: addtextFontWeight,
                 child: addChild),
-            ListView.builder(
+            new ListView.builder(
                 scrollDirection: Axis.horizontal,
                 shrinkWrap: true,
                 physics: ClampingScrollPhysics(),
