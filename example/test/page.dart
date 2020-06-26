@@ -1,6 +1,7 @@
 import 'package:material_x/laravel.dart';
 
 void main() {
+  LaravelTableController();
   var ok = LaravelGetData(tableName: "ok")
       .where('id', '>', 'user_id'.toVariable())
       .where('id', '>', 'user_id'.toVariable())

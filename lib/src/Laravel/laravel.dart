@@ -165,8 +165,6 @@ String mxBetweenText(String text, String start, String end) {
   return str.substring(startIndex + start.length, endIndex);
 }
 
-
-
 List<String> laraveRequiredValidation({List<String> list}) {
   List<String> model = List();
   list.forEach((element) {

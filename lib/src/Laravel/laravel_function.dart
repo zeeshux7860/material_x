@@ -43,7 +43,7 @@ extension LaravelString on String {
   }
 
   String toStoreVariable({variablename}) {
-    String text = "\$$variablename = '$this';";
+    String text = "\$$variablename = $this";
     return text;
   }
 

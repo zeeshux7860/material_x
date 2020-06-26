@@ -1,16 +1,17 @@
 import '../../laravel.dart';
 
-String laravelModel(String dbname, List<String> fillable, List<String> hidden) {
+String laravelModel(
+    String tableName, List<String> fillable, List<String> hidden) {
   String text = """<?php
 
 namespace App;
 
 use Illuminate\\Database\\Eloquent\\Model;
 
-class ${dbname[0].toUpperCase()}${dbname.substring(1)} extends Model
+class ${tableName[0].toUpperCase()}${tableName.substring(1)} extends Model
 {
     //
-    protected \$table = '$dbname';
+    protected \$table = '$tableName';
     protected \$fillable = $fillable;
     protected \$hidden = $hidden;
 }
