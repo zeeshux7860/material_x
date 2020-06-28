@@ -65,7 +65,7 @@ extension StringExtensionsa on String {
   }
 
   String save() {
-    return "->save()";
+    return "$this->save()";
   }
 }
 
@@ -77,7 +77,7 @@ String laravelArray(List list) {
 }
 
 String laravelGetRequestKeyValue(requestKey) {
-  return "request->$requestKey";
+  return "\$request->$requestKey";
 }
 
 String laravelSaveValue(keyName, value) {

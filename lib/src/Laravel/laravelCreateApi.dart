@@ -14,7 +14,7 @@ class LaravelCreateRestApi {
     createFile(path + '/database/migrations', table,
         '2020_05_17_101229_' + tableName.toLowerCase() + '.php');
     createFile(path + '/app', model,
-        '${tableName[0].toUpperCase()}${tableName.substring(1)}' + 'Model.php');
+        '${tableName[0].toUpperCase()}${tableName.substring(1)}' + '.php');
     createFile(
         path + '/app/Http/Controllers/API',
         controller,

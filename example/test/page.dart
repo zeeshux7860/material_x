@@ -18,10 +18,10 @@ void f() {
   var o = [
     "zeeshan".toStoreVariable(variablename: "name"),
     "zeeshan".toStoreVariable(variablename: "names"),
-    Condition('name'.toVariable(), '==', 'names'.toVariable(),
+    Condition(
             falseValue: "false".toBoolReturn(),
             trueValue: "true".toBoolReturn())
-        .check()
+        .check('name'.toVariable(), '==', 'names'.toVariable())
   ].toFuntions("ok", request: true);
 
   print(o);

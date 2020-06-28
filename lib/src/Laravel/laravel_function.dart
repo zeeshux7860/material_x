@@ -71,17 +71,22 @@ String requestall() {
 // }
 
 class Condition {
-  final condition1;
-  final operator;
-  final condition2;
-  final String trueValue;
-  final String falseValue;
+  final dynamic trueValue;
+  final dynamic falseValue;
 
-  Condition(this.condition1, this.operator, this.condition2,
-      {this.trueValue, this.falseValue});
+  Condition({this.trueValue, this.falseValue});
 
-  String check() {
-    String text = """if($condition1 $operator $condition2){
+  String check(condition1, operators, condition2) {
+    String text = """if($condition1 $operators $condition2){
+      $trueValue
+    }else{
+      $falseValue
+    }""";
+    return text;
+  }
+
+  String oneCheck(condition1) {
+    String text = """if($condition1){
       $trueValue
     }else{
       $falseValue
