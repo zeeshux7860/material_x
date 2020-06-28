@@ -94,7 +94,7 @@ class LaravelSaveData {
   }
 
   String create(String array) {
-    return tablename + '::' + "->create(array($array))";
+    return tablename + '::' + "create($array)";
   }
 }
 

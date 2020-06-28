@@ -3,6 +3,10 @@ import 'dart:io';
 import 'package:console_cmd/console_cmd.dart';
 
 extension Laravels on String {
+  String toEncrpt() {
+    return "bcrypt($this)";
+  }
+
   /// Alias of $table->unsignedBigInteger('user_id')
   String toForeignId() {
     return "\$table->foreignId('$this');";
