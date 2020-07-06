@@ -10,7 +10,7 @@ void main() {
   // print(ok.toStoreVariable(variablename: "ok"));
   var ok = laravelArray(["a", "b", "c"]);
 
-  var o = LaravelSaveData("Ok").create(ok).close();
+  var o = LaravelSaveData(tablename: 'ok').create(ok).close();
   print(o);
 }
 

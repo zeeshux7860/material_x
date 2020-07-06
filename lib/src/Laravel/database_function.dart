@@ -87,7 +87,7 @@ String laravelSaveValue(keyName, value) {
 class LaravelSaveData {
   final String tablename;
 
-  LaravelSaveData(this.tablename);
+  LaravelSaveData({this.tablename});
 
   String save() {
     return tablename + '::' + "save()";
@@ -99,13 +99,13 @@ class LaravelSaveData {
 }
 
 String response200(dynamic data) {
-  return "return response($data, 200)";
+  return "return response()->json(['response_code' => 200, $data], 200)";
 }
 
 String response401(dynamic data) {
-  return "return response($data, 401)";
+  return "return response()->json(['response_code' => 401, $data], 401)";
 }
 
 String response404(dynamic data) {
-  return "return response($data, 404)";
+  return "return response()->json(['response_code' => 404, $data], 404)";
 }

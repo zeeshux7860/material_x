@@ -84,6 +84,20 @@ DB_PASSWORD= //if your database password then enter here\nNow setup your databas
     });
   }
 
+  laravelReset({String path}) {
+    ANSIPrinter().printRGB("Running Migration... ",
+        breakLine: true, bGray: 1.0, fColor: 0xff4BB543);
+    shell.cd(path).run('''
+    php artisan migrate:rollback
+    php artisan migrate:reset
+    php artisan migrate:fresh
+    php artisan migrate:fresh --seed
+    ''').then((a) {
+      ANSIPrinter().printRGB("SuccessFully Reset Migrate",
+          breakLine: true, bGray: 1.0, fColor: 0xff4BB543);
+    });
+  }
+
   laravelRunPassPort(path) {
     shell.cd(path).run('php artisan passport:install').then((a) {
       ANSIPrinter().printRGB("Now Every thing is done :) Great ",

@@ -18,6 +18,19 @@ extension LaravelValidation on List {
 }
 
 extension LaravelString on String {
+  String validateAuth({List<String> messageerror}) {
+    var text = """
+       if (Auth::check()) {
+
+            \$user = Auth::user();
+        $this
+        } else {
+            return response()->json(['response_code' => 401, 'error' => 'Unauthorised', ${messageerror.toList()}], 401);
+        }
+      """;
+    return text;
+  }
+
   String toRequired() {
     return "'$this' => 'required'";
   }

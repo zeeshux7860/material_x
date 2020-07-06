@@ -35,7 +35,7 @@ class ${dbname.firstCapitalize()} extends Migration
      */
     public function down()
     {
-        //
+          Schema::drop('${dbname.toLowerCase()}');
     }
 }
 """;
