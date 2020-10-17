@@ -6,7 +6,7 @@ extension MxNew on Widget {
   ///
   /// Typically a [Text] widget. If the [CircleAvatar] is to have an image, use
   /// [backgroundImage] instead.
-  Widget circleAvatar({
+  Widget xCircleAvatar({
     /// The color with which to fill the circle. Changing the background
     /// color will cause the avatar to animate to the new color.
     ///

@@ -2216,7 +2216,9 @@ class _DanceState extends State<Dance> with SingleTickerProviderStateMixin {
         builder: (BuildContext context, Widget child) {
           final animation = (step1.value != -0.2)
               ? step1.value
-              : (step2.value != 0.2) ? step2.value : step3.value;
+              : (step2.value != 0.2)
+                  ? step2.value
+                  : step3.value;
 
           return Transform(
               alignment: FractionalOffset.center,

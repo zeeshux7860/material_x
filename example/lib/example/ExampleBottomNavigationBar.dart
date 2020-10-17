@@ -24,15 +24,15 @@ class _ExampleBottomNavigationBarState
             bottomNavigationBar: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icons.home.mxIcons(),
-            title: Text('Home'),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
             icon: Icons.business.mxIcons(),
-            title: Text('Business'),
+            label: 'Business',
           ),
           BottomNavigationBarItem(
             icon: Icons.school.mxIcons(),
-            title: Text('School'),
+            label: 'School',
           ),
         ].mxBottomNavigationBar(
           currentIndex: selectedIndex,

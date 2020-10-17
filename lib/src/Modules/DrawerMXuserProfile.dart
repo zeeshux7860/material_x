@@ -39,7 +39,9 @@ class MxDrawerUserProfileBlur extends StatelessWidget {
               subtitle: new Textmaterial(
                 text: emailUpperCase == null
                     ? userEmail
-                    : emailUpperCase ? userEmail.toUpperCase() : userEmail,
+                    : emailUpperCase
+                        ? userEmail.toUpperCase()
+                        : userEmail,
                 color: Colors.white,
                 // fontWeight: FontWeight.bold,
               ),

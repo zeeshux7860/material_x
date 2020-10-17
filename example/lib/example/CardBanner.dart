@@ -24,7 +24,7 @@ class ExampleCardBanner extends StatelessWidget {
       MxCardBanner(
         rightSideChild: Icons.add
             .mxIcons()
-            .circleAvatar(radius: 35, backgroundColor: Colors.white),
+            .xCircleAvatar(radius: 35, backgroundColor: Colors.white),
         onTap: () {},
         margin: EdgeInsets.all(20),
         rounded: 10,
@@ -46,7 +46,7 @@ class ExampleCardBanner extends StatelessWidget {
             "https://raw.githubusercontent.com/zeeshux7860/material_x/master/example/logo.png"
                 .mxImageNetwork()
                 .mxap(value: 10.0)
-                .circleAvatar(radius: 35, backgroundColor: Colors.white),
+                .xCircleAvatar(radius: 35, backgroundColor: Colors.white),
         onTap: () {},
         margin: EdgeInsets.all(20),
         rounded: 10,

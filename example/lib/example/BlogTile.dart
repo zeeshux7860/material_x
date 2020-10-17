@@ -19,7 +19,7 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
         shape: BorderRadius.circular(10).mxShapeBorder(),
         leading: "Z"
             .textMaterialColorWhite()
-            .circleAvatar(backgroundColor: Colors.black, radius: 25),
+            .xCircleAvatar(backgroundColor: Colors.black, radius: 25),
         title: "Image Editor Pro".textMaterialColorBlack(),
         subTitle: "Goto PubDev Check".textMaterial(),
         trailing: '10 min ago'.textMaterial(),
@@ -39,7 +39,7 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
         shape: BorderRadius.circular(10).mxShapeBorder(),
         leading: "Z"
             .textMaterialColorWhite()
-            .circleAvatar(backgroundColor: Colors.white, radius: 25),
+            .xCircleAvatar(backgroundColor: Colors.white, radius: 25),
         title: "Image Editor Pro".textMaterialColorWhite(),
         subTitle: "Goto PubDev Check".textMaterial(color: Colors.grey[50]),
         trailing: '10 min ago'.textMaterial(
@@ -60,7 +60,7 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
         shape: BorderRadius.circular(10).mxShapeBorder(),
         leading: "Z"
             .textMaterial(fontWeight: FontWeight.bold, color: Colors.black)
-            .circleAvatar(backgroundColor: Colors.white, radius: 25),
+            .xCircleAvatar(backgroundColor: Colors.white, radius: 25),
         title: "Image Editor Pro".textMaterialColorWhite(),
         subTitle: "Goto PubDev Check".textMaterial(color: Colors.grey[50]),
         trailing: '10 min ago'.textMaterial(

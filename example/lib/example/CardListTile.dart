@@ -39,7 +39,7 @@ class _ExampleCardListTileState extends State<ExampleCardListTile> {
         MxCardListTile(
           leading: "z"
               .textMaterial(fontWeight: FontWeight.bold)
-              .circleAvatar(backgroundColor: Colors.white),
+              .xCircleAvatar(backgroundColor: Colors.white),
           rounded: 20,
           color: Colors.orange,
           title: "Test".textMaterialColorWhite(),

@@ -24,7 +24,7 @@ class ExampleStaticCard extends StatelessWidget {
         spaceHeight: 10.0,
         child: Icons.ac_unit
             .mxIcon(color: Colors.blue)
-            .circleAvatar(backgroundColor: Colors.white, radius: 25.0),
+            .xCircleAvatar(backgroundColor: Colors.white, radius: 25.0),
         title: "Text".text(style: TextStyle(color: Colors.white)),
         value: '105.0'.h1TextBold(color: Colors.white),
       ).toCenter(),
@@ -37,7 +37,7 @@ class ExampleStaticCard extends StatelessWidget {
         spaceHeight: 10.0,
         child: Icons.ac_unit
             .mxIcon(color: Colors.black, size: 25.0)
-            .circleAvatar(backgroundColor: Colors.white, radius: 30.0),
+            .xCircleAvatar(backgroundColor: Colors.white, radius: 30.0),
         // title: "Text".text(),
         value: '105.0'.h2TextBold(color: Colors.white),
       ).toCenter(),
