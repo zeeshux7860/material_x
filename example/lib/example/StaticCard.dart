@@ -23,7 +23,7 @@ class ExampleStaticCard extends StatelessWidget {
         bgColor: Color(0xFF3d6dfe),
         spaceHeight: 10.0,
         child: Icons.ac_unit
-            .mxIcon(color: Colors.blue)
+            .xIcon(color: Colors.blue)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 25.0),
         title: "Text".text(style: TextStyle(color: Colors.white)),
         value: '105.0'.h1TextBold(color: Colors.white),
@@ -36,14 +36,14 @@ class ExampleStaticCard extends StatelessWidget {
         bgColor: Colors.black,
         spaceHeight: 10.0,
         child: Icons.ac_unit
-            .mxIcon(color: Colors.black, size: 25.0)
+            .xIcon(color: Colors.black, size: 25.0)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 30.0),
         // title: "Text".text(),
         value: '105.0'.h2TextBold(color: Colors.white),
       ).toCenter(),
-    ].mxcolumnCC().mxScaffold(
+    ].xcolumnCC().xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'StaticCard'.textMaterialColorBlack().mxAppBar(
+        appBar: 'StaticCard'.textMaterialColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

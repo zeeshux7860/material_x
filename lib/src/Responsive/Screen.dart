@@ -39,57 +39,57 @@ extension ScreenResponsive on Widget {
 /* Smartphones (portrait and landscape) ----------- */
 Widget smartphonespl(BuildContext context, Widget child) {
 /* Styles */
-  var minDeviceWidth = mxwidth(context);
-  var maxDeviceWidth = mxwidth(context);
+  var minDeviceWidth = xwidth(context);
+  var maxDeviceWidth = xwidth(context);
   return minDeviceWidth >= 320 || maxDeviceWidth <= 480 ? child : Container();
 }
 
 /* Smartphones (landscape) ----------- */
 Widget smartphonesl(BuildContext context, Widget child) {
 /* Styles */
-  var minDeviceWidth = mxwidth(context);
+  var minDeviceWidth = xwidth(context);
   return minDeviceWidth >= 321 ? child : Container();
 }
 
 /* Smartphones (portrait) ----------- */
 Widget smartphonesp(BuildContext context, Widget child) {
 /* Styles */
-  var maxDeviceWidth = mxwidth(context);
+  var maxDeviceWidth = xwidth(context);
   return maxDeviceWidth <= 480 ? child : Container();
 }
 
 /* iPads (portrait and landscape) ----------- */
 Widget tabletpl(BuildContext context, Widget child) {
 /* Styles */
-  var minDeviceWidth = mxwidth(context);
-  var maxDeviceWidth = mxwidth(context);
+  var minDeviceWidth = xwidth(context);
+  var maxDeviceWidth = xwidth(context);
   return minDeviceWidth >= 768 || maxDeviceWidth <= 1024 ? child : Container();
 }
 
 /* iPads (landscape) ----------- */
 Widget tabletl(BuildContext context, Widget child) {
 /* Styles */
-  var minDeviceWidth = mxwidth(context);
+  var minDeviceWidth = xwidth(context);
   return minDeviceWidth >= 768 ? child : Container();
 }
 
 /* iPads (portrait) ----------- */
 Widget tabletp(BuildContext context, Widget child) {
 /* Styles */
-  var maxDeviceWidth = mxwidth(context);
+  var maxDeviceWidth = xwidth(context);
   return maxDeviceWidth <= 1024 ? child : Container();
 }
 
 /* Desktops and laptops ----------- */
 Widget desktop(BuildContext context, Widget child) {
 /* Styles */
-  var minDeviceWidth = mxwidth(context);
+  var minDeviceWidth = xwidth(context);
   return minDeviceWidth >= 1224 ? child : Container();
 }
 
 /* Large screens ----------- */
 Widget largeDesktop(BuildContext context, Widget child) {
 /* Styles */
-  var minDeviceWidth = mxwidth(context);
+  var minDeviceWidth = xwidth(context);
   return minDeviceWidth >= 1824 ? child : Container();
 }

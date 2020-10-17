@@ -8,9 +8,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return "$value".text().toCenter().mxScaffold(
+    return "$value".text().toCenter().xScaffold(
         floatingActionButton:
-            Icons.add.mxIcons().mxFloationActiobButton(onTap: () {}));
+            Icons.add.xIcons().xFloationActiobButton(onTap: () {}));
   }
 
   var value = 0;

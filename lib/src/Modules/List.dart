@@ -2,7 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 extension MxListViews on List<Widget> {
-  Widget mxWrap(
+  Widget xWrap(
       {
 
       /// The direction to use as the main axis.
@@ -151,7 +151,7 @@ extension MxListViews on List<Widget> {
     );
   }
 
-  Widget mxListView({
+  Widget xListView({
     bool addAutomaticKeepAlives = true,
     bool addRepaintBoundaries = true,
     bool addSemanticIndexes = true,
@@ -188,7 +188,7 @@ extension MxListViews on List<Widget> {
     );
   }
 
-  Widget mxListViewVertical({
+  Widget xListViewVertical({
     bool addAutomaticKeepAlives = true,
     bool addRepaintBoundaries = true,
     bool addSemanticIndexes = true,
@@ -224,7 +224,7 @@ extension MxListViews on List<Widget> {
     );
   }
 
-  Widget mxListViewHorizontal({
+  Widget xListViewHorizontal({
     bool addAutomaticKeepAlives = true,
     bool addRepaintBoundaries = true,
     bool addSemanticIndexes = true,
@@ -260,7 +260,7 @@ extension MxListViews on List<Widget> {
     );
   }
 
-  Widget mxListViewHorizontalClampingScrollPhysics({
+  Widget xListViewHorizontalClampingScrollPhysics({
     bool addAutomaticKeepAlives = true,
     bool addRepaintBoundaries = true,
     bool addSemanticIndexes = true,
@@ -294,7 +294,7 @@ extension MxListViews on List<Widget> {
     );
   }
 
-  Widget mxListViewVerticalClampingScrollPhysics({
+  Widget xListViewVerticalClampingScrollPhysics({
     bool addAutomaticKeepAlives = true,
     bool addRepaintBoundaries = true,
     bool addSemanticIndexes = true,
@@ -328,7 +328,7 @@ extension MxListViews on List<Widget> {
     );
   }
 
-  Widget mxListViewVerticalNeverScrollableScrollPhysics(
+  Widget xListViewVerticalNeverScrollableScrollPhysics(
       {bool addAutomaticKeepAlives = true,
       bool addRepaintBoundaries = true,
       bool addSemanticIndexes = true,
@@ -362,7 +362,7 @@ extension MxListViews on List<Widget> {
     );
   }
 
-  Widget mxListViewHorizontalNeverScrollableScrollPhysics(
+  Widget xListViewHorizontalNeverScrollableScrollPhysics(
       {bool addAutomaticKeepAlives = true,
       bool addRepaintBoundaries = true,
       bool addSemanticIndexes = true,
@@ -396,7 +396,7 @@ extension MxListViews on List<Widget> {
     );
   }
 
-  Widget mxCustomScrollView({
+  Widget xCustomScrollView({
     Key key,
     Axis scrollDirection = Axis.vertical,
     bool reverse = false,

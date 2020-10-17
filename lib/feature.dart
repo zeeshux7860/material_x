@@ -1,3 +1,3 @@
-library mxfeature;
+library xfeature;
 
 export 'src/refresh/main.dart';

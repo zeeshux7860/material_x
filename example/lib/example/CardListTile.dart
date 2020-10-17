@@ -20,7 +20,7 @@ class _ExampleCardListTileState extends State<ExampleCardListTile> {
       body: <Widget>[
         MxCardListTile(
           trailing: "10min ago".textMaterialColorWhite(),
-          leading: Icons.add.mxListTileIcon(color: Colors.white),
+          leading: Icons.add.xListTileIcon(color: Colors.white),
           color: Colors.red,
           title: "Test".textMaterialColorWhite(),
           subTitle: "Material-X package ".textMaterialColorWhite(),
@@ -60,7 +60,7 @@ class _ExampleCardListTileState extends State<ExampleCardListTile> {
         ),
         20.0.sizedHeight(),
         MxCardListTile(
-          leading: Icons.fullscreen.mxListTileIcon(color: Colors.white),
+          leading: Icons.fullscreen.xListTileIcon(color: Colors.white),
           color: Colors.green,
           title: "Test".textMaterialColorWhite(),
           subTitle: "Material-X package ".textMaterialColorWhite(),
@@ -70,7 +70,7 @@ class _ExampleCardListTileState extends State<ExampleCardListTile> {
                   .decorationINToCover(),
           onTap: () {},
         ),
-      ].mxcolumnCC().mxap(value: 10.0),
+      ].xcolumnCC().xap(value: 10.0),
     );
   }
 }

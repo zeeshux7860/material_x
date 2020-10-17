@@ -4,7 +4,7 @@ extension Snackbar on Widget {
   /// The primary content of the snack bar.
   ///
   /// Typically a [Text] widget.
-  Widget mxSnackBar({
+  Widget xSnackBar({
     /// The Snackbar's background color. If not specified it will use
     /// [ThemeData.snackBarTheme.backgroundColor]. If that is not specified
     /// it will default to a dark variation of [ColorScheme.surface] for light

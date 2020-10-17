@@ -2,7 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 extension Gesture on Widget {
-  Widget mxGesture({
+  Widget xGesture({
     /// The widget below this widget in the tree.
 
     /// A pointer that might cause a tap with a primary button has contacted the

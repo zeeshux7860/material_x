@@ -1,7 +1,7 @@
 import 'package:material_x/material_x.dart';
 
 extension BlogTileMx on DecorationImage {
-  Widget mxBlogTile({
+  Widget xBlogTile({
     final Key key,
     final Function onTap,
     final Widget child,

@@ -1,7 +1,7 @@
 import 'package:material_x/material_x.dart';
 
 extension TextEditor on String {
-  Widget mxCodeEditor() {
+  Widget xCodeEditor() {
     var lines = '\n'.allMatches(this).length + 1;
     return <Widget>[
       Padding(
@@ -21,7 +21,7 @@ extension TextEditor on String {
             backgroundColor: Colors.green,
             radius: 5,
           ),
-        ].mxRow(),
+        ].xRow(),
       ),
       10.0.sizedHeight(),
       <Widget>[
@@ -51,13 +51,12 @@ extension TextEditor on String {
           style: TextStyle(color: Colors.white, fontSize: 14),
           cursorColor: Colors.red,
         ))
-      ].mxRow().mxContainer(
+      ].xRow().xContainer(
           padding: EdgeInsets.all(12), shadowColor: Colors.grey, blurRadius: 12)
     ]
-        .mxcolumn()
-        .mxContainer(
-            margin: EdgeInsets.all(15), rounded: 5, color: Colors.black)
-        .mxContainer(
+        .xcolumn()
+        .xContainer(margin: EdgeInsets.all(15), rounded: 5, color: Colors.black)
+        .xContainer(
             // padding: EdgeInsets.all(30.0),
             rounded: 20,
             // blurRadius: 12.0,

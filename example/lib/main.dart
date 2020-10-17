@@ -7,7 +7,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return HomePage().mxMaterialApp();
+    return HomePage().xMaterialApp();
   }
 }
 
@@ -19,13 +19,13 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return mxListView.list([
-      ["one", "two", "three"].mxDropdownLabel(
+    return xListView.list([
+      ["one", "two", "three"].xDropdownLabel(
           name: "zeshan",
           onChanged: (v) {
             setState(() {});
           },
           dropdownValue: "two"),
-    ]).mxScaffold(appBar: "example Dropdown".text().mxAppBar());
+    ]).xScaffold(appBar: "example Dropdown".text().xAppBar());
   }
 }

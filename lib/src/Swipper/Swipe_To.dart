@@ -6,7 +6,7 @@ enum SwipePosition {
   SwipeRight,
 }
 
-class MXSwipeTo extends StatefulWidget {
+class xSwipeTo extends StatefulWidget {
   final Color iconBackgroundColor;
   final Color backColor;
   final Widget thumb;
@@ -17,7 +17,7 @@ class MXSwipeTo extends StatefulWidget {
   final double horizintalPadding;
   final double circleHeight;
   final double circleWidth;
-  const MXSwipeTo(
+  const xSwipeTo(
       {Key key,
       @required this.iconBackgroundColor,
       @required this.backColor,
@@ -32,10 +32,10 @@ class MXSwipeTo extends StatefulWidget {
       : super(key: key);
 
   @override
-  MXSwipeToState createState() => MXSwipeToState();
+  xSwipeToState createState() => xSwipeToState();
 }
 
-class MXSwipeToState extends State<MXSwipeTo>
+class xSwipeToState extends State<xSwipeTo>
     with SingleTickerProviderStateMixin {
   final GlobalKey _containerKey = GlobalKey();
   final GlobalKey _positionedKey = GlobalKey();
@@ -78,7 +78,7 @@ class MXSwipeToState extends State<MXSwipeTo>
             decoration: BoxDecoration(
                 color: widget.backColor, borderRadius: widget.borderRadius),
             child: ClipRRect(
-              clipper: _MXSwipeToClipper(
+              clipper: _xSwipeToClipper(
                 animation: _controller,
                 borderRadius: widget.borderRadius,
               ),
@@ -183,8 +183,8 @@ class _SwipeSimulation extends GravitySimulation {
   }
 }
 
-class _MXSwipeToClipper extends CustomClipper<RRect> {
-  const _MXSwipeToClipper({
+class _xSwipeToClipper extends CustomClipper<RRect> {
+  const _xSwipeToClipper({
     @required this.animation,
     @required this.borderRadius,
   })  : assert(animation != null && borderRadius != null),
@@ -206,5 +206,5 @@ class _MXSwipeToClipper extends CustomClipper<RRect> {
   }
 
   @override
-  bool shouldReclip(_MXSwipeToClipper oldClipper) => true;
+  bool shouldReclip(_xSwipeToClipper oldClipper) => true;
 }

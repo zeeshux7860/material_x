@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class MXRotationRoute extends PageRouteBuilder {
+class xRotationRoute extends PageRouteBuilder {
   final Widget page;
-  MXRotationRoute({this.page})
+  xRotationRoute({this.page})
       : super(
           pageBuilder: (
             BuildContext context,

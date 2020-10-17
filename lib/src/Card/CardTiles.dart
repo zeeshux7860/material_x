@@ -61,7 +61,7 @@ class CardTile extends StatelessWidget {
                   title == null ? new Container() : title,
                   title == null ? new Container() : 7.0.sizedHeight(),
                   subtitle == null ? new Container() : subtitle
-                ].mxcolumnSS()),
+                ].xcolumnSS()),
           )
         ]),
       ),

@@ -22,7 +22,7 @@ class ${tableName[0].toUpperCase()}${tableName.substring(1)} extends Model
 List<String> makeModel({List<String> list}) {
   List<String> model = List();
   list.forEach((element) {
-    var data = mxBetweenText(element, "'", "'");
+    var data = xBetweenText(element, "'", "'");
     model.add("'$data'");
   });
   return model;

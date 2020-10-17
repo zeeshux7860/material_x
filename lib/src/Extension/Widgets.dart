@@ -3,7 +3,7 @@ import 'package:material_x/material_x.dart';
 
 extension Widgets on Widget {
   //drawer
-  Widget mxdrawer(
+  Widget xdrawer(
       {
 
       /// The z-coordinate at which to place this drawer relative to its parent.
@@ -35,7 +35,7 @@ extension Widgets on Widget {
   }
 
   /// ScafArea`
-  Widget mxSafeArea({
+  Widget xSafeArea({
     /// Whether to avoid system intrusions on the left.
     final bool left = true,
 
@@ -79,7 +79,7 @@ extension Widgets on Widget {
     );
   }
 
-  Widget mxHero(
+  Widget xHero(
       {Widget Function(BuildContext, Size, Widget) placeholderBuilder,
       Tween<Rect> Function(Rect, Rect) createRectTween,
       Object tag,
@@ -99,14 +99,14 @@ extension Widgets on Widget {
     );
   }
 
-  Widget mxAnimationLimiter({Key key}) {
+  Widget xAnimationLimiter({Key key}) {
     return AnimationLimiter(
       child: this,
       key: key,
     );
   }
 
-  Widget mxNestedScrollView({
+  Widget xNestedScrollView({
     /// An object that can be used to control the position to which the outer
     /// scroll view is scrolled.
     final ScrollController controller,
@@ -184,7 +184,7 @@ extension Widgets on Widget {
 
 extension AppBarMxs on Widget {
 // AppBar
-  PreferredSizeWidget mxAppBar(
+  PreferredSizeWidget xAppBar(
       {final Widget leading,
       final bool automaticallyImplyLeading,
       final List<Widget> actions,
@@ -230,7 +230,7 @@ extension AppBarMxs on Widget {
   }
 
   // /// inkwell widget InkWell()
-  // Widget mxInkWell({
+  // Widget xInkWell({
   //   Key key,
   //   GestureTapCallback onTap,
   //   GestureTapCallback onDoubleTap,
@@ -281,7 +281,7 @@ extension AppBarMxs on Widget {
   //   );
   // }
 
-  mxDialog(context,
+  xDialog(context,
       {final bool barrierDismissible = true,
       final bool useRootNavigator = true,
       final Widget Function(BuildContext) builder}) {
@@ -295,7 +295,7 @@ extension AppBarMxs on Widget {
 }
 
 extension FunctionWidget on Widget Function(BuildContext) {
-  mxDialogBuilder(context,
+  xDialogBuilder(context,
       {final bool barrierDismissible = true,
       final bool useRootNavigator = true,
       final Widget child}) {
@@ -423,7 +423,7 @@ extension StringsMx on String {
     );
   }
 
-  Widget mxTFD(
+  Widget xTFD(
       {final double fontSize,
       final TextEditingController controller,
       final Color color,
@@ -446,7 +446,7 @@ extension StringsMx on String {
   }
 
   /// tf mean TextFormFiled
-  Widget mxTF({
+  Widget xTF({
     final double fontSize,
     final TextEditingController controller,
     final Color color,
@@ -469,7 +469,7 @@ extension StringsMx on String {
 }
 
 extension listViewBuilder on Function(BuildContext context, int index) {
-  Widget mxListVB({
+  Widget xListVB({
     Key key,
     Axis scrollDirection = Axis.vertical,
     bool reverse = false,
@@ -506,7 +506,7 @@ extension listViewBuilder on Function(BuildContext context, int index) {
     );
   }
 
-  Widget mxListVBH({
+  Widget xListVBH({
     Key key,
     Axis scrollDirection = Axis.horizontal,
     bool reverse = false,
@@ -543,7 +543,7 @@ extension listViewBuilder on Function(BuildContext context, int index) {
     );
   }
 
-  Widget mxGridVB(
+  Widget xGridVB(
       {Key key,
       Axis scrollDirection = Axis.vertical,
       bool reverse = false,
@@ -582,7 +582,7 @@ extension listViewBuilder on Function(BuildContext context, int index) {
 
 /// The child Widget to animate. SlideAnimation
 extension AnimationMxs on Widget {
-  Widget mxExpandableText(
+  Widget xExpandableText(
       {CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center,
       MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
       Widget expand = const Text("More Details"),
@@ -598,7 +598,7 @@ extension AnimationMxs on Widget {
     );
   }
 
-  Widget mxSA({
+  Widget xSA({
     final Key key,
 
     /// The duration of the child animation.
@@ -632,7 +632,7 @@ extension AnimationMxs on Widget {
 
   /// The child Widget to animate. FadeInAnimation
 
-  Widget mxFA({
+  Widget xFA({
     /// The duration of the child animation.
     final Duration duration,
 
@@ -648,7 +648,7 @@ extension AnimationMxs on Widget {
 
   /// The child Widget to animate. ScaleAnimation
 
-  Widget mxSCA(
+  Widget xSCA(
       {
 
       /// The duration of the child animation.
@@ -667,7 +667,7 @@ extension AnimationMxs on Widget {
 
   /// The child Widget to animate. FlipAnimation
 
-  Widget mxFPA(
+  Widget xFPA(
       {FlipAxis flipAxis = FlipAxis.x,
 
       /// The duration of the child animation.
@@ -687,7 +687,7 @@ extension AnimationMxs on Widget {
 
 extension MxButton on Widget {
   /// if u want elavation so pass value more tham 5
-  Widget mxButton(
+  Widget xButton(
       {double elavation,
       double rounded,
       double spreadRadius,
@@ -708,11 +708,11 @@ extension MxButton on Widget {
 }
 
 extension Win on String {
-  Widget mxTitle() {
+  Widget xTitle() {
     return MxTitle(title: this);
   }
 
-  Widget mxTFM({TextEditingController controller, bool obscureText}) {
+  Widget xTFM({TextEditingController controller, bool obscureText}) {
     return MxContainer(
       padding: EdgeInsets.zero,
       margin: EdgeInsets.all(10.0),
@@ -743,7 +743,7 @@ extension Win on String {
 }
 
 extension Wins on Widget {
-  Widget mxExpanded({int flex = 1, Key key}) {
+  Widget xExpanded({int flex = 1, Key key}) {
     return Expanded(
       child: this,
       flex: flex,
@@ -794,13 +794,13 @@ extension Wins on Widget {
     );
   }
 
-  Widget mxCard(
+  Widget xCard(
       {double elevation,
       Color shadowColor,
       Color color,
       Function onTap,
       BorderRadiusGeometry borderRadius}) {
-    return this.mxContainer(
+    return this.xContainer(
         padding: EdgeInsets.zero,
         blurRadius: elevation ?? 10,
         color: color ?? Colors.white,
@@ -809,7 +809,7 @@ extension Wins on Widget {
         shadowColor: shadowColor ?? Colors.grey.withOpacity(0.5));
   }
 
-  MxRoutePage mxRoutePage(BuildContext context) {
+  MxRoutePage xRoutePage(BuildContext context) {
     return MxRoutePage(context, this);
   }
 }

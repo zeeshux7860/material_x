@@ -2,7 +2,7 @@ import 'package:material_x/material_x.dart';
 
 extension Drawers on Widget {
   /// RoundedCorner Drawer
-  Widget mxRCdarwer({
+  Widget xRCdarwer({
     BorderRadius borderRadius = BorderRadius.zero,
 
     /// The semantic label of the dialog used by accessibility frameworks to

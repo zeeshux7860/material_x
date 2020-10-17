@@ -4,10 +4,10 @@ List stlessName = ['profile', 'homePage', 'setting']; // create array page name
 List stfullName = ['profile', 'homePage', 'setting'];
 main() {
   stlessName.forEach((f) {
-    mxStless(f + 'Stless', 'lib/MX'); // that is state less
+    xStless(f + 'Stless', 'lib/x'); // that is state less
   });
   stfullName.forEach((f) {
-    mxStfull(f + 'Stfull', 'lib/MX'); // that is stateful
+    xStfull(f + 'Stfull', 'lib/x'); // that is stateful
   });
   print("done");
 }

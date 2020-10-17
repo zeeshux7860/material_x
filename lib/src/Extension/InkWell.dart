@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 extension InkWelltap on Widget {
-  Widget mxInkWell(
+  Widget xInkWell(
       {BorderRadius borderRadius,
       bool autofocus = false,
       bool canRequestFocus = true,

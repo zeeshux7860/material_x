@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:material_x/material_x.dart';
 
 extension RowGridResponsive on List<ResponsiveGridList> {
-  ResponsiveGridList mxResponsiveGridList(
+  ResponsiveGridList xResponsiveGridList(
       {double desiredItemWidth,
       double minSpacing,
       bool scroll = true,
@@ -18,7 +18,7 @@ extension RowGridResponsive on List<ResponsiveGridList> {
 }
 
 extension ResponsiveGridRow on List<ResponsiveGridCol> {
-  MxResponsiveGridRow mxResponsiveGridRow() {
+  MxResponsiveGridRow xResponsiveGridRow() {
     return MxResponsiveGridRow(
       children: this,
     );
@@ -26,7 +26,7 @@ extension ResponsiveGridRow on List<ResponsiveGridCol> {
 }
 
 extension MxResponsiveGridCol on Widget {
-  ResponsiveGridCol mxResponsiveGridCol(
+  ResponsiveGridCol xResponsiveGridCol(
       {int xs = 12, int sm, int md, int lg, int xl}) {
     return ResponsiveGridCol(
       child: this,

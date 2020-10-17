@@ -12,7 +12,7 @@ import 'package:material_x/material_x.dart';
 //       {this.alignment, this.fit, this.key, this.overflow, this.textDirection});
 
 //   Widget list(List<Widget> list) {
-//     return list.mxStack(
+//     return list.xStack(
 //       alignment: alignment,
 //       fit: fit,
 //       overflow: overflow,
@@ -22,9 +22,9 @@ import 'package:material_x/material_x.dart';
 //   }
 // }
 
-// MxStack mxStack = MxStack();
-MxWrap mxWrap = MxWrap();
-MxCustomScrollView mxCustomScrollView = MxCustomScrollView();
+// MxStack xStack = MxStack();
+MxWrap xWrap = MxWrap();
+MxCustomScrollView xCustomScrollView = MxCustomScrollView();
 
 class MxCustomScrollView {
   Key key;
@@ -41,7 +41,7 @@ class MxCustomScrollView {
   DragStartBehavior dragStartBehavior = DragStartBehavior.start;
 
   Widget list(List<Widget> list) {
-    return list.mxCustomScrollView(
+    return list.xCustomScrollView(
       anchor: anchor ?? 0.0,
       cacheExtent: cacheExtent,
       center: center,
@@ -204,7 +204,7 @@ class MxWrap {
       this.key});
 
   Widget list(List<Widget> list) {
-    return list.mxWrap(
+    return list.xWrap(
       alignment: alignment,
       crossAxisAlignment: crossAxisAlignment,
       direction: direction,

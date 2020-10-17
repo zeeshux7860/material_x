@@ -160,7 +160,7 @@ extension StringExtension on String {
   }
 }
 
-String mxBetweenText(String text, String start, String end) {
+String xBetweenText(String text, String start, String end) {
   var str = text.toString();
 
   final startIndex = str.indexOf(start);
@@ -172,7 +172,7 @@ String mxBetweenText(String text, String start, String end) {
 List<String> laraveRequiredValidation({List<String> list}) {
   List<String> model = List();
   list.forEach((element) {
-    var data = mxBetweenText(element, "'", "'");
+    var data = xBetweenText(element, "'", "'");
     model.add("'$data' => 'required'");
   });
   return model;

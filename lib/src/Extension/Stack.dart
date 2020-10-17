@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 extension Lists on List<Widget> {
-//   Widget mxStack(
+//   Widget xStack(
 //           {AlignmentGeometry alignment,
 //           StackFit fit,
 //           Key key,
@@ -16,7 +16,7 @@ extension Lists on List<Widget> {
 //         children: this,
 //       );
 
-  Widget mxExpansionTile({
+  Widget xExpansionTile({
     /// A widget to display before the title.
     ///
     /// Typically a [CircleAvatar] widget.

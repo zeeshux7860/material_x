@@ -59,7 +59,7 @@ extension Components on String {
     );
   }
 
-  Widget mxFloationActiobButton(
+  Widget xFloationActiobButton(
       {bool autofocus = false,
       Clip clipBehavior = Clip.none,
       Color color,
@@ -123,7 +123,7 @@ extension Components on String {
     );
   }
 
-  Widget mxCircleNetWorkImage({
+  Widget xCircleNetWorkImage({
     Color backgroundColor,
     Widget child,
     Color foregroundColor,
@@ -144,7 +144,7 @@ extension Components on String {
     );
   }
 
-  Widget mxCircleAssetImage({
+  Widget xCircleAssetImage({
     Color backgroundColor,
     Widget child,
     Color foregroundColor,
@@ -165,7 +165,7 @@ extension Components on String {
     );
   }
 
-  Widget mxCircleFileImage({
+  Widget xCircleFileImage({
     Color backgroundColor,
     Widget child,
     Color foregroundColor,
@@ -186,7 +186,7 @@ extension Components on String {
     );
   }
 
-  Widget mxCardTileTitle(
+  Widget xCardTileTitle(
       {Color color = Colors.white,
       double fontsize = 20,
       FontWeight fontWeight = FontWeight.bold}) {
@@ -622,7 +622,7 @@ extension Components on String {
     return "${this[0].toUpperCase()}${this.substring(1)}";
   }
 
-  Widget mxTooltips({
+  Widget xTooltips({
     /// The height of the tooltip's [child].
     ///
     /// If the [child] is null, then this is the tooltip's intrinsic height.
@@ -730,7 +730,7 @@ extension Components on String {
   /// Usually a [Text] widget, possibly wrapped in a [Semantics] widget.
   ///
   /// Must not be used in combination with [text].
-  Widget mxTabText({
+  Widget xTabText({
     final Key key,
 
     /// The text to display as the tab's label.

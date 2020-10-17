@@ -37,7 +37,7 @@ class CardBarButton extends StatelessWidget {
       onTap: onTap,
       //width: 40,
       //  padding: const EdgeInsets.all(10.0),
-      child: <Widget>[title, middleSpace.sizedHeight(), subtitle].mxcolumnCC(),
+      child: <Widget>[title, middleSpace.sizedHeight(), subtitle].xcolumnCC(),
     );
   }
 }

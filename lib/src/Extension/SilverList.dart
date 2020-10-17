@@ -2,7 +2,7 @@ import 'package:material_x/material_x.dart';
 
 extension MxSliverGrids on Widget Function(
     BuildContext, int, Animation<double>) {
-  Widget mxSliverGrid(
+  Widget xSliverGrid(
       {@required ScrollController controller,
       @required int itemCount,
       @required SliverGridDelegate gridDelegate,
@@ -29,7 +29,7 @@ extension MxSliverGrids on Widget Function(
 
 extension MxSliverLists on Widget Function(
     BuildContext, int, Animation<double>) {
-  Widget mxSliverList(
+  Widget xSliverList(
       {@required ScrollController controller,
       @required int itemCount,
       final SliverGridDelegate gridDelegate,
@@ -54,7 +54,7 @@ extension MxSliverLists on Widget Function(
 }
 
 extension SilverpaddinngMx on Widget {
-  mxsp(
+  xsp(
     EdgeInsetsGeometry padding,
   ) {
     return SliverPadding(

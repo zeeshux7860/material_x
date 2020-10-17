@@ -1,7 +1,7 @@
 import 'package:material_x/material_x.dart';
 
 extension Mxgradient on List {
-  Gradient mxLG(
+  Gradient xLG(
       {final List<double> stops,
       final GradientTransform transform,
       final AlignmentGeometry begin = Alignment.centerLeft,
@@ -18,7 +18,7 @@ extension Mxgradient on List {
     );
   }
 
-  Gradient mxLGMirror(
+  Gradient xLGMirror(
       {final List<double> stops,
       final GradientTransform transform,
       final AlignmentGeometry begin = Alignment.centerLeft,
@@ -34,7 +34,7 @@ extension Mxgradient on List {
     );
   }
 
-  Gradient mxLGrepeated(
+  Gradient xLGrepeated(
       {final List<double> stops,
       final GradientTransform transform,
       final AlignmentGeometry begin = Alignment.centerLeft,
@@ -50,7 +50,7 @@ extension Mxgradient on List {
     );
   }
 
-  Gradient mxLGClamp(
+  Gradient xLGClamp(
       {final List<double> stops,
       final GradientTransform transform,
       final AlignmentGeometry begin = Alignment.centerLeft,

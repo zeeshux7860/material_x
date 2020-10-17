@@ -21,8 +21,8 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
           child: <Widget>[
             MxTransactiontTile(
                     onTap: () {},
-                    leading: Icons.book.mxListTileIcon(color: Colors.purple),
-                    title: "Zeeshan".mxCardTileTitle(color: Colors.black),
+                    leading: Icons.book.xListTileIcon(color: Colors.purple),
+                    title: "Zeeshan".xCardTileTitle(color: Colors.black),
                     subtitle: "Developr!!".textMaterialColorgrey(),
                     trailing1: "+ 1234500.0".textMaterialColorBlack(
                         fontsize: 15, fontWeight: FontWeight.bold),
@@ -32,76 +32,76 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
             10.0.sizedHeight(),
             MxTransactiontTile(
                     onTap: () {},
-                    leading: Icons.laptop_mac.mxTransactionTileIcon(
+                    leading: Icons.laptop_mac.xTransactionTileIcon(
                       color: Colors.blue,
                     ),
                     title: "Apple Mac Laptop"
-                        .mxCardTileTitle(color: Colors.black, fontsize: 15),
+                        .xCardTileTitle(color: Colors.black, fontsize: 15),
                     subtitle: "Buy".textMaterialColorgrey(),
                     trailing1: "+ 1234500.0".textMaterialColorBlack(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
                     trailing2: "sep 15 2019".textMaterialColorblueGrey())
-                .mxContainer(color: Colors.white)
+                .xContainer(color: Colors.white)
                 .fadeInLeft(),
             10.0.sizedHeight(),
             MxTransactiontTile(
                     onTap: () {},
                     leading:
                         "https://yt3.ggpht.com/a/AGF-l78mULPjAtTZ0U987YPHe5quNFIrNHYlWi9WvA=s900-c-k-c0xffffffff-no-rj-mo"
-                            .mxCircleNetWorkImage(),
+                            .xCircleNetWorkImage(),
                     title: "Apple Mac Laptop"
-                        .mxCardTileTitle(color: Colors.black, fontsize: 15),
+                        .xCardTileTitle(color: Colors.black, fontsize: 15),
                     subtitle: "Buy".textMaterialColorgrey(),
                     trailing1: "+ 1234500.0".textMaterialColorBlack(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
                     trailing2: "sep 15 2019".textMaterialColorblueGrey())
-                .mxContainer(color: Colors.white)
+                .xContainer(color: Colors.white)
                 .fadeInRight(),
             10.0.sizedHeight(),
             MxTransactiontTile(
                     onTap: () {},
                     leading:
                         "https://yt3.ggpht.com/a/AGF-l78mULPjAtTZ0U987YPHe5quNFIrNHYlWi9WvA=s900-c-k-c0xffffffff-no-rj-mo"
-                            .mxCircleNetWorkImage(),
+                            .xCircleNetWorkImage(),
                     title: "Apple Mac Laptop"
-                        .mxCardTileTitle(color: Colors.white, fontsize: 15),
+                        .xCardTileTitle(color: Colors.white, fontsize: 15),
                     subtitle: "Buy".textMaterialColorWhite(),
                     trailing1: "+ 1234500.0".textMaterialColorWhite(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
                     trailing2: "sep 15 2019".textMaterialColorWhite())
-                .mxContainer(color: Color(0xFF3d6dfe))
+                .xContainer(color: Color(0xFF3d6dfe))
                 .fadeInUp(),
             10.0.sizedHeight(),
             MxTransactiontTile(
                     leading:
                         "https://yt3.ggpht.com/a/AGF-l78mULPjAtTZ0U987YPHe5quNFIrNHYlWi9WvA=s900-c-k-c0xffffffff-no-rj-mo"
-                            .mxCircleNetWorkImage(),
+                            .xCircleNetWorkImage(),
                     title: "Apple Mac Laptop"
-                        .mxCardTileTitle(color: Colors.white, fontsize: 15),
+                        .xCardTileTitle(color: Colors.white, fontsize: 15),
                     subtitle: "Buy".textMaterialColorWhite(),
                     trailing1: "+ 1234500.0".textMaterialColorWhite(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
                     trailing2: "sep 15 2019".textMaterialColorWhite())
-                .mxContainer(color: Colors.orange, rounded: 10, onTap: () {})
+                .xContainer(color: Colors.orange, rounded: 10, onTap: () {})
                 .fadeInUp(),
             10.0.sizedHeight(),
             MxTransactiontTile(
                     leading:
                         "https://yt3.ggpht.com/a/AGF-l78mULPjAtTZ0U987YPHe5quNFIrNHYlWi9WvA=s900-c-k-c0xffffffff-no-rj-mo"
-                            .mxCircleNetWorkImage(),
+                            .xCircleNetWorkImage(),
                     title: "Apple Mac Laptop"
-                        .mxCardTileTitle(color: Colors.white, fontsize: 15),
+                        .xCardTileTitle(color: Colors.white, fontsize: 15),
                     subtitle: "Buy".textMaterialColorWhite(),
                     trailing1: "+ 1234500.0".textMaterialColorWhite(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
                     onTap: () {},
                     trailing2: "sep 15 2019".textMaterialColorWhite())
-                .mxContainer(
+                .xContainer(
                   color: Colors.red,
                   blurRadius: 12,
                   spreadRadius: 0.5,
@@ -115,15 +115,15 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
             MxTransactiontTile(
                     leading:
                         "https://yt3.ggpht.com/a/AGF-l78mULPjAtTZ0U987YPHe5quNFIrNHYlWi9WvA=s900-c-k-c0xffffffff-no-rj-mo"
-                            .mxCircleNetWorkImage(),
+                            .xCircleNetWorkImage(),
                     title: "Apple Mac Laptop"
-                        .mxCardTileTitle(color: Colors.white, fontsize: 15),
+                        .xCardTileTitle(color: Colors.white, fontsize: 15),
                     subtitle: "Buy".textMaterialColorWhite(),
                     trailing1: "+ 1234500.0".textMaterialColorWhite(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
                     trailing2: "sep 15 2019".textMaterialColorWhite())
-                .mxContainer(
+                .xContainer(
                     color: Colors.pink,
                     blurRadius: 12,
                     spreadRadius: 0.5,
@@ -136,15 +136,15 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
             MxTransactiontTile(
                     leading:
                         "https://yt3.ggpht.com/a/AGF-l78mULPjAtTZ0U987YPHe5quNFIrNHYlWi9WvA=s900-c-k-c0xffffffff-no-rj-mo"
-                            .mxCircleNetWorkImage(),
+                            .xCircleNetWorkImage(),
                     title: "Apple Mac Laptop"
-                        .mxCardTileTitle(color: Colors.white, fontsize: 15),
+                        .xCardTileTitle(color: Colors.white, fontsize: 15),
                     subtitle: "Buy".textMaterialColorWhite(),
                     trailing1: "+ 1234500.0".textMaterialColorWhite(
                         fontsize: 15, fontWeight: FontWeight.bold),
                     middleSpace: 5.0,
                     trailing2: "sep 15 2019".textMaterialColorWhite())
-                .mxContainer(
+                .xContainer(
                     color: Colors.pink,
                     blurRadius: 12,
                     spreadRadius: 0.5,
@@ -154,7 +154,7 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                     onTap: () {})
                 .fadeInUp(),
             10.0.sizedHeight(),
-          ].mxListView()),
+          ].xListView()),
     );
   }
 }

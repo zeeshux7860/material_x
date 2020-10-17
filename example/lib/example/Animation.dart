@@ -11,11 +11,11 @@ class ExampleAnimation extends StatelessWidget {
       body: <Widget>[
         "FadeIn"
             .h1TextBold(color: Colors.black)
-            .mxContainer(padding: EdgeInsets.only(top: 20, left: 30)),
+            .xContainer(padding: EdgeInsets.only(top: 20, left: 30)),
         20.0.sizedHeight(),
         "FadeIn"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -23,7 +23,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeIn(),
         "FadeIn Left"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -31,7 +31,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeInLeft(),
         "FadeIn Right"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -39,7 +39,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeInRight(),
         "FadeIn Down"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -47,7 +47,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeInDown(),
         "FadeIn Up"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -55,7 +55,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeInUp(),
         "FadeIn UpBig"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -63,7 +63,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeInUpBig(),
         "FadeIn DownBig"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -71,7 +71,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeInDownBig(),
         "FadeIn LeftBig"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -79,7 +79,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeInLeftBig(),
         "FadeIn RightBig"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -87,11 +87,11 @@ class ExampleAnimation extends StatelessWidget {
             .fadeInLeftBig(),
         "FadeOut"
             .h1TextBold(color: Colors.black)
-            .mxContainer(padding: EdgeInsets.only(top: 20, left: 30)),
+            .xContainer(padding: EdgeInsets.only(top: 20, left: 30)),
         20.0.sizedHeight(),
         "FadeOut"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -99,7 +99,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeOut(),
         "FadeOut Left"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -107,7 +107,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeOutLeft(),
         "FadeOut Right"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -115,7 +115,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeOutRight(),
         "FadeOut Down"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -123,7 +123,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeOutDown(),
         "FadeOut Up"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -131,7 +131,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeOutUp(),
         "FadeOut UpBig"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -139,7 +139,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeOutUpBig(),
         "FadeOut DownBig"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -147,7 +147,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeOutDownBig(),
         "FadeOut LeftBig"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -155,7 +155,7 @@ class ExampleAnimation extends StatelessWidget {
             .fadeOutLeftBig(),
         "FadeOut RightBig"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -163,10 +163,10 @@ class ExampleAnimation extends StatelessWidget {
             .fadeOutLeftBig(),
         "BounceIn"
             .h1TextBold(color: Colors.black)
-            .mxContainer(padding: EdgeInsets.only(top: 20, left: 30)),
+            .xContainer(padding: EdgeInsets.only(top: 20, left: 30)),
         "bounceIn Left"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -174,7 +174,7 @@ class ExampleAnimation extends StatelessWidget {
             .bounceInLeft(),
         "bounceIn Right"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -182,7 +182,7 @@ class ExampleAnimation extends StatelessWidget {
             .bounceInRight(),
         "bounceIn Down"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -190,7 +190,7 @@ class ExampleAnimation extends StatelessWidget {
             .bounceInDown(),
         "bounceIn Up"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -199,10 +199,10 @@ class ExampleAnimation extends StatelessWidget {
         20.0.sizedHeight(),
         "Elasticin"
             .h1TextBold(color: Colors.black)
-            .mxContainer(padding: EdgeInsets.only(top: 20, left: 30)),
+            .xContainer(padding: EdgeInsets.only(top: 20, left: 30)),
         "elasticIn"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -210,7 +210,7 @@ class ExampleAnimation extends StatelessWidget {
             .elasticIn(),
         "elasticIn Left"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -218,7 +218,7 @@ class ExampleAnimation extends StatelessWidget {
             .elasticInLeft(),
         "elasticIn Right"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -226,7 +226,7 @@ class ExampleAnimation extends StatelessWidget {
             .elasticInRight(),
         "elasticIn Down"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -234,7 +234,7 @@ class ExampleAnimation extends StatelessWidget {
             .elasticInDown(),
         "elasticIn Up"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -243,10 +243,10 @@ class ExampleAnimation extends StatelessWidget {
         20.0.sizedHeight(),
         "SlideIn"
             .h1TextBold(color: Colors.black)
-            .mxContainer(padding: EdgeInsets.only(top: 20, left: 30)),
+            .xContainer(padding: EdgeInsets.only(top: 20, left: 30)),
         "slideIn Left"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -254,7 +254,7 @@ class ExampleAnimation extends StatelessWidget {
             .slideInLeft(),
         "slideIn Right"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -262,7 +262,7 @@ class ExampleAnimation extends StatelessWidget {
             .slideInRight(),
         "slideIn Down"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -270,7 +270,7 @@ class ExampleAnimation extends StatelessWidget {
             .slideInDown(),
         "slideIn Up"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -279,10 +279,10 @@ class ExampleAnimation extends StatelessWidget {
         20.0.sizedHeight(),
         "Flipin"
             .h1TextBold(color: Colors.black)
-            .mxContainer(padding: EdgeInsets.only(top: 20, left: 30)),
+            .xContainer(padding: EdgeInsets.only(top: 20, left: 30)),
         "flipInY"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -290,7 +290,7 @@ class ExampleAnimation extends StatelessWidget {
             .flipInY(),
         "flipInX"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -298,10 +298,10 @@ class ExampleAnimation extends StatelessWidget {
             .flipInX(),
         "Zoom"
             .h1TextBold(color: Colors.black)
-            .mxContainer(padding: EdgeInsets.only(top: 20, left: 30)),
+            .xContainer(padding: EdgeInsets.only(top: 20, left: 30)),
         "ZoomIn"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -309,7 +309,7 @@ class ExampleAnimation extends StatelessWidget {
             .zoomIn(),
         "ZoomOut"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -317,10 +317,10 @@ class ExampleAnimation extends StatelessWidget {
             .zoomOut(),
         "SpecialIn"
             .h1TextBold(color: Colors.black)
-            .mxContainer(padding: EdgeInsets.only(top: 20, left: 30)),
+            .xContainer(padding: EdgeInsets.only(top: 20, left: 30)),
         "jelloIn"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -328,10 +328,10 @@ class ExampleAnimation extends StatelessWidget {
             .jelloIn(),
         "Attention Seeker"
             .h1TextBold(color: Colors.black)
-            .mxContainer(padding: EdgeInsets.only(top: 20, left: 30)),
+            .xContainer(padding: EdgeInsets.only(top: 20, left: 30)),
         "Bounce"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -339,7 +339,7 @@ class ExampleAnimation extends StatelessWidget {
             .bounce(),
         "Flash"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -347,7 +347,7 @@ class ExampleAnimation extends StatelessWidget {
             .flash(),
         "Pulse"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -355,7 +355,7 @@ class ExampleAnimation extends StatelessWidget {
             .pulse(),
         "Swing"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -363,7 +363,7 @@ class ExampleAnimation extends StatelessWidget {
             .swing(),
         "Spin"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -371,7 +371,7 @@ class ExampleAnimation extends StatelessWidget {
             .spin(),
         "Spin Perfect"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -379,7 +379,7 @@ class ExampleAnimation extends StatelessWidget {
             .spinPerfect(),
         "Dance"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
@@ -387,13 +387,13 @@ class ExampleAnimation extends StatelessWidget {
             .dance(),
         "Roulette"
             .textMaterialColorWhite(fontsize: 30)
-            .mxContainer(
+            .xContainer(
                 color:
                     Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                         .withOpacity(1.0),
                 margin: EdgeInsets.all(20))
             .roulette(),
-      ].mxListView(),
+      ].xListView(),
     );
   }
 }

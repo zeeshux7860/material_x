@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-mxStatusBar(
+xStatusBar(
     {statusBarColor = Colors.transparent,
     Brightness statusBarBrightness,
     Brightness statusBarIconBrightness,

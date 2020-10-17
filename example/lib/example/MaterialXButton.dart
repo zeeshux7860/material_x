@@ -8,24 +8,24 @@ class ExampleMaterialXButton extends StatelessWidget {
         child: "Submit".textMaterialColorWhite(),
         color: Colors.red,
         height: 50.0,
-        width: mxwidth(context),
+        width: xwidth(context),
         onTap: () {},
         elavation: 10,
         rounded: 5,
         spreadRadius: 10,
       ),
       50.0.sizedHeight(),
-      "Submit".textMaterialColorWhite().mxButton(
+      "Submit".textMaterialColorWhite().xButton(
             color: Color(0xFF3d6dfe),
             height: 50.0,
-            width: mxwidth(context),
+            width: xwidth(context),
             onTap: () {},
             rounded: 20,
             spreadRadius: 0,
           ),
-    ].mxcolumnCC().mxap(value: 20.0).mxScaffold(
+    ].xcolumnCC().xap(value: 20.0).xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'MaterialXButton'.textMaterialColorBlack().mxAppBar(
+        appBar: 'MaterialXButton'.textMaterialColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

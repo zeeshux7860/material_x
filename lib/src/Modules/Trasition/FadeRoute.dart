@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class MXFadeRoute extends PageRouteBuilder {
+class xFadeRoute extends PageRouteBuilder {
   final Widget page;
-  MXFadeRoute({this.page})
+  xFadeRoute({this.page})
       : super(
           pageBuilder: (
             BuildContext context,

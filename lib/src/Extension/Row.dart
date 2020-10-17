@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 extension RowWidget on List<Widget> {
-  Widget mxRow(
+  Widget xRow(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -21,7 +21,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowSS(
+  Widget xRowSS(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -39,7 +39,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowBS(
+  Widget xRowBS(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -57,7 +57,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowES(
+  Widget xRowES(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -75,7 +75,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowSTS(
+  Widget xRowSTS(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -95,7 +95,7 @@ extension RowWidget on List<Widget> {
 
   //----------------------------------------------------------  end  start
 
-  Widget mxRowSTC(
+  Widget xRowSTC(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -113,7 +113,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowSC(
+  Widget xRowSC(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -131,7 +131,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowEC(
+  Widget xRowEC(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -149,7 +149,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowCC(
+  Widget xRowCC(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -167,7 +167,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowBC(
+  Widget xRowBC(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -187,7 +187,7 @@ extension RowWidget on List<Widget> {
 
   // ------------------------------------------------------------ emd center
 
-  Widget mxRowSTE(
+  Widget xRowSTE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -205,7 +205,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowSE(
+  Widget xRowSE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -223,7 +223,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowEE(
+  Widget xRowEE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -241,7 +241,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowCE(
+  Widget xRowCE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -259,7 +259,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowBE(
+  Widget xRowBE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -279,7 +279,7 @@ extension RowWidget on List<Widget> {
 
   // ------------------------------------------------------------ emd end
 
-  Widget mxRowSTSA(
+  Widget xRowSTSA(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -297,7 +297,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowSSA(
+  Widget xRowSSA(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -315,7 +315,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowESA(
+  Widget xRowESA(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -333,7 +333,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowCSA(
+  Widget xRowCSA(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -351,7 +351,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowBSA(
+  Widget xRowBSA(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -371,7 +371,7 @@ extension RowWidget on List<Widget> {
 
   // ------------------------------------------------------------- end spaceAround
 
-  Widget mxRowSTSB(
+  Widget xRowSTSB(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -389,7 +389,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowSSB(
+  Widget xRowSSB(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -407,7 +407,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowESB(
+  Widget xRowESB(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -425,7 +425,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowCSB(
+  Widget xRowCSB(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -443,7 +443,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowBSB(
+  Widget xRowBSB(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -462,7 +462,7 @@ extension RowWidget on List<Widget> {
   }
 
   // ------------------------------------------------------------- end spaceBetween
-  Widget mxRowSTSE(
+  Widget xRowSTSE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -480,7 +480,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowSSE(
+  Widget xRowSSE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -498,7 +498,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowESE(
+  Widget xRowESE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -516,7 +516,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowCSE(
+  Widget xRowCSE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -534,7 +534,7 @@ extension RowWidget on List<Widget> {
     );
   }
 
-  Widget mxRowBSE(
+  Widget xRowBSE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,

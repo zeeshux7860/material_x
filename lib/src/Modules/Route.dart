@@ -26,36 +26,36 @@ class MxRoutePage {
   }
 
   slideRightPush() {
-    Navigator.push(context, MXRightRoute(page: child));
+    Navigator.push(context, xRightRoute(page: child));
   }
 
   slideLeftPush() {
-    Navigator.push(context, MXLeftRoute(page: child));
+    Navigator.push(context, xLeftRoute(page: child));
   }
 
   slideTopPush() {
-    Navigator.push(context, MXTopRoute(page: child));
+    Navigator.push(context, xTopRoute(page: child));
   }
 
   slideLBottomPush() {
-    Navigator.push(context, MXBottomRoute(page: child));
+    Navigator.push(context, xBottomRoute(page: child));
   }
 
   scalePush() {
-    Navigator.push(context, MXScaleRoute(page: child));
+    Navigator.push(context, xScaleRoute(page: child));
   }
 
   rotationPush() {
-    Navigator.push(context, MXRotationRoute(page: child));
+    Navigator.push(context, xRotationRoute(page: child));
   }
 
   fadePush() {
-    Navigator.push(context, MXFadeRoute(page: child));
+    Navigator.push(context, xFadeRoute(page: child));
   }
 
   exitPush(exitPageChild) {
     Navigator.push(
-        context, MXEnterExitRoute(enterPage: child, exitPage: exitPageChild));
+        context, xEnterExitRoute(enterPage: child, exitPage: exitPageChild));
     print("20");
   }
 }

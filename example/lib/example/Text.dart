@@ -33,9 +33,9 @@ class ExampleText extends StatelessWidget {
       ".textMaterialColorpink()".textMaterialColorpink(fontsize: 20),
       5.0.sizedHeight(),
       ".textMaterialColorteal()".textMaterialColorteal(fontsize: 20),
-    ].mxcolumnSS().mxap(value: 20.0).mxScaffold(
+    ].xcolumnSS().xap(value: 20.0).xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'Demo Text'.textMaterialColorBlack().mxAppBar(
+        appBar: 'Demo Text'.textMaterialColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

@@ -1,13 +1,13 @@
 import 'package:flutter/gestures.dart';
 import 'package:material_x/material_x.dart';
 
-MxListView mxListView = MxListView();
-MxListViewHorizontal mxListViewHorizontal = MxListViewHorizontal();
-MxListViewHCSP mxListViewHCSP = MxListViewHCSP();
-MxListViewHNSP mxListViewHNSP = MxListViewHNSP();
-MxListViewVertical mxListViewVertical = MxListViewVertical();
-MxListViewVCSP mxListViewVCSP = MxListViewVCSP();
-MxListViewVNSP mxListViewVNSP = MxListViewVNSP();
+MxListView xListView = MxListView();
+MxListViewHorizontal xListViewHorizontal = MxListViewHorizontal();
+MxListViewHCSP xListViewHCSP = MxListViewHCSP();
+MxListViewHNSP xListViewHNSP = MxListViewHNSP();
+MxListViewVertical xListViewVertical = MxListViewVertical();
+MxListViewVCSP xListViewVCSP = MxListViewVCSP();
+MxListViewVNSP xListViewVNSP = MxListViewVNSP();
 
 class MxListView {
   bool addAutomaticKeepAlives;
@@ -43,7 +43,7 @@ class MxListView {
     this.shrinkWrap = false,
   });
   Widget list(List<Widget> list) {
-    return list.mxListView(
+    return list.xListView(
       addAutomaticKeepAlives: addAutomaticKeepAlives,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
@@ -95,7 +95,7 @@ class MxListViewHorizontal {
     this.shrinkWrap = false,
   });
   Widget list(List<Widget> list) {
-    return list.mxListViewHorizontal(
+    return list.xListViewHorizontal(
       addAutomaticKeepAlives: addAutomaticKeepAlives,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
@@ -143,7 +143,7 @@ class MxListViewHCSP {
     this.semanticChildCount,
   });
   Widget list(List<Widget> list) {
-    return list.mxListViewHorizontalClampingScrollPhysics(
+    return list.xListViewHorizontalClampingScrollPhysics(
       addAutomaticKeepAlives: addAutomaticKeepAlives,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
@@ -189,7 +189,7 @@ class MxListViewHNSP {
     this.semanticChildCount,
   });
   Widget list(List<Widget> list) {
-    return list.mxListViewHorizontalNeverScrollableScrollPhysics(
+    return list.xListViewHorizontalNeverScrollableScrollPhysics(
       addAutomaticKeepAlives: addAutomaticKeepAlives,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
@@ -238,7 +238,7 @@ class MxListViewVertical {
     this.shrinkWrap = false,
   });
   Widget list(List<Widget> list) {
-    return list.mxListViewVertical(
+    return list.xListViewVertical(
       addAutomaticKeepAlives: addAutomaticKeepAlives,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
@@ -286,7 +286,7 @@ class MxListViewVCSP {
     this.semanticChildCount,
   });
   Widget list(List<Widget> list) {
-    return list.mxListViewVerticalClampingScrollPhysics(
+    return list.xListViewVerticalClampingScrollPhysics(
       addAutomaticKeepAlives: addAutomaticKeepAlives,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,
@@ -332,7 +332,7 @@ class MxListViewVNSP {
     this.semanticChildCount,
   });
   Widget list(List<Widget> list) {
-    return list.mxListViewHorizontalNeverScrollableScrollPhysics(
+    return list.xListViewHorizontalNeverScrollableScrollPhysics(
       addAutomaticKeepAlives: addAutomaticKeepAlives,
       addRepaintBoundaries: addRepaintBoundaries,
       addSemanticIndexes: addSemanticIndexes,

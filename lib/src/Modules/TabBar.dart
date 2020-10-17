@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-MxTabBarView mxTabBarView = MxTabBarView();
+MxTabBarView xTabBarView = MxTabBarView();
 
 class MxTabBarView {
   final Key key;

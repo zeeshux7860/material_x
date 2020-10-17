@@ -81,7 +81,7 @@ class MxExpansionTile {
       this.initiallyExpanded,
       this.key);
   Widget list(List<Widget> list) {
-    return list.mxExpansionTile(
+    return list.xExpansionTile(
       title: title,
       backgroundColor: backgroundColor,
       key: key,

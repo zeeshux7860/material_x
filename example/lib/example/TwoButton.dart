@@ -10,15 +10,15 @@ class ExampleTwoButton extends StatelessWidget {
             ontap1: () {},
             ontap2: () {},
             elavation: 20.0,
-            width: mxwidth(context) / 2.0 - 15,
+            width: xwidth(context) / 2.0 - 15,
             rounded: 10.0,
             color2: Colors.pink,
             height: 150)
         .toCenter()
-        .mxap(value: 10.0)
-        .mxScaffold(
+        .xap(value: 10.0)
+        .xScaffold(
             backgroundColor: Colors.white,
-            appBar: 'TwoButton'.textMaterialColorBlack().mxAppBar(
+            appBar: 'TwoButton'.textMaterialColorBlack().xAppBar(
                   brightness: Brightness.light,
                   centerTitle: true,
                   backgroundColor: Colors.white,

@@ -12,10 +12,10 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
       // first --------------------------------
       BanTile(
         leftTile:
-            Icons.arrow_back_ios.mxIconTile().mxIconButton(onPressed: () {}),
+            Icons.arrow_back_ios.xIconTile().xIconButton(onPressed: () {}),
         centerTitle: "CenterTitle".textMaterialColorWhite(),
         rightTile:
-            Icons.arrow_forward_ios.mxIconTile().mxIconButton(onPressed: () {}),
+            Icons.arrow_forward_ios.xIconTile().xIconButton(onPressed: () {}),
         body: <Widget>[
           10.0.sizedHeight(),
           H2(
@@ -23,8 +23,8 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
             color: Colors.white,
           ),
           15.0.sizedHeight()
-        ].mxcolumn(),
-      ).mxContainer(
+        ].xcolumn(),
+      ).xContainer(
         padding: EdgeInsets.all(20.0),
         margin: EdgeInsets.all(20.0),
         rounded: 5,
@@ -33,19 +33,19 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
       // second --------------------------------
       BanTile(
         leftTile: Icons.arrow_back_ios
-            .mxIconTile(color: Colors.black)
-            .mxIconButton(onPressed: () {}),
+            .xIconTile(color: Colors.black)
+            .xIconButton(onPressed: () {}),
         centerTitle: "CenterTitle".textMaterialColorBlack(),
         rightTile: Icons.arrow_forward_ios
-            .mxIconTile(color: Colors.black)
-            .mxIconButton(onPressed: () {}),
+            .xIconTile(color: Colors.black)
+            .xIconButton(onPressed: () {}),
         body: <Widget>[
           10.0.sizedHeight(),
           "https://image.freepik.com/free-vector/colorful-abstract-background_23-2148468383.jpg"
-              .mxImageNetwork(repeat: ImageRepeat.noRepeat),
+              .xImageNetwork(repeat: ImageRepeat.noRepeat),
           15.0.sizedHeight()
-        ].mxcolumn(),
-      ).mxContainer(
+        ].xcolumn(),
+      ).xContainer(
         onTap: () {},
         // padding: EdgeInsets.all(20.0),
         margin: EdgeInsets.all(20.0),
@@ -57,12 +57,12 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
       // third --------------------------------
       BanTile(
         leftTile: Icons.arrow_back_ios
-            .mxIconTile(color: Colors.white)
-            .mxIconButton(onPressed: () {}),
+            .xIconTile(color: Colors.white)
+            .xIconButton(onPressed: () {}),
         centerTitle: "CenterTitle".textMaterialColorWhite(),
         rightTile: Icons.arrow_forward_ios
-            .mxIconTile(color: Colors.white)
-            .mxIconButton(onPressed: () {}),
+            .xIconTile(color: Colors.white)
+            .xIconButton(onPressed: () {}),
         body: <Widget>[
           10.0.sizedHeight(),
           H2(
@@ -70,8 +70,8 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
             text: "Text",
           ),
           15.0.sizedHeight()
-        ].mxcolumn(),
-      ).mxContainer(
+        ].xcolumn(),
+      ).xContainer(
         onTap: () {},
         image:
             "https://image.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg"
@@ -86,12 +86,12 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
       // Four --------------------------------
       BanTile(
         leftTile: Icons.arrow_back_ios
-            .mxIconTile(color: Colors.white)
-            .mxIconButton(onPressed: () {}),
+            .xIconTile(color: Colors.white)
+            .xIconButton(onPressed: () {}),
         centerTitle: "CenterTitle".textMaterialColorWhite(),
         rightTile: Icons.arrow_forward_ios
-            .mxIconTile(color: Colors.white)
-            .mxIconButton(onPressed: () {}),
+            .xIconTile(color: Colors.white)
+            .xIconButton(onPressed: () {}),
         body: <Widget>[
           10.0.sizedHeight(),
           H2(
@@ -99,8 +99,8 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
             text: "Text",
           ),
           15.0.sizedHeight()
-        ].mxcolumn(),
-      ).mxContainerGradient(
+        ].xcolumn(),
+      ).xContainerGradient(
         onTap: () {},
         image:
             "https://image.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg"
@@ -124,12 +124,12 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
       // Four --------------------------------
       BanTile(
         leftTile: Icons.arrow_back_ios
-            .mxIconTile(color: Colors.white)
-            .mxIconButton(onPressed: () {}),
+            .xIconTile(color: Colors.white)
+            .xIconButton(onPressed: () {}),
         centerTitle: "CenterTitle".textMaterialColorWhite(),
         rightTile: Icons.arrow_forward_ios
-            .mxIconTile(color: Colors.white)
-            .mxIconButton(onPressed: () {}),
+            .xIconTile(color: Colors.white)
+            .xIconButton(onPressed: () {}),
         body: <Widget>[
           10.0.sizedHeight(),
           H2(
@@ -137,8 +137,8 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
             text: "Text",
           ),
           15.0.sizedHeight()
-        ].mxcolumn(),
-      ).mxContainerGradient(
+        ].xcolumn(),
+      ).xContainerGradient(
         image:
             "https://image.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg"
                 .decorationINToCover(),
@@ -158,9 +158,9 @@ class _ExamplebanTileState extends State<ExamplebanTile> {
           tileMode: TileMode.mirror, // repeats the gradient over the canvas
         ),
       ),
-    ].mxListView().mxap(value: 10).mxScaffold(
+    ].xListView().xap(value: 10).xScaffold(
         backgroundColor: Colors.white,
-        appBar: "BanTile ".textMaterialColorBlack().mxAppBar(
+        appBar: "BanTile ".textMaterialColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

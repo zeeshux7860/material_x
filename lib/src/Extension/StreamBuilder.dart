@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 extension MxStreamBuilder on Function(BuildContext, AsyncSnapshot<dynamic>) {
-  Widget mxStreamBuilder(
+  Widget xStreamBuilder(
       {dynamic initialData, Key key, Stream<dynamic> stream}) {
     return StreamBuilder(
       builder: this,
@@ -13,7 +13,7 @@ extension MxStreamBuilder on Function(BuildContext, AsyncSnapshot<dynamic>) {
 }
 
 extension MxFutureBuilder on Function(BuildContext, AsyncSnapshot<dynamic>) {
-  Widget mxFutureBuilder(
+  Widget xFutureBuilder(
       {dynamic initialData, Key key, Future<dynamic> future}) {
     return FutureBuilder(
       builder: this,

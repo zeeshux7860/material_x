@@ -1,35 +1,35 @@
 import 'package:material_x/material_x.dart';
 
-MxRow mxRow = MxRow();
-MxRowSS mxRowSS = MxRowSS();
-MxRowBS mxRowBS = MxRowBS();
-MxRowCC mxRowCC = MxRowCC();
-MxRowES mxRowES = MxRowES();
-MxRowSTS mxRowSTS = MxRowSTS();
-MxRowSTC mxRowSTC = MxRowSTC();
-MxRowSC mxRowSC = MxRowSC();
-MxRowEC mxRowEC = MxRowEC();
-MxRowBC mxRowBC = MxRowBC();
-MxRowSTE mxRowSTE = MxRowSTE();
-MxRowSE mxRowSE = MxRowSE();
-MxRowEE mxRowEE = MxRowEE();
-MxRowCE mxRowCE = MxRowCE();
-MxRowBE mxRowBE = MxRowBE();
-MxRowSTSA mxRowSTSA = MxRowSTSA();
-MxRowSSA mxRowSSA = MxRowSSA();
-MxRowESA mxRowESA = MxRowESA();
-MxRowCSA mxRowCSA = MxRowCSA();
-MxRowBSA mxRowBSA = MxRowBSA();
-MxRowSTSB mxRowSTSB = MxRowSTSB();
-MxRowSSB mxRowSSB = MxRowSSB();
-MxRowESB mxRowESB = MxRowESB();
-MxRowCSB mxRowCSB = MxRowCSB();
-MxRowBSB mxRowBSB = MxRowBSB();
-MxRowSTSE mxRowSTSE = MxRowSTSE();
-MxRowSSE mxRowSSE = MxRowSSE();
-MxRowESE mxRowESE = MxRowESE();
-MxRowCSE mxRowCSE = MxRowCSE();
-MxRowBSE mxRowBSE = MxRowBSE();
+MxRow xRow = MxRow();
+MxRowSS xRowSS = MxRowSS();
+MxRowBS xRowBS = MxRowBS();
+MxRowCC xRowCC = MxRowCC();
+MxRowES xRowES = MxRowES();
+MxRowSTS xRowSTS = MxRowSTS();
+MxRowSTC xRowSTC = MxRowSTC();
+MxRowSC xRowSC = MxRowSC();
+MxRowEC xRowEC = MxRowEC();
+MxRowBC xRowBC = MxRowBC();
+MxRowSTE xRowSTE = MxRowSTE();
+MxRowSE xRowSE = MxRowSE();
+MxRowEE xRowEE = MxRowEE();
+MxRowCE xRowCE = MxRowCE();
+MxRowBE xRowBE = MxRowBE();
+MxRowSTSA xRowSTSA = MxRowSTSA();
+MxRowSSA xRowSSA = MxRowSSA();
+MxRowESA xRowESA = MxRowESA();
+MxRowCSA xRowCSA = MxRowCSA();
+MxRowBSA xRowBSA = MxRowBSA();
+MxRowSTSB xRowSTSB = MxRowSTSB();
+MxRowSSB xRowSSB = MxRowSSB();
+MxRowESB xRowESB = MxRowESB();
+MxRowCSB xRowCSB = MxRowCSB();
+MxRowBSB xRowBSB = MxRowBSB();
+MxRowSTSE xRowSTSE = MxRowSTSE();
+MxRowSSE xRowSSE = MxRowSSE();
+MxRowESE xRowESE = MxRowESE();
+MxRowCSE xRowCSE = MxRowCSE();
+MxRowBSE xRowBSE = MxRowBSE();
 
 class MxRow {
   final Key key;
@@ -49,7 +49,7 @@ class MxRow {
       this.crossAxisAlignment,
       this.mainAxisAlignment});
   Widget list(List<Widget> list) {
-    return list.mxRow(
+    return list.xRow(
         crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -75,7 +75,7 @@ class MxRowCC {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowCC(
+    return list.xRowCC(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -101,7 +101,7 @@ class MxRowSS {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowSS(
+    return list.xRowSS(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -127,7 +127,7 @@ class MxRowSSB {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowSSB(
+    return list.xRowSSB(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -153,7 +153,7 @@ class MxRowBS {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowBS(
+    return list.xRowBS(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -179,7 +179,7 @@ class MxRowES {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowES(
+    return list.xRowES(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -205,7 +205,7 @@ class MxRowSTS {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowSTS(
+    return list.xRowSTS(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -231,7 +231,7 @@ class MxRowSTC {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowSTC(
+    return list.xRowSTC(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -257,7 +257,7 @@ class MxRowSC {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowSC(
+    return list.xRowSC(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -283,7 +283,7 @@ class MxRowEC {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowEC(
+    return list.xRowEC(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -309,7 +309,7 @@ class MxRowBC {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowBC(
+    return list.xRowBC(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -335,7 +335,7 @@ class MxRowSTE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowSTE(
+    return list.xRowSTE(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -361,7 +361,7 @@ class MxRowSE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowSE(
+    return list.xRowSE(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -387,7 +387,7 @@ class MxRowEE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowEE(
+    return list.xRowEE(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -413,7 +413,7 @@ class MxRowCE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowCE(
+    return list.xRowCE(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -439,7 +439,7 @@ class MxRowBE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowBE(
+    return list.xRowBE(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -465,7 +465,7 @@ class MxRowSTSA {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowSTSA(
+    return list.xRowSTSA(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -491,7 +491,7 @@ class MxRowSSA {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowSSA(
+    return list.xRowSSA(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -517,7 +517,7 @@ class MxRowESA {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowESA(
+    return list.xRowESA(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -543,7 +543,7 @@ class MxRowCSA {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowCSA(
+    return list.xRowCSA(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -569,7 +569,7 @@ class MxRowBSA {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowBSA(
+    return list.xRowBSA(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -595,7 +595,7 @@ class MxRowSTSB {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowSTSB(
+    return list.xRowSTSB(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -621,7 +621,7 @@ class MxRowESB {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowESB(
+    return list.xRowESB(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -647,7 +647,7 @@ class MxRowCSB {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowCSB(
+    return list.xRowCSB(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -673,7 +673,7 @@ class MxRowBSB {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowBSB(
+    return list.xRowBSB(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -699,7 +699,7 @@ class MxRowSTSE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowSTSE(
+    return list.xRowSTSE(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -725,7 +725,7 @@ class MxRowSSE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowSSE(
+    return list.xRowSSE(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -751,7 +751,7 @@ class MxRowESE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowESE(
+    return list.xRowESE(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -777,7 +777,7 @@ class MxRowCSE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowCSE(
+    return list.xRowCSE(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
@@ -803,7 +803,7 @@ class MxRowBSE {
     this.verticalDirection,
   });
   Widget list(List<Widget> list) {
-    return list.mxRowBSE(
+    return list.xRowBSE(
         // crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.start,
         key: key,
         //  mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,

@@ -104,7 +104,7 @@ extension MxNew on Widget {
     );
   }
 
-  Widget mxRaisedButton(
+  Widget xRaisedButton(
       {bool autofocus = false,
       Clip clipBehavior = Clip.none,
       Color color,
@@ -164,7 +164,7 @@ extension MxNew on Widget {
     );
   }
 
-  Widget mxFlatButton(
+  Widget xFlatButton(
       {bool autofocus = false,
       Clip clipBehavior = Clip.none,
       Color color,
@@ -210,7 +210,7 @@ extension MxNew on Widget {
     );
   }
 
-  Widget mxOutlineButton(
+  Widget xOutlineButton(
       {bool autofocus = false,
       Clip clipBehavior = Clip.none,
       Color color,
@@ -257,7 +257,7 @@ extension MxNew on Widget {
     );
   }
 
-  Widget mxLiquidPullToRefresh({
+  Widget xLiquidPullToRefresh({
     @required Future<void> Function() onRefresh,
     Color color,
     Color backgroundColor,
@@ -286,7 +286,7 @@ extension MxNew on Widget {
     );
   }
 
-  Widget mxPullRefresh({
+  Widget xPullRefresh({
     @required Future<void> Function() onRefresh,
     Color color,
     Color backgroundColor,
@@ -347,7 +347,7 @@ extension MxNew on Widget {
   ///  * [PositionedTransition], which takes a provided [Animation] to transition
   ///    changes in the child's position over a given duration.
   ///  * [PositionedDirectional], which adapts to the ambient [Directionality].
-  Widget mxPositioned({
+  Widget xPositioned({
     /// The distance that the child's left edge is inset from the left of the stack.
     ///
     /// Only two out of the three horizontal values ([left], [right], [width]) can be
@@ -415,7 +415,7 @@ extension MxNew on Widget {
     );
   }
 
-  Widget mxChip({
+  Widget xChip({
     final Widget avatar,
     final Widget label,
     final TextStyle labelStyle,
@@ -462,7 +462,7 @@ extension MxNew on Widget {
   /// The text to display as the tab's label.
   ///
   /// Must not be used in combination with [child].
-  Widget mxTab({
+  Widget xTab({
     final Key key,
 
     /// The widget to be used as the tab's label.

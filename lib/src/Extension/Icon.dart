@@ -1,7 +1,7 @@
 import 'package:material_x/material_x.dart';
 
 extension IconButtons on Icon {
-  Widget mxOutLineButtonIcon(
+  Widget xOutLineButtonIcon(
       {void Function() onPressed,
       bool autofocus = false,
       Clip clipBehavior = Clip.none,
@@ -50,7 +50,7 @@ extension IconButtons on Icon {
     );
   }
 
-  Widget mxFlatButtonIcon(
+  Widget xFlatButtonIcon(
       {bool autofocus = false,
       Clip clipBehavior = Clip.none,
       Color color,
@@ -98,7 +98,7 @@ extension IconButtons on Icon {
     );
   }
 
-  Widget mxRaisedButtonIcon(
+  Widget xRaisedButtonIcon(
       {bool autofocus = false,
       Clip clipBehavior = Clip.none,
       Color color,

@@ -17,20 +17,20 @@ class _ExampleGridViewAnimationState extends State<ExampleGridViewAnimation> {
             .toString()
             .textMaterial(fontsize: 30)
             .toCenter()
-            .mxContainer(
+            .xContainer(
                 color: Colors.white, shadowColor: Colors.blue, blurRadius: 12.0)
-            .mxap(value: 20.0)
-            .mxFA()
-            .mxSA(),
+            .xap(value: 20.0)
+            .xFA()
+            .xSA(),
       );
     }
-        .mxGridVB(
+        .xGridVB(
             itemCount: 100,
-            gridDelegate: mxSGDWFCC(
+            gridDelegate: xSGDWFCC(
               crossAxisCount: 4,
             ))
-        .mxAnimationLimiter()
-        .mxScaffold();
+        .xAnimationLimiter()
+        .xScaffold();
   }
 }
 
@@ -50,9 +50,9 @@ class _GridExampleState extends State<GridExample> {
       body: SafeArea(
           child: animationItemBuilder(
                   (index) => HorizontalItem(title: index.toString()))
-              .mxGridAnimated(
+              .xGridAnimated(
                   itemCount: 100,
-                  gridDelegate: mxSGDWFCC(
+                  gridDelegate: xSGDWFCC(
                       crossAxisCount: 4,
                       crossAxisSpacing: 16,
                       mainAxisSpacing: 16))),

@@ -72,7 +72,7 @@ class _MxDropdownLabState extends State<MxDropdownLab> {
 }
 
 extension Dropdowns on List<String> {
-  Widget mxDropdownLabel({
+  Widget xDropdownLabel({
     @required final String name,
     final double fontSize,
     final Color color,

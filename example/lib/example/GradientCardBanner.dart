@@ -5,7 +5,7 @@ class ExampleGradientCardBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     return <Widget>[
       MxGradientCardBanner(
-              gradient: [Colors.orange, Colors.pink].mxLGrepeated(
+              gradient: [Colors.orange, Colors.pink].xLGrepeated(
                   begin: Alignment.topLeft, end: Alignment.bottomLeft),
               shadowColor: Colors.pink,
               blurRadius: 5.0,
@@ -15,10 +15,10 @@ class ExampleGradientCardBanner extends StatelessWidget {
                       .textMaterialColorWhite(),
               button: 'know more'.textMaterialColorWhite().cardBannerButton(
                   onTap: () {}, rounded: 5.0, buttonColor: Colors.black))
-          .mxap(value: 20.0),
+          .xap(value: 20.0),
       20.0.sizedHeight(),
       MxGradientCardBanner(
-        gradient: [Colors.cyan, Colors.indigo].mxLGrepeated(
+        gradient: [Colors.cyan, Colors.indigo].xLGrepeated(
           begin: Alignment.topLeft,
           end: Alignment(0.7, 0.0),
         ),
@@ -28,14 +28,14 @@ class ExampleGradientCardBanner extends StatelessWidget {
         subTitle:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
                 .textMaterialColorWhite()
-                .mxExpandableText(
+                .xExpandableText(
                     expand: "More details".textMaterialColorWhite(),
                     unexpand: "Less details".textMaterialColorWhite(),
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start),
       )
           .animation(configMap: MxAnimationType.fadeIn, autoPlay: true)
-          .mxlrp(l: 20.0, r: 20.0),
+          .xlrp(l: 20.0, r: 20.0),
       20.0.sizedHeight(),
       MxGradientCardBanner(
               onTap: () {},
@@ -70,10 +70,10 @@ class ExampleGradientCardBanner extends StatelessWidget {
                   .textMaterialColorWhite()
                   .cardBannerButton(onTap: () {}))
           .animation(configMap: MxAnimationType.fadeIn, autoPlay: true)
-          .mxap(value: 20.0),
-    ].mxListView().mxScaffold(
+          .xap(value: 20.0),
+    ].xListView().xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'MxGradientCardBanner'.textMaterialColorBlack().mxAppBar(
+        appBar: 'MxGradientCardBanner'.textMaterialColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

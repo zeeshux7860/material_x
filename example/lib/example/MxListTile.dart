@@ -10,7 +10,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      MXListTile(
+      xListTile(
               onTap: () {
                 setState(() {
                   if (isActive) {
@@ -26,7 +26,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               selected: isActive,
               text: "Home")
           .bounce(),
-      MXListTile(
+      xListTile(
               onTap: () {
                 setState(() {
                   if (isActive) {
@@ -41,13 +41,13 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               unSelectedColor: Colors.red,
               selected: isActive,
               text: "Home")
-          .mxContainer(
+          .xContainer(
               margin: EdgeInsets.all(10),
               color: Colors.white,
               rounded: 10,
               shadowColor: Colors.grey,
               blurRadius: 12),
-      MXListTile(
+      xListTile(
               onTap: () {
                 setState(() {
                   if (isActive) {
@@ -62,13 +62,13 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               unSelectedColor: Colors.red,
               selected: isActive,
               text: "Home")
-          .mxContainer(
+          .xContainer(
               margin: EdgeInsets.all(10),
               color: Color(0xFF3d6dfe),
               rounded: 10,
               shadowColor: Color(0xFF3d6dfe),
               blurRadius: 12),
-      MXListTile(
+      xListTile(
               onTap: () {
                 setState(() {
                   if (isActive) {
@@ -82,15 +82,15 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               selectedColor: Colors.white,
               unSelectedColor: Colors.red,
               selected: isActive,
-              trailing: Icons.add.mxIconTile(size: 30),
+              trailing: Icons.add.xIconTile(size: 30),
               text: "Home")
-          .mxContainer(
+          .xContainer(
               margin: EdgeInsets.all(10),
               color: Colors.black,
               rounded: 10,
               shadowColor: Colors.black,
               blurRadius: 12),
-      MXListTile(
+      xListTile(
               subtitle: "Text".textMaterialColorWhite(),
               onTap: () {
                 setState(() {
@@ -107,16 +107,16 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               unSelectedColor: Colors.red,
               selected: isActive,
               text: "Home")
-          .mxContainerGradient(
+          .xContainerGradient(
               margin: EdgeInsets.all(10),
-              gradient: [Colors.red, Colors.pink].mxLGClamp(
+              gradient: [Colors.red, Colors.pink].xLGClamp(
                 begin: Alignment.topLeft,
                 end: Alignment(0.8, 0.0),
               ),
               rounded: 10,
               shadowColor: Colors.grey,
               blurRadius: 12),
-      MXListTile(
+      xListTile(
               subtitle: "Text".textMaterialColorWhite(),
               onTap: () {
                 setState(() {
@@ -148,19 +148,19 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
                   width: 100,
                   height: 30),
               text: "Home")
-          .mxContainerGradient(
+          .xContainerGradient(
               margin: EdgeInsets.all(10),
-              gradient: [Colors.orange, Colors.red].mxLGrepeated(
+              gradient: [Colors.orange, Colors.red].xLGrepeated(
                 begin: Alignment.topLeft,
                 end: Alignment(0.8, 0.0),
               ),
               rounded: 10,
               shadowColor: Colors.red,
               blurRadius: 12),
-    ].mxcolumnCC().mxap(value: 10).mxScaffold(
+    ].xcolumnCC().xap(value: 10).xScaffold(
           backgroundColor: Colors.white,
           appBar: new AppBar(
-            title: "MXListTile".textMaterialColorBlack(),
+            title: "xListTile".textMaterialColorBlack(),
             brightness: Brightness.light,
             centerTitle: true,
             backgroundColor: Colors.white,

@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:material_x/src/Modules/DrawerMXuserProfile.dart';
+import 'package:material_x/src/Modules/DrawerxuserProfile.dart';
 import 'package:material_x/src/Modules/ExpansionTile.dart';
 import 'package:material_x/src/Modules/MxAnimationType.dart';
 import 'package:material_x/src/Modules/ProgressLoading.dart';
@@ -56,8 +56,8 @@ class MxRoundedCornerDrawer extends StatelessWidget {
         child: new ListView(
           padding: EdgeInsets.all(0.0),
           children: <Widget>[
-            // MX UserProfile
-            MxDrawerUserProfileBlur(
+            // x UserProfile
+            XDrawerUserProfileBlur(
               height: 200,
               margin: EdgeInsets.only(top: 120),
               userName: userName,

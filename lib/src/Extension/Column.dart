@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 extension ColumnWudget on List<Widget> {
-  Widget mxcolumn(
+  Widget xcolumn(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -21,7 +21,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnSS(
+  Widget xcolumnSS(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -39,7 +39,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnBS(
+  Widget xcolumnBS(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -57,7 +57,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnES(
+  Widget xcolumnES(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -75,7 +75,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnSTS(
+  Widget xcolumnSTS(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -95,7 +95,7 @@ extension ColumnWudget on List<Widget> {
 
   //----------------------------------------------------------  end  start
 
-  Widget mxcolumnSTC(
+  Widget xcolumnSTC(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -113,7 +113,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnSC(
+  Widget xcolumnSC(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -131,7 +131,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnEC(
+  Widget xcolumnEC(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -149,7 +149,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnCC(
+  Widget xcolumnCC(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -167,7 +167,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnBC(
+  Widget xcolumnBC(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -187,7 +187,7 @@ extension ColumnWudget on List<Widget> {
 
   // ------------------------------------------------------------ emd center
 
-  Widget mxcolumnSTE(
+  Widget xcolumnSTE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -205,7 +205,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnSE(
+  Widget xcolumnSE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -223,7 +223,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnEE(
+  Widget xcolumnEE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -241,7 +241,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnCE(
+  Widget xcolumnCE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -259,7 +259,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnBE(
+  Widget xcolumnBE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -279,7 +279,7 @@ extension ColumnWudget on List<Widget> {
 
   // ------------------------------------------------------------ emd end
 
-  Widget mxcolumnSTSA(
+  Widget xcolumnSTSA(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -297,7 +297,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnSSA(
+  Widget xcolumnSSA(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -315,7 +315,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnESA(
+  Widget xcolumnESA(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -333,7 +333,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnCSA(
+  Widget xcolumnCSA(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -351,7 +351,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnBSA(
+  Widget xcolumnBSA(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -371,7 +371,7 @@ extension ColumnWudget on List<Widget> {
 
   // ------------------------------------------------------------- end spaceAround
 
-  Widget mxcolumnSTSB(
+  Widget xcolumnSTSB(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -389,7 +389,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnSSB(
+  Widget xcolumnSSB(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -407,7 +407,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnESB(
+  Widget xcolumnESB(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -425,7 +425,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnCSB(
+  Widget xcolumnCSB(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -443,7 +443,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnBSB(
+  Widget xcolumnBSB(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -462,7 +462,7 @@ extension ColumnWudget on List<Widget> {
   }
 
   // ------------------------------------------------------------- end spaceBetween
-  Widget mxcolumnSTSE(
+  Widget xcolumnSTSE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -480,7 +480,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnSSE(
+  Widget xcolumnSSE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -498,7 +498,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnESE(
+  Widget xcolumnESE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -516,7 +516,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnCSE(
+  Widget xcolumnCSE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,
@@ -534,7 +534,7 @@ extension ColumnWudget on List<Widget> {
     );
   }
 
-  Widget mxcolumnBSE(
+  Widget xcolumnBSE(
       {Key key,
       MainAxisSize mainAxisSize = MainAxisSize.max,
       TextBaseline textBaseline,

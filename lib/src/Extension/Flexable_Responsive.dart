@@ -1,20 +1,20 @@
 import 'package:material_x/material_x.dart';
 
 extension ColoumRes on Widget {
-  Widget mxFlexableRes(bool condition,
+  Widget xFlexableRes(bool condition,
       {FlexFit fit = FlexFit.loose, int flex = 1, Key key}) {
     if (condition) {
-      return this.mxFlexable(fit: fit, flex: flex, key: key);
+      return this.xFlexable(fit: fit, flex: flex, key: key);
     } else {
       return this;
     }
   }
 }
 
-Widget mxResponsive(condition, {Widget mxColumn, Widget mxRow}) {
+Widget xResponsive(condition, {Widget xColumn, Widget xRow}) {
   if (condition) {
-    return mxColumn;
+    return xColumn;
   } else {
-    return mxRow;
+    return xRow;
   }
 }

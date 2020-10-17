@@ -16,13 +16,13 @@ class _ExampleListViewAnimationState extends State<ExampleListViewAnimation> {
         child: ListTile(
           title: index.toString().textMaterial(),
         )
-            .mxContainer(
+            .xContainer(
                 color: Colors.white, shadowColor: Colors.blue, blurRadius: 12.0)
-            .mxap(value: 20.0)
-            .mxFA()
-            .mxSA(),
+            .xap(value: 20.0)
+            .xFA()
+            .xSA(),
       );
-    }.mxListVB(itemCount: 100).mxAnimationLimiter().mxScaffold();
+    }.xListVB(itemCount: 100).xAnimationLimiter().xScaffold();
   }
 }
 
@@ -40,6 +40,6 @@ class _VerticalExampleState extends State<VerticalExample> {
         return VerticalItem(title: index.toString());
       },
       padding: EdgeInsets.symmetric(vertical: 8),
-    ).mxlbAnimated(itemCount: 100, reAnimateOnVisibility: true).mxScaffold();
+    ).xlbAnimated(itemCount: 100, reAnimateOnVisibility: true).xScaffold();
   }
 }

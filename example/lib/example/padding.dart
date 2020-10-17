@@ -15,46 +15,46 @@ class _ExamplePaddingState extends State<ExamplePadding> {
       <Widget>[
         "single value pass".h1TextBold(color: Colors.black),
         20.0.sizedHeight(),
-        " .mxap(value: 20.0) all pading".text().mxap(value: 20.0),
-        " .mxlp(value: 20.0) left pading".text().mxlp(value: 20.0),
-        " .mxrp(value: 20.0) right pading".text().mxrp(value: 20.0),
-        " .mxbp(value: 20.0) bottom pading".text().mxbp(value: 20.0),
-        " .mxbp(value: 20.0) bottom pading".text().mxbp(value: 20.0),
+        " .xap(value: 20.0) all pading".text().xap(value: 20.0),
+        " .xlp(value: 20.0) left pading".text().xlp(value: 20.0),
+        " .xrp(value: 20.0) right pading".text().xrp(value: 20.0),
+        " .xbp(value: 20.0) bottom pading".text().xbp(value: 20.0),
+        " .xbp(value: 20.0) bottom pading".text().xbp(value: 20.0),
         20.0.sizedHeight(),
         "2 side value pass".h1TextBold(color: Colors.black),
         20.0.sizedHeight(),
-        " .mxlrp(l: 20,r: 20) left rigth pading".text().mxlrp(l: 20, r: 20),
-        " .mxltp(l: 20.0, t: 20.0) left top pading"
+        " .xlrp(l: 20,r: 20) left rigth pading".text().xlrp(l: 20, r: 20),
+        " .xltp(l: 20.0, t: 20.0) left top pading"
             .text()
-            .mxltp(l: 20.0, t: 20.0),
-        " .mxlbp(l: 20.0, b: 20.0) left bottom pading"
+            .xltp(l: 20.0, t: 20.0),
+        " .xlbp(l: 20.0, b: 20.0) left bottom pading"
             .text()
-            .mxlbp(l: 20.0, b: 20.0),
-        " .mxtbp(t: 20.0,b: 20.0) top bottom pading"
+            .xlbp(l: 20.0, b: 20.0),
+        " .xtbp(t: 20.0,b: 20.0) top bottom pading"
             .text()
-            .mxtbp(t: 20.0, b: 20.0),
-        " .mxrtp(t: 20.0, r: 20.0) right top padding"
+            .xtbp(t: 20.0, b: 20.0),
+        " .xrtp(t: 20.0, r: 20.0) right top padding"
             .text()
-            .mxrtp(t: 20.0, r: 20.0),
-        " .mxrbp(b: 20.0, r: 20.0) right top padding"
+            .xrtp(t: 20.0, r: 20.0),
+        " .xrbp(b: 20.0, r: 20.0) right top padding"
             .text()
-            .mxrbp(b: 20.0, r: 20.0),
+            .xrbp(b: 20.0, r: 20.0),
         20.0.sizedHeight(),
         "3 side value pass".h1TextBold(color: Colors.black),
         20.0.sizedHeight(),
-        " .mxlbtp(b: 20.0, l: 20.0, t: 20.0) left bottom top  padding"
+        " .xlbtp(b: 20.0, l: 20.0, t: 20.0) left bottom top  padding"
             .text()
-            .mxlbtp(b: 20.0, l: 20.0, t: 20.0),
-        " .mxlrbp(b: 20.0, l: 20.0, r: 20.0) left bottom rigth  padding"
+            .xlbtp(b: 20.0, l: 20.0, t: 20.0),
+        " .xlrbp(b: 20.0, l: 20.0, r: 20.0) left bottom rigth  padding"
             .text()
-            .mxlrbp(b: 20.0, l: 20.0, r: 20.0),
-        " .mxlrtp(t: 20.0, l: 20.0, r: 20.0) left right top  padding"
+            .xlrbp(b: 20.0, l: 20.0, r: 20.0),
+        " .xlrtp(t: 20.0, l: 20.0, r: 20.0) left right top  padding"
             .text()
-            .mxlrtp(t: 20.0, l: 20.0, r: 20.0),
-      ].mxcolumnSS().mxap(value: 20.0)
-    ].mxListView().mxScaffold(
+            .xlrtp(t: 20.0, l: 20.0, r: 20.0),
+      ].xcolumnSS().xap(value: 20.0)
+    ].xListView().xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'Padding'.textMaterialColorBlack().mxAppBar(
+        appBar: 'Padding'.textMaterialColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

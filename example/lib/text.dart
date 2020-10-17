@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MyHomePage().mxMaterialApp(title: 'zeeshan');
+    return MyHomePage().xMaterialApp(title: 'zeeshan');
   }
 }
 
@@ -31,17 +31,17 @@ class _MyHomePageState extends State<MyHomePage> {
             MxCardTile(
               backgroundColor: Colors.deepOrangeAccent.shade400,
               boxColor: Colors.deepOrangeAccent.shade100,
-              subtitle1: Icons.arrow_forward_ios.mxIconTile(),
+              subtitle1: Icons.arrow_forward_ios.xIconTile(),
             ).animation(configMap: MxAnimationType.fadeIn, autoPlay: true),
             MxCardTile(
               rounded: 10,
-              title: "Zeeshan".mxCardTileTitle(),
+              title: "Zeeshan".xCardTileTitle(),
               subtitle1: "Software Engineer".textMaterialColorWhite(),
               backgroundColor: Colors.deepPurple,
               boxColor: Colors.deepPurple.shade100,
               boxRounded: 100,
-              boxChild: Icons.android.mxIconTile(),
-              subtitle2: Icons.data_usage.mxIconTile().bounce(),
+              boxChild: Icons.android.xIconTile(),
+              subtitle2: Icons.data_usage.xIconTile().bounce(),
             ).fadeIn(),
             20.0.sizedHeight(),
 
@@ -49,15 +49,15 @@ class _MyHomePageState extends State<MyHomePage> {
               onTap: () {
                 //  MxRoutePage(context, Drawer()).materialPagePush();
               },
-              leading: Icons.book.mxListTileIcon(color: Colors.purple),
-              title: "Zeeshan".mxCardTileTitle(color: Colors.black),
+              leading: Icons.book.xListTileIcon(color: Colors.purple),
+              title: "Zeeshan".xCardTileTitle(color: Colors.black),
               subtitle: "Developr!!".textMaterialColorgrey(),
               trailing: <Widget>[
                 "+ 1234500.0".textMaterialColorBlack(
                     fontsize: 15, fontWeight: FontWeight.bold),
                 5.0.sizedHeight(),
                 "sep 15 2019".textMaterialColorblueGrey()
-              ].mxcolumnCC(),
+              ].xcolumnCC(),
             ),
 
             HeaderTitle(
@@ -73,24 +73,23 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.indigo,
                 child: <Widget>[
                   <Widget>[
-                    Icons.arrow_back_ios.mxIconTile(),
+                    Icons.arrow_back_ios.xIconTile(),
                     "Monday 27 july 2000".textMaterialColorWhite(),
-                    Icons.arrow_forward_ios.mxIconTile(),
-                  ].mxRowCSB(),
+                    Icons.arrow_forward_ios.xIconTile(),
+                  ].xRowCSB(),
                   25.0.sizedHeight(),
                   H2(
                     text: '7h 26Min',
                     color: Colors.white,
                   ),
                   20.0.sizedHeight(),
-                ].mxcolumn()),
+                ].xcolumn()),
             Column(
               children: <Widget>[
                 CardBarButton(
                   onTap: () {},
                   color: Colors.black,
-                  title:
-                      Icons.android.mxIconTile(color: Colors.white, size: 30),
+                  title: Icons.android.xIconTile(color: Colors.white, size: 30),
                   subtitle: "Zeeshan".textMaterialColorWhite(),
                 )
               ],
@@ -135,7 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     // delay: Duration(seconds: 10),
                     duration: Duration(seconds: 3)),
             MxGradientCardBanner(
-                gradient: [Color(0xFF3C8CE7), Color(0xFF3C8CE7)].mxLGrepeated(
+                gradient: [Color(0xFF3C8CE7), Color(0xFF3C8CE7)].xLGrepeated(
                   begin: Alignment.topLeft,
                   end: Alignment(0.8, 0.0),
                 ),
@@ -207,7 +206,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         .cardBannerButton(onTap: () {}))
                 .animation(configMap: MxAnimationType.fadeIn, autoPlay: true),
             //Textmaterial(text: "null"),
-            <Widget>[Icon(Icons.ac_unit).bounce()].mxRowCSB(),
+            <Widget>[Icon(Icons.ac_unit).bounce()].xRowCSB(),
             <Widget>[
               H1(
                 text: 'aaaaa',
@@ -220,7 +219,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       height: 100,
                       color: Colors.pink)
                   .roulette()
-            ].mxcolumnCC(),
+            ].xcolumnCC(),
             30.0.sizedHeight(),
             CardTile(
               margin: EdgeInsets.all(10),
@@ -252,14 +251,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: <Widget>[
                   25.0.sizedHeight(),
                   "https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/icon/apple-watch.png"
-                      .mxCircleNetWorkImage(
+                      .xCircleNetWorkImage(
                           radius: 40, backgroundColor: Colors.white),
                   25.0.sizedHeight(),
                   '50% Off'.h1TextBold(fontWeight: FontWeight.normal),
                   10.0.sizedHeight(),
                   'On apple watch'.h3TextBold(fontWeight: FontWeight.normal),
                   25.0.sizedHeight(),
-                ].mxcolumnCC()),
+                ].xcolumnCC()),
             25.0.sizedHeight(),
             MxContainer(
               padding: EdgeInsets.all(0.0),
@@ -272,7 +271,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontsize: 30, fontWeight: FontWeight.bold),
                       subtitle: "June 18, Thu 04:50".textMaterialColorBlack(),
                     ),
-                  ].mxcolumnSC(),
+                  ].xcolumnSC(),
                 ),
                 MxContainer(
                     child: MximageBlur(
@@ -284,7 +283,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     image:
                         "https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/gallery/3.png"
                             .decorationINToCover())
-              ].mxListViewVerticalClampingScrollPhysics(
+              ].xListViewVerticalClampingScrollPhysics(
                   padding: EdgeInsets.all(0.0)),
             ).fadeInLeft(),
             25.0.sizedHeight(),
@@ -294,16 +293,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 alignment: Alignment(0, 0),
                 color: Colors.purple,
                 child: Text("lg : 12"),
-              ).mxResponsiveGridCol(),
+              ).xResponsiveGridCol(),
               Container(
                 height: 100,
                 alignment: Alignment(0, 0),
                 color: Colors.purple,
                 child: Text("lg : 6"),
-              ).fadeIn().mxResponsiveGridCol(lg: 6, md: 6, sm: 6, xs: 6),
-            ].mxResponsiveGridRow()
-          ].mxListView()),
-      floatingActionButton: "check".mxFloationActiobButton(onTap: () {
+              ).fadeIn().xResponsiveGridCol(lg: 6, md: 6, sm: 6, xs: 6),
+            ].xResponsiveGridRow()
+          ].xListView()),
+      floatingActionButton: "check".xFloationActiobButton(onTap: () {
         var isDesktops = context.isDesktop();
         print(isDesktops);
         var isTablets = context.isTablet();

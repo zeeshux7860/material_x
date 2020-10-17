@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:material_x/material_x.dart';
 
 extension imageString on String {
-  Widget mxImageAsset({
+  Widget xImageAsset({
     Map<String, String> headers,
 
     /// A builder function responsible for creating the widget that represents
@@ -318,7 +318,7 @@ extension imageString on String {
     );
   }
 
-  Widget mxImageNetwork({
+  Widget xImageNetwork({
     Map<String, String> headers,
 
     /// A builder function responsible for creating the widget that represents
@@ -629,7 +629,7 @@ extension imageString on String {
     );
   }
 
-  Widget mxImageFile({
+  Widget xImageFile({
     Map<String, String> headers,
 
     /// A builder function responsible for creating the widget that represents
@@ -940,7 +940,7 @@ extension imageString on String {
 }
 
 extension DecorationMx on DecorationImage {
-  Widget mxContainer({
+  Widget xContainer({
     final double width,
     final Color color,
     final EdgeInsetsGeometry padding,

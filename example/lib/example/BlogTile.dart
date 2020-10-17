@@ -16,7 +16,7 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
         imageHeight: 200,
         onTap: () {},
         backrounded: 10,
-        shape: BorderRadius.circular(10).mxShapeBorder(),
+        shape: BorderRadius.circular(10).xShapeBorder(),
         leading: "Z"
             .textMaterialColorWhite()
             .xCircleAvatar(backgroundColor: Colors.black, radius: 25),
@@ -36,7 +36,7 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
         imageHeight: 200,
         onTap: () {},
         backrounded: 10,
-        shape: BorderRadius.circular(10).mxShapeBorder(),
+        shape: BorderRadius.circular(10).xShapeBorder(),
         leading: "Z"
             .textMaterialColorWhite()
             .xCircleAvatar(backgroundColor: Colors.white, radius: 25),
@@ -57,7 +57,7 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
         imageHeight: 200,
         onTap: () {},
         backrounded: 10,
-        shape: BorderRadius.circular(10).mxShapeBorder(),
+        shape: BorderRadius.circular(10).xShapeBorder(),
         leading: "Z"
             .textMaterial(fontWeight: FontWeight.bold, color: Colors.black)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 25),
@@ -70,7 +70,7 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
             "https://user-images.githubusercontent.com/55942632/77652902-fedd9980-6f94-11ea-96d5-d31657590893.png"
                 .decorationINToCover(),
       ),
-    ].mxListView().mxap(value: 10.0).mxScaffold(
+    ].xListView().xap(value: 10.0).xScaffold(
           backgroundColor: Colors.white,
           appBar: new AppBar(
             brightness: Brightness.light,

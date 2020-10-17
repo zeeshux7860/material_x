@@ -6,7 +6,7 @@ extension Floating on Widget {
   /// The widget below this widget in the tree.
   ///
   /// Typically an [Icon].
-  Widget mxFloatinActionExtend({
+  Widget xFloatinActionExtend({
     /// Text that describes the action that will occur when the button is pressed.
     ///
     /// This text is displayed when the user long-presses on the button and is

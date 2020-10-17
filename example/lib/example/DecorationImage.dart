@@ -6,7 +6,7 @@ class ExampleDecorationImage extends StatelessWidget {
     return <Widget>[
       '3 Type of decorationimage'
           .h1TextBold(color: Colors.black)
-          .mxap(value: 20.0),
+          .xap(value: 20.0),
       <Widget>[
         ".decorationINToCover  // mean IN  image network its mean you can change last cover contain fitheight etc"
             .text(),
@@ -16,19 +16,19 @@ class ExampleDecorationImage extends StatelessWidget {
         10.0.sizedHeight(),
         ".decorationIFToCover  // mean IF  image file its mean you can change last cover contain fitheight etc"
             .text(),
-      ].mxcolumn().mxap(value: 20.0),
+      ].xcolumn().xap(value: 20.0),
       "https://img.freepik.com/free-psd/tropical-foliage-background_53876-91352.jpg?size=626&ext=jpg"
           .decorationINToCover()
-          .mxContainer(
+          .xContainer(
               rounded: 10.0,
               onTap: () {},
               margin: EdgeInsets.all(20.0),
               height: 250.0,
-              width: mxwidth(context)),
+              width: xwidth(context)),
       20.0.sizedHeight(),
       "https://image.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg"
           .decorationINToCover()
-          .mxContainer(
+          .xContainer(
               child: "Image Show Text".textMaterialColorWhite().toCenter(),
               blurRadius: 50.0,
               spreadRadius: 1.0,
@@ -37,10 +37,10 @@ class ExampleDecorationImage extends StatelessWidget {
               onTap: () {},
               margin: EdgeInsets.all(20.0),
               height: 250.0,
-              width: mxwidth(context))
-    ].mxListView().mxScaffold(
+              width: xwidth(context))
+    ].xListView().xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'Decorationimage'.textMaterialColorBlack().mxAppBar(
+        appBar: 'Decorationimage'.textMaterialColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

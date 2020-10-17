@@ -2,7 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:material_x/material_x.dart';
 
 extension MxFunction on Function {
-  Widget mxFlatButton(
+  Widget xFlatButton(
       {bool autofocus = false,
       Clip clipBehavior = Clip.none,
       Color color,
@@ -48,7 +48,7 @@ extension MxFunction on Function {
     );
   }
 
-  Widget mxOutlineButton(
+  Widget xOutlineButton(
       {bool autofocus = false,
       Clip clipBehavior = Clip.none,
       Color color,
@@ -119,7 +119,7 @@ extension MxApp on bool {
   ///   },
   /// )
   /// ```
-  Widget mxSWitch(
+  Widget xSWitch(
       {
 
       /// Whether this switch is on or off.
@@ -234,7 +234,7 @@ extension MxApp on bool {
   ///   },
   /// )
   /// ```
-  Widget mxCheckbok(
+  Widget xCheckbok(
       {
 
       /// Whether this checkbox is checked.
@@ -304,7 +304,7 @@ extension MxApp on bool {
     );
   }
 
-  Widget mxRadio({
+  Widget xRadio({
     final bool groupValue,
 
     /// Called when the user selects this radio button.
@@ -399,7 +399,7 @@ extension Bools on Function(bool) {
   ///   },
   /// )
   /// ```
-  Widget mxSWitch({
+  Widget xSWitch({
     /// Whether this switch is on or off.
     ///
     /// This property must not be null.
@@ -512,7 +512,7 @@ extension Bools on Function(bool) {
   ///   },
   /// )
   /// ```
-  Widget mxCheckbok({
+  Widget xCheckbok({
     /// Whether this checkbox is checked.
     ///
     /// This property must not be null.
@@ -580,7 +580,7 @@ extension Bools on Function(bool) {
     );
   }
 
-  Widget mxRadio({
+  Widget xRadio({
     final bool groupValue,
 
     /// Called when the user selects this radio button.

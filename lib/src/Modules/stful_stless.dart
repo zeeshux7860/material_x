@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:material_x/material_x.dart';
 
 extension StfulStless on Widget {
-  Widget mxMaterialApp({
+  Widget xMaterialApp({
     GlobalKey<NavigatorState> navigatorKey,
     Key key,
     Map<String, Widget Function(BuildContext)> routes =
@@ -62,7 +62,7 @@ extension StfulStless on Widget {
   }
 
   // image blur
-  Widget mxFloationActiobButton(
+  Widget xFloationActiobButton(
       {bool autofocus = false,
       Clip clipBehavior = Clip.none,
       Color color,
@@ -116,7 +116,7 @@ extension StfulStless on Widget {
         child: this);
   }
 
-  Widget mxIconButton({
+  Widget xIconButton({
     Key key,
 
     /// The size of the icon inside the button.
@@ -262,7 +262,7 @@ extension StfulStless on Widget {
 }
 
 extension ComponentsIconData on IconData {
-  Widget mxIconTile({double size = 15, Color color = Colors.white}) {
+  Widget xIconTile({double size = 15, Color color = Colors.white}) {
     return new Icon(
       this,
       size: size,
@@ -270,7 +270,7 @@ extension ComponentsIconData on IconData {
     );
   }
 
-  Widget mxIconActive(
+  Widget xIconActive(
       {double size = 15,
       Color color = Colors.grey,
       Color activeColor = Colors.red,
@@ -282,7 +282,7 @@ extension ComponentsIconData on IconData {
     );
   }
 
-  Icon mxIcon(
+  Icon xIcon(
       {double size = 15,
       Color color = Colors.grey,
       Color activeColor = Colors.red,
@@ -294,7 +294,7 @@ extension ComponentsIconData on IconData {
     );
   }
 
-  Icon mxIcons({
+  Icon xIcons({
     double size,
     Color color,
   }) {
@@ -305,7 +305,7 @@ extension ComponentsIconData on IconData {
     );
   }
 
-  Widget mxIconWidget(
+  Widget xIconWidget(
       {double size = 15,
       Color color = Colors.grey,
       Color activeColor = Colors.red,
@@ -317,7 +317,7 @@ extension ComponentsIconData on IconData {
     );
   }
 
-  Widget mxIconBadge({
+  Widget xIconBadge({
     Function onPressed,
     int badgeValue = 0,
     Color iconColor,
@@ -352,7 +352,7 @@ extension ComponentsIconData on IconData {
     );
   }
 
-  Widget mxListTileIcon(
+  Widget xListTileIcon(
       {double size = 30,
       Function onTap,
       Color color = Colors.red,
@@ -371,7 +371,7 @@ extension ComponentsIconData on IconData {
         ).toCenter());
   }
 
-  Widget mxTransactionTileIcon(
+  Widget xTransactionTileIcon(
       {double size = 30,
       Function onTap,
       Color color = Colors.red,
@@ -425,8 +425,7 @@ extension Lableicon on Widget {
       shadowColor: shadowColor,
       spreadRadius: spreadRadius,
       width: width,
-      child:
-          <Widget>[this.mxap(value: 5), 10.0.sizedHeight(), lable].mxcolumn(),
+      child: <Widget>[this.xap(value: 5), 10.0.sizedHeight(), lable].xcolumn(),
     );
   }
 }

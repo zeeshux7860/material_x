@@ -1,7 +1,7 @@
 import 'package:material_x/material_x.dart';
 
 extension AniamtedMx on Widget Function(BuildContext, int, Animation<double>) {
-  Widget mxGridAnimated({
+  Widget xGridAnimated({
     /// Start animation after (default zero)
     final Duration delay = Duration.zero,
 
@@ -177,7 +177,7 @@ extension AniamtedMx on Widget Function(BuildContext, int, Animation<double>) {
   }
 }
 
-SliverGridDelegate mxSGDWFCC(
+SliverGridDelegate xSGDWFCC(
     {int crossAxisCount,
     double crossAxisSpacing = 0.0,
     double mainAxisSpacing = 0.0,
@@ -191,7 +191,7 @@ SliverGridDelegate mxSGDWFCC(
 }
 
 extension ZMx on Function(BuildContext, int, Animation<double>) {
-  Widget mxlbAnimated({
+  Widget xlbAnimated({
     bool shrinkWrap = false,
     ScrollPhysics physics,
     Duration showItemInterval = const Duration(milliseconds: 150),

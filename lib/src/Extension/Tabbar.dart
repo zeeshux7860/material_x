@@ -2,7 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:material_x/material_x.dart';
 
 extension MxTabbars on Widget {
-  Widget mxDTController({int length, int initialIndex = 0}) {
+  Widget xDTController({int length, int initialIndex = 0}) {
     return DefaultTabController(
         initialIndex: initialIndex, length: length, child: this);
   }
@@ -13,7 +13,7 @@ extension MxTabbars on Widget {
 /// The length of this list must match the [controller]'s [TabController.length]
 /// and the length of the [TabBarView.children] list.
 extension MxTabBarss on List<Widget> {
-  Widget mxTabBar(
+  Widget xTabBar(
       {TabController controller,
 
       /// Whether this tab bar can be scrolled horizontally.
@@ -150,7 +150,7 @@ extension MxTabBarss on List<Widget> {
     );
   }
 
-  Widget mxTabBarView(
+  Widget xTabBarView(
       {TabController controller,
       DragStartBehavior dragStartBehavior = DragStartBehavior.start,
       Key key,
@@ -168,7 +168,7 @@ extension MxTabBarss on List<Widget> {
 extension MxBottomNavigationBar on List<BottomNavigationBarItem> {
   /// Defines the appearance of the button items that are arrayed within the
   /// bottom navigation bar.
-  Widget mxBottomNavigationBar({
+  Widget xBottomNavigationBar({
     /// Called when one of the [items] is tapped.
     ///
     /// The stateful widget that creates the bottom navigation bar needs to keep

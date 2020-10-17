@@ -18,11 +18,11 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
         bgColor: Colors.black,
         spaceHeight: 10.0,
         child: Icons.ac_unit
-            .mxIcon(color: Colors.black, size: 25.0)
+            .xIcon(color: Colors.black, size: 25.0)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 30.0),
         // title: "Text".text(),
         value: '105.0'.h2TextBold(color: Colors.white),
-      ).mxFlexableRes(350.0 <= value),
+      ).xFlexableRes(350.0 <= value),
       20.0.sizedHeight(),
       MxCustomStatic(
         onTap: () {},
@@ -31,11 +31,11 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
         bgColor: Colors.black,
         spaceHeight: 10.0,
         child: Icons.ac_unit
-            .mxIcon(color: Colors.black, size: 25.0)
+            .xIcon(color: Colors.black, size: 25.0)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 30.0),
         // title: "Text".text(),
         value: '105.0'.h2TextBold(color: Colors.white),
-      ).mxFlexableRes(350.0 <= value),
+      ).xFlexableRes(350.0 <= value),
       20.0.sizedHeight(),
       MxCustomStatic(
         onTap: () {},
@@ -44,16 +44,16 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
         bgColor: Colors.black,
         spaceHeight: 10.0,
         child: Icons.ac_unit
-            .mxIcon(color: Colors.black, size: 25.0)
+            .xIcon(color: Colors.black, size: 25.0)
             .xCircleAvatar(backgroundColor: Colors.white, radius: 30.0),
         // title: "Text".text(),
         value: '105.0'.h2TextBold(color: Colors.white),
-      ).mxFlexableRes(350.0 <= value)
+      ).xFlexableRes(350.0 <= value)
     ];
     return <Widget>[
       350.0 <= value
-          ? menu.mxRowSSB().mxap(value: 20.0).fadeIn()
-          : menu.mxcolumn().fadeInLeft().mxContainer(
+          ? menu.xRowSSB().xap(value: 20.0).fadeIn()
+          : menu.xcolumn().fadeInLeft().xContainer(
                 width: value,
               ),
       Slider(
@@ -64,9 +64,9 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
               value = v;
             });
           })
-    ].mxcolumnCC().mxScaffold(
+    ].xcolumnCC().xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'Column & Row Responsive'.textMaterialColorBlack().mxAppBar(
+        appBar: 'Column & Row Responsive'.textMaterialColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

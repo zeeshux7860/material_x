@@ -9,7 +9,7 @@ import 'package:material_x/material_x.dart';
 /// [disabledHint] is also null but [hint] is non-null, [hint] will instead
 /// be displayed.
 extension MxDropDown on List<DropdownMenuItem> {
-  Widget mxDropDown({
+  Widget xDropDown({
     /// The value of the currently selected [DropdownMenuItem].
     ///
     /// If [value] is null and [hint] is non-null, the [hint] widget is

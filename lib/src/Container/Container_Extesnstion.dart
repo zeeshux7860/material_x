@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:material_x/material_x.dart';
 
 extension ContainerExtension on Widget {
-  Widget mxContainer({
+  Widget xContainer({
     double width,
     Color color,
     EdgeInsetsGeometry padding,
@@ -38,7 +38,7 @@ extension ContainerExtension on Widget {
     );
   }
 
-  Widget mxContainerGradient({
+  Widget xContainerGradient({
     double width,
     Gradient gradient,
     EdgeInsetsGeometry padding,
@@ -72,7 +72,7 @@ extension ContainerExtension on Widget {
     );
   }
 
-  Widget mxCustomCard({
+  Widget xCustomCard({
     double width,
     Color color = Colors.white,
     EdgeInsetsGeometry padding,

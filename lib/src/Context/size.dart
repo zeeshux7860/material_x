@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 
-double mxheight(context) {
+double xheight(context) {
   return MediaQuery.of(context).size.height;
 }
 
-double mxwidth(context) {
+double xwidth(context) {
   return MediaQuery.of(context).size.width;
 }

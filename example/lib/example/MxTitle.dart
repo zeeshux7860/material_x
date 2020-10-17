@@ -22,18 +22,18 @@ class _ExampleMxTitleState extends State<ExampleMxTitle> {
           title: 'MxTitle',
         ),
         HeaderTitle(
-          title: "HeaderWidget title".mxCardTileTitle(color: Colors.black),
+          title: "HeaderWidget title".xCardTileTitle(color: Colors.black),
           subtitle: "HeaderTitle suvtitle".textMaterialColorblueGrey(),
         ),
         HeaderTitle(
           title: <Widget>[
-            Icons.add.mxIconTile(color: Colors.red, size: 30),
+            Icons.add.xIconTile(color: Colors.red, size: 30),
             10.0.sizedWidth(),
             "Row use ".h1TextBold(color: Colors.black)
-          ].mxRow(),
+          ].xRow(),
           subtitle: "HeaderTitle suvtitle".textMaterialColorblueGrey(),
         ),
-      ].mxcolumnCC(),
+      ].xcolumnCC(),
     );
   }
 }

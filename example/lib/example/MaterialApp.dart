@@ -7,7 +7,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MyHomePage().mxMaterialApp();
+    return MyHomePage().xMaterialApp();
   }
 }
 

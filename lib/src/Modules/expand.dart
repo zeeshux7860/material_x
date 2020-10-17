@@ -33,13 +33,13 @@ class _ExpandableTextState extends State<ExpandableText>
                   : new BoxConstraints(maxHeight: widget.heightunexpand),
               child: widget.text)),
       isExpanded
-          ? widget.unexpand.mxFlatButton(onPressed: () {
+          ? widget.unexpand.xFlatButton(onPressed: () {
               setState(() => isExpanded = false);
             })
-          : widget.expand.mxFlatButton(onPressed: () {
+          : widget.expand.xFlatButton(onPressed: () {
               setState(() => isExpanded = true);
             })
-    ].mxcolumn(
+    ].xcolumn(
         crossAxisAlignment: widget.crossAxisAlignment,
         mainAxisAlignment: widget.mainAxisAlignment);
   }
