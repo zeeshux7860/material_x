@@ -1,37 +1,37 @@
 import 'package:material_x/material_x.dart';
 
-MxRow xRow = MxRow();
-MxRowSS xRowSS = MxRowSS();
-MxRowBS xRowBS = MxRowBS();
-MxRowCC xRowCC = MxRowCC();
-MxRowES xRowES = MxRowES();
-MxRowSTS xRowSTS = MxRowSTS();
-MxRowSTC xRowSTC = MxRowSTC();
-MxRowSC xRowSC = MxRowSC();
-MxRowEC xRowEC = MxRowEC();
-MxRowBC xRowBC = MxRowBC();
-MxRowSTE xRowSTE = MxRowSTE();
-MxRowSE xRowSE = MxRowSE();
-MxRowEE xRowEE = MxRowEE();
-MxRowCE xRowCE = MxRowCE();
-MxRowBE xRowBE = MxRowBE();
-MxRowSTSA xRowSTSA = MxRowSTSA();
-MxRowSSA xRowSSA = MxRowSSA();
-MxRowESA xRowESA = MxRowESA();
-MxRowCSA xRowCSA = MxRowCSA();
-MxRowBSA xRowBSA = MxRowBSA();
-MxRowSTSB xRowSTSB = MxRowSTSB();
-MxRowSSB xRowSSB = MxRowSSB();
-MxRowESB xRowESB = MxRowESB();
-MxRowCSB xRowCSB = MxRowCSB();
-MxRowBSB xRowBSB = MxRowBSB();
-MxRowSTSE xRowSTSE = MxRowSTSE();
-MxRowSSE xRowSSE = MxRowSSE();
-MxRowESE xRowESE = MxRowESE();
-MxRowCSE xRowCSE = MxRowCSE();
-MxRowBSE xRowBSE = MxRowBSE();
+XRow xRow = XRow();
+XRowSS xRowSS = XRowSS();
+XRowBS xRowBS = XRowBS();
+XRowCC xRowCC = XRowCC();
+XRowES xRowES = XRowES();
+XRowSTS xRowSTS = XRowSTS();
+XRowSTC xRowSTC = XRowSTC();
+XRowSC xRowSC = XRowSC();
+XRowEC xRowEC = XRowEC();
+XRowBC xRowBC = XRowBC();
+XRowSTE xRowSTE = XRowSTE();
+XRowSE xRowSE = XRowSE();
+XRowEE xRowEE = XRowEE();
+XRowCE xRowCE = XRowCE();
+XRowBE xRowBE = XRowBE();
+XRowSTSA xRowSTSA = XRowSTSA();
+XRowSSA xRowSSA = XRowSSA();
+XRowESA xRowESA = XRowESA();
+XRowCSA xRowCSA = XRowCSA();
+XRowBSA xRowBSA = XRowBSA();
+XRowSTSB xRowSTSB = XRowSTSB();
+XRowSSB xRowSSB = XRowSSB();
+XRowESB xRowESB = XRowESB();
+XRowCSB xRowCSB = XRowCSB();
+XRowBSB xRowBSB = XRowBSB();
+XRowSTSE xRowSTSE = XRowSTSE();
+XRowSSE xRowSSE = XRowSSE();
+XRowESE xRowESE = XRowESE();
+XRowCSE xRowCSE = XRowCSE();
+XRowBSE xRowBSE = XRowBSE();
 
-class MxRow {
+class XRow {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
@@ -40,7 +40,7 @@ class MxRow {
   final CrossAxisAlignment crossAxisAlignment;
   final MainAxisAlignment mainAxisAlignment;
 
-  MxRow(
+  XRow(
       {this.key,
       this.textBaseline,
       this.textDirection,
@@ -60,14 +60,14 @@ class MxRow {
   }
 }
 
-class MxRowCC {
+class XRowCC {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowCC({
+  XRowCC({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -86,14 +86,14 @@ class MxRowCC {
   }
 }
 
-class MxRowSS {
+class XRowSS {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowSS({
+  XRowSS({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -112,14 +112,14 @@ class MxRowSS {
   }
 }
 
-class MxRowSSB {
+class XRowSSB {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowSSB({
+  XRowSSB({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -138,14 +138,14 @@ class MxRowSSB {
   }
 }
 
-class MxRowBS {
+class XRowBS {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowBS({
+  XRowBS({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -164,14 +164,14 @@ class MxRowBS {
   }
 }
 
-class MxRowES {
+class XRowES {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowES({
+  XRowES({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -190,14 +190,14 @@ class MxRowES {
   }
 }
 
-class MxRowSTS {
+class XRowSTS {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowSTS({
+  XRowSTS({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -216,14 +216,14 @@ class MxRowSTS {
   }
 }
 
-class MxRowSTC {
+class XRowSTC {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowSTC({
+  XRowSTC({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -242,14 +242,14 @@ class MxRowSTC {
   }
 }
 
-class MxRowSC {
+class XRowSC {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowSC({
+  XRowSC({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -268,14 +268,14 @@ class MxRowSC {
   }
 }
 
-class MxRowEC {
+class XRowEC {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowEC({
+  XRowEC({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -294,14 +294,14 @@ class MxRowEC {
   }
 }
 
-class MxRowBC {
+class XRowBC {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowBC({
+  XRowBC({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -320,14 +320,14 @@ class MxRowBC {
   }
 }
 
-class MxRowSTE {
+class XRowSTE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowSTE({
+  XRowSTE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -346,14 +346,14 @@ class MxRowSTE {
   }
 }
 
-class MxRowSE {
+class XRowSE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowSE({
+  XRowSE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -372,14 +372,14 @@ class MxRowSE {
   }
 }
 
-class MxRowEE {
+class XRowEE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowEE({
+  XRowEE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -398,14 +398,14 @@ class MxRowEE {
   }
 }
 
-class MxRowCE {
+class XRowCE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowCE({
+  XRowCE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -424,14 +424,14 @@ class MxRowCE {
   }
 }
 
-class MxRowBE {
+class XRowBE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowBE({
+  XRowBE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -450,14 +450,14 @@ class MxRowBE {
   }
 }
 
-class MxRowSTSA {
+class XRowSTSA {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowSTSA({
+  XRowSTSA({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -476,14 +476,14 @@ class MxRowSTSA {
   }
 }
 
-class MxRowSSA {
+class XRowSSA {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowSSA({
+  XRowSSA({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -502,14 +502,14 @@ class MxRowSSA {
   }
 }
 
-class MxRowESA {
+class XRowESA {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowESA({
+  XRowESA({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -528,14 +528,14 @@ class MxRowESA {
   }
 }
 
-class MxRowCSA {
+class XRowCSA {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowCSA({
+  XRowCSA({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -554,14 +554,14 @@ class MxRowCSA {
   }
 }
 
-class MxRowBSA {
+class XRowBSA {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowBSA({
+  XRowBSA({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -580,14 +580,14 @@ class MxRowBSA {
   }
 }
 
-class MxRowSTSB {
+class XRowSTSB {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowSTSB({
+  XRowSTSB({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -606,14 +606,14 @@ class MxRowSTSB {
   }
 }
 
-class MxRowESB {
+class XRowESB {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowESB({
+  XRowESB({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -632,14 +632,14 @@ class MxRowESB {
   }
 }
 
-class MxRowCSB {
+class XRowCSB {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowCSB({
+  XRowCSB({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -658,14 +658,14 @@ class MxRowCSB {
   }
 }
 
-class MxRowBSB {
+class XRowBSB {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowBSB({
+  XRowBSB({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -684,14 +684,14 @@ class MxRowBSB {
   }
 }
 
-class MxRowSTSE {
+class XRowSTSE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowSTSE({
+  XRowSTSE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -710,14 +710,14 @@ class MxRowSTSE {
   }
 }
 
-class MxRowSSE {
+class XRowSSE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowSSE({
+  XRowSSE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -736,14 +736,14 @@ class MxRowSSE {
   }
 }
 
-class MxRowESE {
+class XRowESE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowESE({
+  XRowESE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -762,14 +762,14 @@ class MxRowESE {
   }
 }
 
-class MxRowCSE {
+class XRowCSE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowCSE({
+  XRowCSE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -788,14 +788,14 @@ class MxRowCSE {
   }
 }
 
-class MxRowBSE {
+class XRowBSE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxRowBSE({
+  XRowBSE({
     this.key,
     this.textBaseline,
     this.textDirection,

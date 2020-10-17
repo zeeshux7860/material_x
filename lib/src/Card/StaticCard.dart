@@ -1,6 +1,6 @@
 import 'package:material_x/material_x.dart';
 
-class MxStaticCard extends StatelessWidget {
+class XStaticCard extends StatelessWidget {
   final double width;
   final IconData icon;
   final Widget title;
@@ -14,7 +14,7 @@ class MxStaticCard extends StatelessWidget {
   final Color cicleColor;
   final EdgeInsetsGeometry margin;
   final Color bgColor;
-  const MxStaticCard(
+  const XStaticCard(
       {Key key,
       this.width,
       this.padding,
@@ -82,7 +82,7 @@ class MxStaticCard extends StatelessWidget {
   }
 }
 
-class MxCustomStatic extends StatelessWidget {
+class XCustomStatic extends StatelessWidget {
   final double width;
   final Widget title;
   final Widget value;
@@ -94,7 +94,7 @@ class MxCustomStatic extends StatelessWidget {
   final double spaceHeight;
   final Color bgColor;
   final Widget child;
-  const MxCustomStatic(
+  const XCustomStatic(
       {Key key,
       this.width,
       this.boxShadow,

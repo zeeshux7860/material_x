@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_x/material_x.dart';
 
-class MxTransactiontTile extends StatelessWidget {
+class XTransactiontTile extends StatelessWidget {
   final Function onTap;
   final Widget leading;
   final Widget subtitle;
@@ -9,7 +9,7 @@ class MxTransactiontTile extends StatelessWidget {
   final Widget trailing1;
   final Widget trailing2;
   final Widget title;
-  const MxTransactiontTile(
+  const XTransactiontTile(
       {Key key,
       this.onTap,
       this.leading,
@@ -23,7 +23,7 @@ class MxTransactiontTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       onTap: () {
-        //  MxRoutePage(context, Drawer()).materialPagePush();
+        //  XRoutePage(context, Drawer()).materialPagePush();
       },
       leading: leading,
       title: title,

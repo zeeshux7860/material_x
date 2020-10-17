@@ -27,7 +27,7 @@ class CardBarButton extends StatelessWidget {
       : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MxContainer(
+    return XContainer(
       rounded: roundedCorner,
       height: height,
       width: width,

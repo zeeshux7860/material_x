@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class xEnterExitRoute extends PageRouteBuilder {
+class XEnterExitRoute extends PageRouteBuilder {
   final Widget enterPage;
   final Widget exitPage;
-  xEnterExitRoute({this.exitPage, this.enterPage})
+  XEnterExitRoute({this.exitPage, this.enterPage})
       : super(
           pageBuilder: (
             BuildContext context,

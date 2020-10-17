@@ -1,6 +1,6 @@
 import 'package:animated_interpolation/fading.dart';
 
-enum MxAnimationType {
+enum XAnimationType {
   fadeIn,
   fadeOut,
   fadeInDown,
@@ -23,58 +23,58 @@ enum MxAnimationType {
 
 animationValue(value) {
   switch (value) {
-    case MxAnimationType.fadeIn:
+    case XAnimationType.fadeIn:
       return fadeIn;
       break;
-    case MxAnimationType.fadeOut:
+    case XAnimationType.fadeOut:
       return fadeOut;
       break;
-    case MxAnimationType.fadeInDown:
+    case XAnimationType.fadeInDown:
       return fadeInDown;
       break;
-    case MxAnimationType.fadeInUp:
+    case XAnimationType.fadeInUp:
       return fadeInUp;
       break;
-    case MxAnimationType.fadeInLeft:
+    case XAnimationType.fadeInLeft:
       return fadeInLeft;
       break;
-    case MxAnimationType.fadeInRight:
+    case XAnimationType.fadeInRight:
       return fadeInRight;
       break;
-    case MxAnimationType.fadeInDownBig:
+    case XAnimationType.fadeInDownBig:
       return fadeInDownBig;
       break;
-    case MxAnimationType.fadeInUpBig:
+    case XAnimationType.fadeInUpBig:
       return fadeInUpBig;
       break;
-    case MxAnimationType.fadeInLeftBig:
+    case XAnimationType.fadeInLeftBig:
       return fadeInLeftBig;
       break;
-    case MxAnimationType.fadeInRightBig:
+    case XAnimationType.fadeInRightBig:
       return fadeInRightBig;
       break;
-    case MxAnimationType.fadeOutUp:
+    case XAnimationType.fadeOutUp:
       return fadeOutUp;
       break;
-    case MxAnimationType.fadeOutLeft:
+    case XAnimationType.fadeOutLeft:
       return fadeOutLeft;
       break;
-    case MxAnimationType.fadeOutRight:
+    case XAnimationType.fadeOutRight:
       return fadeOutRight;
       break;
-    case MxAnimationType.fadeOutDownBig:
+    case XAnimationType.fadeOutDownBig:
       return fadeOutDownBig;
       break;
-    case MxAnimationType.fadeOutRight:
+    case XAnimationType.fadeOutRight:
       return fadeOutRight;
       break;
-    case MxAnimationType.fadeOutUpBig:
+    case XAnimationType.fadeOutUpBig:
       return fadeOutUpBig;
       break;
-    case MxAnimationType.fadeOutLeftBig:
+    case XAnimationType.fadeOutLeftBig:
       return fadeOutLeftBig;
       break;
-    case MxAnimationType.fadeOutRightBig:
+    case XAnimationType.fadeOutRightBig:
       return fadeOutRightBig;
       break;
 

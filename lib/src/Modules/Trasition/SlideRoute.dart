@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class xRightRoute extends PageRouteBuilder {
+class XRightRoute extends PageRouteBuilder {
   final Widget page;
-  xRightRoute({this.page})
+  XRightRoute({this.page})
       : super(
           pageBuilder: (
             BuildContext context,
@@ -26,9 +26,9 @@ class xRightRoute extends PageRouteBuilder {
         );
 }
 
-class xLeftRoute extends PageRouteBuilder {
+class XLeftRoute extends PageRouteBuilder {
   final Widget page;
-  xLeftRoute({this.page})
+  XLeftRoute({this.page})
       : super(
           pageBuilder: (
             BuildContext context,
@@ -52,9 +52,9 @@ class xLeftRoute extends PageRouteBuilder {
         );
 }
 
-class xTopRoute extends PageRouteBuilder {
+class XTopRoute extends PageRouteBuilder {
   final Widget page;
-  xTopRoute({this.page})
+  XTopRoute({this.page})
       : super(
           pageBuilder: (
             BuildContext context,
@@ -78,9 +78,9 @@ class xTopRoute extends PageRouteBuilder {
         );
 }
 
-class xBottomRoute extends PageRouteBuilder {
+class XBottomRoute extends PageRouteBuilder {
   final Widget page;
-  xBottomRoute({this.page})
+  XBottomRoute({this.page})
       : super(
           pageBuilder: (
             BuildContext context,

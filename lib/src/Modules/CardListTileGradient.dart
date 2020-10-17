@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_x/src/Container/GradientContainer.dart';
 
-class MxCardListTileGradient extends StatelessWidget {
+class XCardListTileGradient extends StatelessWidget {
   final double width;
   final Widget title;
   final Widget subTitle;
@@ -12,7 +12,7 @@ class MxCardListTileGradient extends StatelessWidget {
   final double blurRadius;
   final double rounded;
   final Widget trailing;
-  const MxCardListTileGradient(
+  const XCardListTileGradient(
       {Key key,
       this.width = 300,
       this.title,
@@ -28,7 +28,7 @@ class MxCardListTileGradient extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MxContainerGradient(
+    return XContainerGradient(
         rounded: rounded,
         width: width,
         onTap: onTap,

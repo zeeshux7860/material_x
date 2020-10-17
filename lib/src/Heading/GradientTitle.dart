@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_x/material_x.dart';
 
-class MxHeaderGradient extends StatelessWidget {
+class XHeaderGradient extends StatelessWidget {
   final double rounded;
   final double blurRadius;
   final Offset offset;
@@ -10,7 +10,7 @@ class MxHeaderGradient extends StatelessWidget {
   final Gradient gradient;
   final Widget child;
   final Function onTap;
-  const MxHeaderGradient({
+  const XHeaderGradient({
     Key key,
     this.rounded = 5,
     this.blurRadius = 12,
@@ -28,7 +28,7 @@ class MxHeaderGradient extends StatelessWidget {
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MxContainerGradient(
+    return XContainerGradient(
         onTap: onTap,
         rounded: rounded,
         blurRadius: blurRadius,

@@ -8,7 +8,7 @@ import 'package:material_x/material_x.dart';
 /// will display the [disabledHint] widget if it is non-null. If
 /// [disabledHint] is also null but [hint] is non-null, [hint] will instead
 /// be displayed.
-extension MxDropDown on List<DropdownMenuItem> {
+extension XDropDown on List<DropdownMenuItem> {
   Widget xDropDown({
     /// The value of the currently selected [DropdownMenuItem].
     ///

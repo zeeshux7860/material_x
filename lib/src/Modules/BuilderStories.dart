@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:material_x/src/Container/Container.dart';
 import 'package:material_x/src/Modules/StoriesBar.dart';
 
-class MxStoriesBuilder extends StatelessWidget {
+class XStoriesBuilder extends StatelessWidget {
   final Color addCircleColor;
   final String addText;
   final FontWeight addtextFontWeight;
@@ -17,7 +17,7 @@ class MxStoriesBuilder extends StatelessWidget {
   final Function addOnTap;
   final Widget Function(BuildContext, int) itemBuilder;
 
-  const MxStoriesBuilder(
+  const XStoriesBuilder(
       {Key key,
       this.addCircleColor,
       @required this.addText,
@@ -35,13 +35,13 @@ class MxStoriesBuilder extends StatelessWidget {
       : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return new MxContainer(
+    return new XContainer(
         height: backGroundHeight,
         color: backGroundColor,
         child: new ListView(
           scrollDirection: Axis.horizontal,
           children: <Widget>[
-            MxStorieBar(
+            XStorieBar(
                 onTap: addOnTap,
                 verticalSpace: 10,
                 circleRadius: 25,

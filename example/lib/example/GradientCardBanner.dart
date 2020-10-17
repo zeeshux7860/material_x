@@ -4,7 +4,7 @@ class ExampleGradientCardBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      MxGradientCardBanner(
+      XGradientCardBanner(
               gradient: [Colors.orange, Colors.pink].xLGrepeated(
                   begin: Alignment.topLeft, end: Alignment.bottomLeft),
               shadowColor: Colors.pink,
@@ -17,7 +17,7 @@ class ExampleGradientCardBanner extends StatelessWidget {
                   onTap: () {}, rounded: 5.0, buttonColor: Colors.black))
           .xap(value: 20.0),
       20.0.sizedHeight(),
-      MxGradientCardBanner(
+      XGradientCardBanner(
         gradient: [Colors.cyan, Colors.indigo].xLGrepeated(
           begin: Alignment.topLeft,
           end: Alignment(0.7, 0.0),
@@ -34,10 +34,10 @@ class ExampleGradientCardBanner extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start),
       )
-          .animation(configMap: MxAnimationType.fadeIn, autoPlay: true)
+          .animation(configMap: XAnimationType.fadeIn, autoPlay: true)
           .xlrp(l: 20.0, r: 20.0),
       20.0.sizedHeight(),
-      MxGradientCardBanner(
+      XGradientCardBanner(
               onTap: () {},
               spreadRadius: 0.2,
               rightSideChild: CircleAvatar(
@@ -69,11 +69,11 @@ class ExampleGradientCardBanner extends StatelessWidget {
               button: 'know more'
                   .textMaterialColorWhite()
                   .cardBannerButton(onTap: () {}))
-          .animation(configMap: MxAnimationType.fadeIn, autoPlay: true)
+          .animation(configMap: XAnimationType.fadeIn, autoPlay: true)
           .xap(value: 20.0),
     ].xListView().xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'MxGradientCardBanner'.textMaterialColorBlack().xAppBar(
+        appBar: 'XGradientCardBanner'.textMaterialColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

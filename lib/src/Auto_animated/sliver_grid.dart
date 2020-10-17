@@ -8,8 +8,8 @@ import 'helpers/utils.dart' as utils;
 
 const Duration _kDuration = Duration(milliseconds: 250);
 
-class MxSliverGrid extends StatefulWidget {
-  const MxSliverGrid({
+class XSliverGrid extends StatefulWidget {
+  const XSliverGrid({
     @required this.itemBuilder,
     @required this.gridDelegate,
     @required this.itemCount,
@@ -24,7 +24,7 @@ class MxSliverGrid extends StatefulWidget {
         assert(itemCount != null && itemCount >= 0),
         super(key: key);
 
-  MxSliverGrid.options({
+  XSliverGrid.options({
     @required this.itemBuilder,
     @required this.gridDelegate,
     @required this.itemCount,
@@ -85,11 +85,11 @@ class MxSliverGrid extends StatefulWidget {
   final SliverGridDelegate gridDelegate;
 
   @override
-  _MxSliverGridState createState() => _MxSliverGridState();
+  _XSliverGridState createState() => _XSliverGridState();
 }
 
-class _MxSliverGridState extends State<MxSliverGrid>
-    with TickerProviderStateMixin<MxSliverGrid> {
+class _XSliverGridState extends State<XSliverGrid>
+    with TickerProviderStateMixin<XSliverGrid> {
   final String _keyPrefix = utils.createCryptoRandomString();
 
   Widget _itemBuilder(BuildContext context, int itemIndex) => AnimateIfVisible(

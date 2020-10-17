@@ -6,7 +6,7 @@ class ExampleAnimation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: 'Demo MxMaterialApp'.textMaterialColorWhite(),
+        title: 'Demo XMaterialApp'.textMaterialColorWhite(),
       ),
       body: <Widget>[
         "FadeIn"

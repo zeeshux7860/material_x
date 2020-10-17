@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MxContainerGradient extends StatelessWidget {
+class XContainerGradient extends StatelessWidget {
   final double width;
   final Gradient gradient;
   final EdgeInsetsGeometry padding;
@@ -15,7 +15,7 @@ class MxContainerGradient extends StatelessWidget {
   final Function onTap;
   final EdgeInsetsGeometry margin;
   final BorderRadiusGeometry borderRadius;
-  const MxContainerGradient(
+  const XContainerGradient(
       {Key key,
       this.height,
       this.width,

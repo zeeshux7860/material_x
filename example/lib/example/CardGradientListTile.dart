@@ -4,7 +4,7 @@ class ExampleCardGradientListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      MxCardListTileGradient(
+      XCardListTileGradient(
               trailing: "10min ago".textMaterialColorWhite(),
               blurRadius: 20,
               rounded: 10,
@@ -19,7 +19,7 @@ class ExampleCardGradientListTile extends StatelessWidget {
                 Colors.cyan
               ].xLGrepeated(begin: Alignment.topLeft, end: Alignment.topRight))
           .xap(value: 20.0),
-      MxCardListTileGradient(
+      XCardListTileGradient(
               rounded: 10.0,
               leading: Icons.ac_unit.xListTileIcon(color: Colors.white),
               title: "Testing".textMaterialColorWhite(),
@@ -28,7 +28,7 @@ class ExampleCardGradientListTile extends StatelessWidget {
               gradient: [Colors.pink, Colors.deepOrange].xLGrepeated(
                   begin: Alignment.topLeft, end: Alignment.bottomRight))
           .xap(value: 20.0),
-      MxCardListTileGradient(
+      XCardListTileGradient(
               leading: Icons.ac_unit.xListTileIcon(color: Colors.white),
               title: "Testing".textMaterialColorWhite(),
               subTitle:
@@ -39,7 +39,7 @@ class ExampleCardGradientListTile extends StatelessWidget {
           .xap(value: 20.0),
     ].xListView().xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'MxCardListTileGradient'.textMaterialColorBlack().xAppBar(
+        appBar: 'XCardListTileGradient'.textMaterialColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,

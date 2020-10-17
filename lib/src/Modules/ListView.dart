@@ -1,15 +1,15 @@
 import 'package:flutter/gestures.dart';
 import 'package:material_x/material_x.dart';
 
-MxListView xListView = MxListView();
-MxListViewHorizontal xListViewHorizontal = MxListViewHorizontal();
-MxListViewHCSP xListViewHCSP = MxListViewHCSP();
-MxListViewHNSP xListViewHNSP = MxListViewHNSP();
-MxListViewVertical xListViewVertical = MxListViewVertical();
-MxListViewVCSP xListViewVCSP = MxListViewVCSP();
-MxListViewVNSP xListViewVNSP = MxListViewVNSP();
+XListView xListView = XListView();
+XListViewHorizontal xListViewHorizontal = XListViewHorizontal();
+XListViewHCSP xListViewHCSP = XListViewHCSP();
+XListViewHNSP xListViewHNSP = XListViewHNSP();
+XListViewVertical xListViewVertical = XListViewVertical();
+XListViewVCSP xListViewVCSP = XListViewVCSP();
+XListViewVNSP xListViewVNSP = XListViewVNSP();
 
-class MxListView {
+class XListView {
   bool addAutomaticKeepAlives;
   bool addRepaintBoundaries;
   bool addSemanticIndexes; //todo
@@ -25,7 +25,7 @@ class MxListView {
   int semanticChildCount;
   Axis scrollDirection;
   bool shrinkWrap;
-  MxListView({
+  XListView({
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
@@ -63,7 +63,7 @@ class MxListView {
   }
 }
 
-class MxListViewHorizontal {
+class XListViewHorizontal {
   bool addAutomaticKeepAlives;
   bool addRepaintBoundaries;
   bool addSemanticIndexes; //todo
@@ -78,7 +78,7 @@ class MxListViewHorizontal {
   bool reverse;
   int semanticChildCount;
   bool shrinkWrap;
-  MxListViewHorizontal({
+  XListViewHorizontal({
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
@@ -114,7 +114,7 @@ class MxListViewHorizontal {
   }
 }
 
-class MxListViewHCSP {
+class XListViewHCSP {
   bool addAutomaticKeepAlives;
   bool addRepaintBoundaries;
   bool addSemanticIndexes; //todo
@@ -128,7 +128,7 @@ class MxListViewHCSP {
   bool reverse;
   int semanticChildCount;
 
-  MxListViewHCSP({
+  XListViewHCSP({
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
@@ -160,7 +160,7 @@ class MxListViewHCSP {
   }
 }
 
-class MxListViewHNSP {
+class XListViewHNSP {
   bool addAutomaticKeepAlives;
   bool addRepaintBoundaries;
   bool addSemanticIndexes; //todo
@@ -174,7 +174,7 @@ class MxListViewHNSP {
   bool reverse;
   int semanticChildCount;
 
-  MxListViewHNSP({
+  XListViewHNSP({
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
@@ -206,7 +206,7 @@ class MxListViewHNSP {
   }
 }
 
-class MxListViewVertical {
+class XListViewVertical {
   bool addAutomaticKeepAlives;
   bool addRepaintBoundaries;
   bool addSemanticIndexes; //todo
@@ -221,7 +221,7 @@ class MxListViewVertical {
   bool reverse;
   int semanticChildCount;
   bool shrinkWrap;
-  MxListViewVertical({
+  XListViewVertical({
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
@@ -257,7 +257,7 @@ class MxListViewVertical {
   }
 }
 
-class MxListViewVCSP {
+class XListViewVCSP {
   bool addAutomaticKeepAlives;
   bool addRepaintBoundaries;
   bool addSemanticIndexes; //todo
@@ -271,7 +271,7 @@ class MxListViewVCSP {
   bool reverse;
   int semanticChildCount;
 
-  MxListViewVCSP({
+  XListViewVCSP({
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
@@ -303,7 +303,7 @@ class MxListViewVCSP {
   }
 }
 
-class MxListViewVNSP {
+class XListViewVNSP {
   bool addAutomaticKeepAlives;
   bool addRepaintBoundaries;
   bool addSemanticIndexes; //todo
@@ -317,7 +317,7 @@ class MxListViewVNSP {
   bool reverse;
   int semanticChildCount;
 
-  MxListViewVNSP({
+  XListViewVNSP({
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,

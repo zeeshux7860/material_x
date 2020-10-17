@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:material_x/src/Text/text_material.dart';
 
-class MxDrawerUserProfileBlur extends StatelessWidget {
+class XDrawerUserProfileBlur extends StatelessWidget {
   final String userName;
   final String userEmail;
   final String photoUrl;
@@ -12,7 +12,7 @@ class MxDrawerUserProfileBlur extends StatelessWidget {
   final double height;
   final double width;
 
-  const MxDrawerUserProfileBlur(
+  const XDrawerUserProfileBlur(
       {Key key,
       @required this.userName,
       @required this.userEmail,

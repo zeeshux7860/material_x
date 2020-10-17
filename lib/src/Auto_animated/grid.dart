@@ -7,8 +7,8 @@ import 'helpers/utils.dart' as utils;
 
 const Duration _kDuration = Duration(milliseconds: 250);
 
-class MxGridAnimated extends StatefulWidget {
-  const MxGridAnimated({
+class XGridAnimated extends StatefulWidget {
+  const XGridAnimated({
     @required this.itemBuilder,
     @required this.gridDelegate,
     @required this.itemCount,
@@ -32,7 +32,7 @@ class MxGridAnimated extends StatefulWidget {
         assert(itemCount != null && itemCount >= 0),
         super(key: key);
 
-  MxGridAnimated.options({
+  XGridAnimated.options({
     @required this.itemBuilder,
     @required this.gridDelegate,
     @required this.itemCount,
@@ -208,11 +208,11 @@ class MxGridAnimated extends StatefulWidget {
   final bool addSemanticIndexes;
 
   @override
-  _MxGridAnimatedViewState createState() => _MxGridAnimatedViewState();
+  _XGridAnimatedViewState createState() => _XGridAnimatedViewState();
 }
 
-class _MxGridAnimatedViewState extends State<MxGridAnimated>
-    with TickerProviderStateMixin<MxGridAnimated> {
+class _XGridAnimatedViewState extends State<XGridAnimated>
+    with TickerProviderStateMixin<XGridAnimated> {
   final String _keyPrefix = utils.createCryptoRandomString();
 
   Widget _itemBuilder(BuildContext context, int itemIndex) => AnimateIfVisible(

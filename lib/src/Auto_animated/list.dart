@@ -16,7 +16,7 @@ const Duration _kDuration = Duration(milliseconds: 150);
 
 /// A scrolling container that animates items
 /// when widget mounted or they are inserted or removed.
-class MxlbAnimated extends StatefulWidget {
+class XlbAnimated extends StatefulWidget {
   /// Creates a fixed-length scrollable linear array of list "items" separated
   /// by list item "separators".
   ///
@@ -37,15 +37,15 @@ class MxlbAnimated extends StatefulWidget {
   /// widget instances when called. Avoid using a builder that returns a
   /// previously-constructed widget; if the list view's children are created in
   /// advance, or all at once when the
-  /// [MxlbAnimated] itself is created, it is more
-  /// efficient to use [new MxlbAnimated].
+  /// [XlbAnimated] itself is created, it is more
+  /// efficient to use [new XlbAnimated].
   ///
   /// {@tool sample}
   ///
   /// This example
   ///
   /// ```dart
-  /// MxlbAnimated(
+  /// XlbAnimated(
   ///   itemCount: 25,
   ///   separatorBuilder: (BuildContext context, int index) => Divider(),
   ///   itemBuilder: (_ context, int index, Animation<double> animation) {
@@ -64,7 +64,7 @@ class MxlbAnimated extends StatefulWidget {
   /// `addSemanticIndexes` argument corresponds to the
   /// [SliverChildBuilderDelegate.addSemanticIndexes] property. None may be
   /// null.
-  const MxlbAnimated({
+  const XlbAnimated({
     @required this.itemBuilder,
     @required this.itemCount,
     this.separatorBuilder,
@@ -108,15 +108,15 @@ class MxlbAnimated extends StatefulWidget {
   /// widget instances when called. Avoid using a builder that returns a
   /// previously-constructed widget; if the list view's children are created in
   /// advance, or all at once when the
-  /// [MxlbAnimated] itself is created, it is more
-  /// efficient to use [new MxlbAnimated].
+  /// [XlbAnimated] itself is created, it is more
+  /// efficient to use [new XlbAnimated].
   ///
   /// {@tool sample}
   ///
   /// This example
   ///
   /// ```dart
-  /// MxlbAnimated.options(
+  /// XlbAnimated.options(
   ///   itemCount: 25,
   ///   option: LiveOptions(
   ///     // Start animation after (default zero)
@@ -145,7 +145,7 @@ class MxlbAnimated extends StatefulWidget {
   /// `addSemanticIndexes` argument corresponds to the
   /// [SliverChildBuilderDelegate.addSemanticIndexes] property. None may be
   /// null.
-  MxlbAnimated.options({
+  XlbAnimated.options({
     @required this.itemBuilder,
     @required this.itemCount,
     @required LiveOptions options,
@@ -290,25 +290,25 @@ class MxlbAnimated extends StatefulWidget {
   final bool addSemanticIndexes;
 
   @override
-  MxlbAnimatedState createState() => MxlbAnimatedState();
+  XlbAnimatedState createState() => XlbAnimatedState();
 }
 
 /// The state for a scrolling container that animates items when they are
 /// inserted or removed.
 ///
 /// An app that needs to insert or remove items in response to an event
-/// can refer to the [MxlbAnimated]'s state with a global key:
+/// can refer to the [XlbAnimated]'s state with a global key:
 ///
 /// ```dart
-/// GlobalKey<MxlbAnimatedState> listKey =
-///    GlobalKey<MxlbAnimatedState>();
+/// GlobalKey<XlbAnimatedState> listKey =
+///    GlobalKey<XlbAnimatedState>();
 /// ...
-/// MxlbAnimated(key: listKey, ...);
+/// XlbAnimated(key: listKey, ...);
 /// ...
 /// listKey.currentState.insert(123);
 /// ```
-class MxlbAnimatedState extends State<MxlbAnimated>
-    with TickerProviderStateMixin<MxlbAnimated> {
+class XlbAnimatedState extends State<XlbAnimated>
+    with TickerProviderStateMixin<XlbAnimated> {
   final String _keyPrefix = utils.createCryptoRandomString();
 
   Widget _itemBuilder(BuildContext context, int itemIndex) => AnimateIfVisible(

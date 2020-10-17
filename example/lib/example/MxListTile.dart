@@ -1,16 +1,16 @@
 import 'package:material_x/material_x.dart';
 
-class ExampleMxListTile extends StatefulWidget {
+class ExampleXListTile extends StatefulWidget {
   @override
-  _ExampleMxListTileState createState() => _ExampleMxListTileState();
+  _ExampleXListTileState createState() => _ExampleXListTileState();
 }
 
-class _ExampleMxListTileState extends State<ExampleMxListTile> {
+class _ExampleXListTileState extends State<ExampleXListTile> {
   bool isActive = true;
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      xListTile(
+      XListTile(
               onTap: () {
                 setState(() {
                   if (isActive) {
@@ -26,7 +26,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               selected: isActive,
               text: "Home")
           .bounce(),
-      xListTile(
+      XListTile(
               onTap: () {
                 setState(() {
                   if (isActive) {
@@ -47,7 +47,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               rounded: 10,
               shadowColor: Colors.grey,
               blurRadius: 12),
-      xListTile(
+      XListTile(
               onTap: () {
                 setState(() {
                   if (isActive) {
@@ -68,7 +68,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               rounded: 10,
               shadowColor: Color(0xFF3d6dfe),
               blurRadius: 12),
-      xListTile(
+      XListTile(
               onTap: () {
                 setState(() {
                   if (isActive) {
@@ -90,7 +90,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               rounded: 10,
               shadowColor: Colors.black,
               blurRadius: 12),
-      xListTile(
+      XListTile(
               subtitle: "Text".textMaterialColorWhite(),
               onTap: () {
                 setState(() {
@@ -116,7 +116,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
               rounded: 10,
               shadowColor: Colors.grey,
               blurRadius: 12),
-      xListTile(
+      XListTile(
               subtitle: "Text".textMaterialColorWhite(),
               onTap: () {
                 setState(() {
@@ -160,7 +160,7 @@ class _ExampleMxListTileState extends State<ExampleMxListTile> {
     ].xcolumnCC().xap(value: 10).xScaffold(
           backgroundColor: Colors.white,
           appBar: new AppBar(
-            title: "xListTile".textMaterialColorBlack(),
+            title: "XListTile".textMaterialColorBlack(),
             brightness: Brightness.light,
             centerTitle: true,
             backgroundColor: Colors.white,

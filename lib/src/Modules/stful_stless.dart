@@ -358,7 +358,7 @@ extension ComponentsIconData on IconData {
       Color color = Colors.red,
       double height = 50,
       double width = 50}) {
-    return MxContainer(
+    return XContainer(
         onTap: onTap,
         width: width,
         height: height,
@@ -378,7 +378,7 @@ extension ComponentsIconData on IconData {
       Color iconcColor = Colors.white,
       double height = 50,
       double width = 50}) {
-    return MxContainer(
+    return XContainer(
         onTap: onTap,
         width: width,
         height: height,
@@ -410,7 +410,7 @@ extension Lableicon on Widget {
     final DecorationImage image,
     final BorderRadiusGeometry borderRadius,
   }) {
-    return MxContainer(
+    return XContainer(
       blurRadius: blurRadius,
       borderRadius: borderRadius,
       color: color,

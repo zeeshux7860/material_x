@@ -1,14 +1,14 @@
 import 'package:flutter/gestures.dart';
 import 'package:material_x/material_x.dart';
 
-// class MxStack {
+// class XStack {
 //   final AlignmentGeometry alignment;
 //   final StackFit fit;
 //   final Key key;
 //   final Overflow overflow;
 //   final TextDirection textDirection;
 
-//   MxStack(
+//   XStack(
 //       {this.alignment, this.fit, this.key, this.overflow, this.textDirection});
 
 //   Widget list(List<Widget> list) {
@@ -22,11 +22,11 @@ import 'package:material_x/material_x.dart';
 //   }
 // }
 
-// MxStack xStack = MxStack();
-MxWrap xWrap = MxWrap();
-MxCustomScrollView xCustomScrollView = MxCustomScrollView();
+// XStack xStack = XStack();
+XWrap xWrap = XWrap();
+XCustomScrollView xCustomScrollView = XCustomScrollView();
 
-class MxCustomScrollView {
+class XCustomScrollView {
   Key key;
   Axis scrollDirection = Axis.vertical;
   bool reverse = false;
@@ -58,7 +58,7 @@ class MxCustomScrollView {
   }
 }
 
-class MxWrap {
+class XWrap {
   /// The direction to use as the main axis.
   ///
   /// For example, if [direction] is [Axis.horizontal], the default, the
@@ -192,7 +192,7 @@ class MxWrap {
   final VerticalDirection verticalDirection;
   final Key key;
 
-  MxWrap(
+  XWrap(
       {this.direction,
       this.alignment,
       this.spacing,

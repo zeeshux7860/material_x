@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MxContainer extends StatelessWidget {
+class XContainer extends StatelessWidget {
   final double width;
   final Color color;
   final EdgeInsetsGeometry padding;
@@ -16,7 +16,7 @@ class MxContainer extends StatelessWidget {
   final DecorationImage image;
   final BorderRadiusGeometry borderRadius;
 
-  const MxContainer(
+  const XContainer(
       {Key key,
       this.height,
       this.width,

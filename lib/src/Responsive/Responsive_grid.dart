@@ -53,10 +53,10 @@ GridType _currentSize(BuildContext context) {
 
 int _totalSegments = 12;
 
-class MxResponsiveGridRow extends StatelessWidget {
+class XResponsiveGridRow extends StatelessWidget {
   final List<ResponsiveGridCol> children;
 
-  MxResponsiveGridRow({@required this.children});
+  XResponsiveGridRow({@required this.children});
 
   @override
   Widget build(BuildContext context) {

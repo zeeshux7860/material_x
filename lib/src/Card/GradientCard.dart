@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_x/material_x.dart';
 
-class MxGradientCardBanner extends StatelessWidget {
+class XGradientCardBanner extends StatelessWidget {
   final Function onTap;
   final Gradient gradient;
   final Color shadowColor;
@@ -15,7 +15,7 @@ class MxGradientCardBanner extends StatelessWidget {
   final Widget button;
   final EdgeInsetsGeometry margin;
 
-  const MxGradientCardBanner(
+  const XGradientCardBanner(
       {Key key,
       this.onTap,
       @required this.gradient,
@@ -32,7 +32,7 @@ class MxGradientCardBanner extends StatelessWidget {
       : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MxContainerGradient(
+    return XContainerGradient(
       margin: margin,
       onTap: onTap,
       rounded: rounded,

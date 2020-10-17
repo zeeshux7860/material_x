@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:material_x/src/Text/text_material.dart';
 
-class MxProgressLoading extends StatelessWidget {
+class XProgressLoading extends StatelessWidget {
   final String progressName;
   final Color progressColor;
   final Color progressBackgroundColor;
   final double progressValue;
   final Color progressNameColor;
 
-  const MxProgressLoading(
+  const XProgressLoading(
       {Key key,
       this.progressName,
       this.progressColor,

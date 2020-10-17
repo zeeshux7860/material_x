@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:material_x/src/Container/Container.dart';
 
-class MxDrawerFullWidth extends StatelessWidget {
+class XDrawerFullWidth extends StatelessWidget {
   final List<Widget> children;
   final Color backgrounCcolor;
 
-  const MxDrawerFullWidth({Key key, this.backgrounCcolor, this.children})
+  const XDrawerFullWidth({Key key, this.backgrounCcolor, this.children})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: MediaQuery.of(context).size.width, //20.0,
       child: Drawer(
-        child: new MxContainer(
+        child: new XContainer(
           color: backgrounCcolor,
           child: new ListView(
             padding: EdgeInsets.only(top: 0.0),

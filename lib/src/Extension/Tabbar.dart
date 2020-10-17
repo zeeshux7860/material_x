@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:material_x/material_x.dart';
 
-extension MxTabbars on Widget {
+extension XTabbars on Widget {
   Widget xDTController({int length, int initialIndex = 0}) {
     return DefaultTabController(
         initialIndex: initialIndex, length: length, child: this);
@@ -12,7 +12,7 @@ extension MxTabbars on Widget {
 ///
 /// The length of this list must match the [controller]'s [TabController.length]
 /// and the length of the [TabBarView.children] list.
-extension MxTabBarss on List<Widget> {
+extension XTabBarss on List<Widget> {
   Widget xTabBar(
       {TabController controller,
 
@@ -165,7 +165,7 @@ extension MxTabBarss on List<Widget> {
   }
 }
 
-extension MxBottomNavigationBar on List<BottomNavigationBarItem> {
+extension XBottomNavigationBar on List<BottomNavigationBarItem> {
   /// Defines the appearance of the button items that are arrayed within the
   /// bottom navigation bar.
   Widget xBottomNavigationBar({

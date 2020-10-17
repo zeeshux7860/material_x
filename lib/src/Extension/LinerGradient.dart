@@ -1,6 +1,6 @@
 import 'package:material_x/material_x.dart';
 
-extension Mxgradient on List {
+extension Xgradient on List {
   Gradient xLG(
       {final List<double> stops,
       final GradientTransform transform,

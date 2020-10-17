@@ -182,7 +182,7 @@ extension Widgets on Widget {
   }
 }
 
-extension AppBarMxs on Widget {
+extension AppBarXs on Widget {
 // AppBar
   PreferredSizeWidget xAppBar(
       {final Widget leading,
@@ -308,7 +308,7 @@ extension FunctionWidget on Widget Function(BuildContext) {
   }
 }
 
-extension StringsMx on String {
+extension StringsX on String {
   Widget text({
     /// The text to display.
     ///
@@ -581,7 +581,7 @@ extension listViewBuilder on Function(BuildContext context, int index) {
 }
 
 /// The child Widget to animate. SlideAnimation
-extension AnimationMxs on Widget {
+extension AnimationXs on Widget {
   Widget xExpandableText(
       {CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center,
       MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
@@ -685,7 +685,7 @@ extension AnimationMxs on Widget {
   }
 }
 
-extension MxButton on Widget {
+extension XButton on Widget {
   /// if u want elavation so pass value more tham 5
   Widget xButton(
       {double elavation,
@@ -709,11 +709,11 @@ extension MxButton on Widget {
 
 extension Win on String {
   Widget xTitle() {
-    return MxTitle(title: this);
+    return XTitle(title: this);
   }
 
   Widget xTFM({TextEditingController controller, bool obscureText}) {
-    return MxContainer(
+    return XContainer(
       padding: EdgeInsets.zero,
       margin: EdgeInsets.all(10.0),
       rounded: 10,
@@ -809,7 +809,7 @@ extension Wins on Widget {
         shadowColor: shadowColor ?? Colors.grey.withOpacity(0.5));
   }
 
-  MxRoutePage xRoutePage(BuildContext context) {
-    return MxRoutePage(context, this);
+  XRoutePage xRoutePage(BuildContext context) {
+    return XRoutePage(context, this);
   }
 }

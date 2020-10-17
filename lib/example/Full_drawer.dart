@@ -7,7 +7,7 @@ class FullDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      drawer: MxDrawerFullWidth(
+      drawer: XDrawerFullWidth(
         backgrounCcolor: Colors.red,
         children: <Widget>[
           new ListTile(
@@ -27,7 +27,7 @@ class FullDrawer extends StatelessWidget {
           ),
           new ListTile(
             onTap: () {
-              MxRoutePage(context, RoundedDrawer()).exitPush(RoundedDrawer());
+              XRoutePage(context, RoundedDrawer()).exitPush(RoundedDrawer());
             },
             leading: new Icon(
               Icons.remove,
@@ -40,7 +40,7 @@ class FullDrawer extends StatelessWidget {
             ),
           ),
         ],
-      ).animation(configMap: MxAnimationType.fadeIn, autoPlay: true),
+      ).animation(configMap: XAnimationType.fadeIn, autoPlay: true),
     );
   }
 }

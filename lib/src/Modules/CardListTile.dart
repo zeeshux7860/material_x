@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_x/src/Container/Container.dart';
 
-class MxCardListTile extends StatelessWidget {
+class XCardListTile extends StatelessWidget {
   final double width;
   final Widget title;
   final Widget subTitle;
@@ -13,7 +13,7 @@ class MxCardListTile extends StatelessWidget {
   final Widget trailing;
   final EdgeInsetsGeometry padding;
   final DecorationImage image;
-  const MxCardListTile(
+  const XCardListTile(
       {Key key,
       this.width,
       this.title,
@@ -29,7 +29,7 @@ class MxCardListTile extends StatelessWidget {
       : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MxContainer(
+    return XContainer(
         image: image,
         padding: padding,
         rounded: rounded,

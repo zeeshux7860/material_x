@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_x/material_x.dart';
 
-class MxCardBanner extends StatelessWidget {
+class XCardBanner extends StatelessWidget {
   final Function onTap;
   final Color color;
   final Color shadowColor;
@@ -15,7 +15,7 @@ class MxCardBanner extends StatelessWidget {
   final Widget button;
   final EdgeInsetsGeometry margin;
 
-  const MxCardBanner(
+  const XCardBanner(
       {Key key,
       this.onTap,
       @required this.color,
@@ -32,7 +32,7 @@ class MxCardBanner extends StatelessWidget {
       : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MxContainer(
+    return XContainer(
       margin: margin,
       onTap: onTap,
       rounded: rounded,

@@ -19,7 +19,7 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
       body: Padding(
           padding: const EdgeInsets.all(10.0),
           child: <Widget>[
-            MxTransactiontTile(
+            XTransactiontTile(
                     onTap: () {},
                     leading: Icons.book.xListTileIcon(color: Colors.purple),
                     title: "Zeeshan".xCardTileTitle(color: Colors.black),
@@ -30,7 +30,7 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                     trailing2: "sep 15 2019".textMaterialColorblueGrey())
                 .fadeInDown(),
             10.0.sizedHeight(),
-            MxTransactiontTile(
+            XTransactiontTile(
                     onTap: () {},
                     leading: Icons.laptop_mac.xTransactionTileIcon(
                       color: Colors.blue,
@@ -45,7 +45,7 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                 .xContainer(color: Colors.white)
                 .fadeInLeft(),
             10.0.sizedHeight(),
-            MxTransactiontTile(
+            XTransactiontTile(
                     onTap: () {},
                     leading:
                         "https://yt3.ggpht.com/a/AGF-l78mULPjAtTZ0U987YPHe5quNFIrNHYlWi9WvA=s900-c-k-c0xffffffff-no-rj-mo"
@@ -60,7 +60,7 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                 .xContainer(color: Colors.white)
                 .fadeInRight(),
             10.0.sizedHeight(),
-            MxTransactiontTile(
+            XTransactiontTile(
                     onTap: () {},
                     leading:
                         "https://yt3.ggpht.com/a/AGF-l78mULPjAtTZ0U987YPHe5quNFIrNHYlWi9WvA=s900-c-k-c0xffffffff-no-rj-mo"
@@ -75,7 +75,7 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                 .xContainer(color: Color(0xFF3d6dfe))
                 .fadeInUp(),
             10.0.sizedHeight(),
-            MxTransactiontTile(
+            XTransactiontTile(
                     leading:
                         "https://yt3.ggpht.com/a/AGF-l78mULPjAtTZ0U987YPHe5quNFIrNHYlWi9WvA=s900-c-k-c0xffffffff-no-rj-mo"
                             .xCircleNetWorkImage(),
@@ -89,7 +89,7 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                 .xContainer(color: Colors.orange, rounded: 10, onTap: () {})
                 .fadeInUp(),
             10.0.sizedHeight(),
-            MxTransactiontTile(
+            XTransactiontTile(
                     leading:
                         "https://yt3.ggpht.com/a/AGF-l78mULPjAtTZ0U987YPHe5quNFIrNHYlWi9WvA=s900-c-k-c0xffffffff-no-rj-mo"
                             .xCircleNetWorkImage(),
@@ -112,7 +112,7 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                 )
                 .fadeInUp(),
             10.0.sizedHeight(),
-            MxTransactiontTile(
+            XTransactiontTile(
                     leading:
                         "https://yt3.ggpht.com/a/AGF-l78mULPjAtTZ0U987YPHe5quNFIrNHYlWi9WvA=s900-c-k-c0xffffffff-no-rj-mo"
                             .xCircleNetWorkImage(),
@@ -133,7 +133,7 @@ class _ExampleTransactionTileState extends State<ExampleTransactionTile> {
                     onTap: () {})
                 .fadeInUp(),
             10.0.sizedHeight(),
-            MxTransactiontTile(
+            XTransactiontTile(
                     leading:
                         "https://yt3.ggpht.com/a/AGF-l78mULPjAtTZ0U987YPHe5quNFIrNHYlWi9WvA=s900-c-k-c0xffffffff-no-rj-mo"
                             .xCircleNetWorkImage(),

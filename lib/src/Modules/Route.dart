@@ -7,14 +7,14 @@ import 'package:material_x/src/Modules/Trasition/RotationRoute.dart';
 import 'package:material_x/src/Modules/Trasition/ScaleRoute.dart';
 import 'package:material_x/src/Modules/Trasition/SlideRoute.dart';
 
-class MxRoutePage {
+class XRoutePage {
   final BuildContext context;
   final Widget child;
 
-  MxRoutePage(this.context, this.child);
+  XRoutePage(this.context, this.child);
 
   sizeTransitionPush() {
-    Navigator.push(context, MxSizeRoute(page: child));
+    Navigator.push(context, XSizeRoute(page: child));
   }
 
   cupertinoPagePush() {
@@ -26,36 +26,36 @@ class MxRoutePage {
   }
 
   slideRightPush() {
-    Navigator.push(context, xRightRoute(page: child));
+    Navigator.push(context, XRightRoute(page: child));
   }
 
   slideLeftPush() {
-    Navigator.push(context, xLeftRoute(page: child));
+    Navigator.push(context, XLeftRoute(page: child));
   }
 
   slideTopPush() {
-    Navigator.push(context, xTopRoute(page: child));
+    Navigator.push(context, XTopRoute(page: child));
   }
 
   slideLBottomPush() {
-    Navigator.push(context, xBottomRoute(page: child));
+    Navigator.push(context, XBottomRoute(page: child));
   }
 
   scalePush() {
-    Navigator.push(context, xScaleRoute(page: child));
+    Navigator.push(context, XScaleRoute(page: child));
   }
 
   rotationPush() {
-    Navigator.push(context, xRotationRoute(page: child));
+    Navigator.push(context, XRotationRoute(page: child));
   }
 
   fadePush() {
-    Navigator.push(context, xFadeRoute(page: child));
+    Navigator.push(context, XFadeRoute(page: child));
   }
 
   exitPush(exitPageChild) {
     Navigator.push(
-        context, xEnterExitRoute(enterPage: child, exitPage: exitPageChild));
+        context, XEnterExitRoute(enterPage: child, exitPage: exitPageChild));
     print("20");
   }
 }

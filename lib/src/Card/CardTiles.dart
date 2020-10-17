@@ -32,7 +32,7 @@ class CardTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MxContainer(
+    return XContainer(
       onTap: onTap,
       margin: margin,
       blurRadius: blurRadius,
@@ -44,7 +44,7 @@ class CardTile extends StatelessWidget {
         child: Row(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
           Flexible(
               flex: 2,
-              child: MxContainer(
+              child: XContainer(
                 borderRadius: BorderRadius.only(
                   bottomLeft: bottomLeft,
                   bottomRight: bottomRight,
@@ -55,7 +55,7 @@ class CardTile extends StatelessWidget {
               )),
           Flexible(
             flex: 10,
-            child: MxContainer(
+            child: XContainer(
                 padding: EdgeInsets.all(15),
                 child: <Widget>[
                   title == null ? new Container() : title,

@@ -12,13 +12,13 @@ class _ExampleCardListTileState extends State<ExampleCardListTile> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: new AppBar(
-        title: "MxCardListTile".textMaterialColorBlack(),
+        title: "XCardListTile".textMaterialColorBlack(),
         brightness: Brightness.light,
         centerTitle: true,
         backgroundColor: Colors.white,
       ),
       body: <Widget>[
-        MxCardListTile(
+        XCardListTile(
           trailing: "10min ago".textMaterialColorWhite(),
           leading: Icons.add.xListTileIcon(color: Colors.white),
           color: Colors.red,
@@ -28,7 +28,7 @@ class _ExampleCardListTileState extends State<ExampleCardListTile> {
           onTap: () {},
         ),
         20.0.sizedHeight(),
-        MxCardListTile(
+        XCardListTile(
           color: Color(0xFF3D6dfe),
           title: "Test".textMaterialColorWhite(),
           subTitle: "Material-X package ".textMaterialColorWhite(),
@@ -36,7 +36,7 @@ class _ExampleCardListTileState extends State<ExampleCardListTile> {
           onTap: () {},
         ),
         20.0.sizedHeight(),
-        MxCardListTile(
+        XCardListTile(
           leading: "z"
               .textMaterial(fontWeight: FontWeight.bold)
               .xCircleAvatar(backgroundColor: Colors.white),
@@ -48,7 +48,7 @@ class _ExampleCardListTileState extends State<ExampleCardListTile> {
           onTap: () {},
         ),
         20.0.sizedHeight(),
-        MxCardListTile(
+        XCardListTile(
           color: Colors.yellow,
           title: "Test".textMaterialColorWhite(),
           subTitle: "Material-X package ".textMaterialColorWhite(),
@@ -59,7 +59,7 @@ class _ExampleCardListTileState extends State<ExampleCardListTile> {
           onTap: () {},
         ),
         20.0.sizedHeight(),
-        MxCardListTile(
+        XCardListTile(
           leading: Icons.fullscreen.xListTileIcon(color: Colors.white),
           color: Colors.green,
           title: "Test".textMaterialColorWhite(),

@@ -19,7 +19,7 @@ extension ContainerExtension on Widget {
     Key key,
     BorderRadiusGeometry borderRadius,
   }) {
-    return MxContainer(
+    return XContainer(
       blurRadius: blurRadius,
       borderRadius: borderRadius,
       child: this,
@@ -54,7 +54,7 @@ extension ContainerExtension on Widget {
     Key key,
     BorderRadiusGeometry borderRadius,
   }) {
-    return MxContainerGradient(
+    return XContainerGradient(
       blurRadius: blurRadius,
       borderRadius: borderRadius,
       child: this,
@@ -87,7 +87,7 @@ extension ContainerExtension on Widget {
     DecorationImage image,
     BorderRadiusGeometry borderRadius,
   }) {
-    return MxContainer(
+    return XContainer(
         offset: offset,
         margin: EdgeInsets.all(50),
         color: Colors.white,

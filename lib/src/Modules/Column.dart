@@ -1,37 +1,37 @@
 import 'package:material_x/material_x.dart';
 
-MxColumn xColumn = MxColumn();
-MxColumnSS xColumnSS = MxColumnSS();
-MxColumnBS xColumnBS = MxColumnBS();
-MxColumnCC xColumnCC = MxColumnCC();
-MxColumnES xColumnES = MxColumnES();
-MxColumnSTS xColumnSTS = MxColumnSTS();
-MxColumnSTC xColumnSTC = MxColumnSTC();
-MxColumnSC xColumnSC = MxColumnSC();
-MxColumnEC xColumnEC = MxColumnEC();
-MxColumnBC xColumnBC = MxColumnBC();
-MxColumnSTE xColumnSTE = MxColumnSTE();
-MxColumnSE xColumnSE = MxColumnSE();
-MxColumnEE xColumnEE = MxColumnEE();
-MxColumnCE xColumnCE = MxColumnCE();
-MxColumnBE xColumnBE = MxColumnBE();
-MxColumnSTSA xColumnSTSA = MxColumnSTSA();
-MxColumnSSA xColumnSSA = MxColumnSSA();
-MxColumnESA xColumnESA = MxColumnESA();
-MxColumnCSA xColumnCSA = MxColumnCSA();
-MxColumnBSA xColumnBSA = MxColumnBSA();
-MxColumnSTSB xColumnSTSB = MxColumnSTSB();
-MxColumnSSB xColumnSSB = MxColumnSSB();
-MxColumnESB xColumnESB = MxColumnESB();
-MxColumnCSB xColumnCSB = MxColumnCSB();
-MxColumnBSB xColumnBSB = MxColumnBSB();
-MxColumnSTSE xColumnSTSE = MxColumnSTSE();
-MxColumnSSE xColumnSSE = MxColumnSSE();
-MxColumnESE xColumnESE = MxColumnESE();
-MxColumnCSE xColumnCSE = MxColumnCSE();
-MxColumnBSE xColumnBSE = MxColumnBSE();
+XColumn xColumn = XColumn();
+XColumnSS xColumnSS = XColumnSS();
+XColumnBS xColumnBS = XColumnBS();
+XColumnCC xColumnCC = XColumnCC();
+XColumnES xColumnES = XColumnES();
+XColumnSTS xColumnSTS = XColumnSTS();
+XColumnSTC xColumnSTC = XColumnSTC();
+XColumnSC xColumnSC = XColumnSC();
+XColumnEC xColumnEC = XColumnEC();
+XColumnBC xColumnBC = XColumnBC();
+XColumnSTE xColumnSTE = XColumnSTE();
+XColumnSE xColumnSE = XColumnSE();
+XColumnEE xColumnEE = XColumnEE();
+XColumnCE xColumnCE = XColumnCE();
+XColumnBE xColumnBE = XColumnBE();
+XColumnSTSA xColumnSTSA = XColumnSTSA();
+XColumnSSA xColumnSSA = XColumnSSA();
+XColumnESA xColumnESA = XColumnESA();
+XColumnCSA xColumnCSA = XColumnCSA();
+XColumnBSA xColumnBSA = XColumnBSA();
+XColumnSTSB xColumnSTSB = XColumnSTSB();
+XColumnSSB xColumnSSB = XColumnSSB();
+XColumnESB xColumnESB = XColumnESB();
+XColumnCSB xColumnCSB = XColumnCSB();
+XColumnBSB xColumnBSB = XColumnBSB();
+XColumnSTSE xColumnSTSE = XColumnSTSE();
+XColumnSSE xColumnSSE = XColumnSSE();
+XColumnESE xColumnESE = XColumnESE();
+XColumnCSE xColumnCSE = XColumnCSE();
+XColumnBSE xColumnBSE = XColumnBSE();
 
-class MxColumn {
+class XColumn {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
@@ -40,7 +40,7 @@ class MxColumn {
   final CrossAxisAlignment crossAxisAlignment;
   final MainAxisAlignment mainAxisAlignment;
 
-  MxColumn(
+  XColumn(
       {this.key,
       this.textBaseline,
       this.textDirection,
@@ -60,14 +60,14 @@ class MxColumn {
   }
 }
 
-class MxColumnCC {
+class XColumnCC {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnCC({
+  XColumnCC({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -86,14 +86,14 @@ class MxColumnCC {
   }
 }
 
-class MxColumnSS {
+class XColumnSS {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnSS({
+  XColumnSS({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -112,14 +112,14 @@ class MxColumnSS {
   }
 }
 
-class MxColumnSSB {
+class XColumnSSB {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnSSB({
+  XColumnSSB({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -138,14 +138,14 @@ class MxColumnSSB {
   }
 }
 
-class MxColumnBS {
+class XColumnBS {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnBS({
+  XColumnBS({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -164,14 +164,14 @@ class MxColumnBS {
   }
 }
 
-class MxColumnES {
+class XColumnES {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnES({
+  XColumnES({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -190,14 +190,14 @@ class MxColumnES {
   }
 }
 
-class MxColumnSTS {
+class XColumnSTS {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnSTS({
+  XColumnSTS({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -216,14 +216,14 @@ class MxColumnSTS {
   }
 }
 
-class MxColumnSTC {
+class XColumnSTC {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnSTC({
+  XColumnSTC({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -242,14 +242,14 @@ class MxColumnSTC {
   }
 }
 
-class MxColumnSC {
+class XColumnSC {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnSC({
+  XColumnSC({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -268,14 +268,14 @@ class MxColumnSC {
   }
 }
 
-class MxColumnEC {
+class XColumnEC {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnEC({
+  XColumnEC({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -294,14 +294,14 @@ class MxColumnEC {
   }
 }
 
-class MxColumnBC {
+class XColumnBC {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnBC({
+  XColumnBC({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -320,14 +320,14 @@ class MxColumnBC {
   }
 }
 
-class MxColumnSTE {
+class XColumnSTE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnSTE({
+  XColumnSTE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -346,14 +346,14 @@ class MxColumnSTE {
   }
 }
 
-class MxColumnSE {
+class XColumnSE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnSE({
+  XColumnSE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -372,14 +372,14 @@ class MxColumnSE {
   }
 }
 
-class MxColumnEE {
+class XColumnEE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnEE({
+  XColumnEE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -398,14 +398,14 @@ class MxColumnEE {
   }
 }
 
-class MxColumnCE {
+class XColumnCE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnCE({
+  XColumnCE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -424,14 +424,14 @@ class MxColumnCE {
   }
 }
 
-class MxColumnBE {
+class XColumnBE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnBE({
+  XColumnBE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -450,14 +450,14 @@ class MxColumnBE {
   }
 }
 
-class MxColumnSTSA {
+class XColumnSTSA {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnSTSA({
+  XColumnSTSA({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -476,14 +476,14 @@ class MxColumnSTSA {
   }
 }
 
-class MxColumnSSA {
+class XColumnSSA {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnSSA({
+  XColumnSSA({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -502,14 +502,14 @@ class MxColumnSSA {
   }
 }
 
-class MxColumnESA {
+class XColumnESA {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnESA({
+  XColumnESA({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -528,14 +528,14 @@ class MxColumnESA {
   }
 }
 
-class MxColumnCSA {
+class XColumnCSA {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnCSA({
+  XColumnCSA({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -554,14 +554,14 @@ class MxColumnCSA {
   }
 }
 
-class MxColumnBSA {
+class XColumnBSA {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnBSA({
+  XColumnBSA({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -580,14 +580,14 @@ class MxColumnBSA {
   }
 }
 
-class MxColumnSTSB {
+class XColumnSTSB {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnSTSB({
+  XColumnSTSB({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -606,14 +606,14 @@ class MxColumnSTSB {
   }
 }
 
-class MxColumnESB {
+class XColumnESB {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnESB({
+  XColumnESB({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -632,14 +632,14 @@ class MxColumnESB {
   }
 }
 
-class MxColumnCSB {
+class XColumnCSB {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnCSB({
+  XColumnCSB({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -658,14 +658,14 @@ class MxColumnCSB {
   }
 }
 
-class MxColumnBSB {
+class XColumnBSB {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnBSB({
+  XColumnBSB({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -684,14 +684,14 @@ class MxColumnBSB {
   }
 }
 
-class MxColumnSTSE {
+class XColumnSTSE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnSTSE({
+  XColumnSTSE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -710,14 +710,14 @@ class MxColumnSTSE {
   }
 }
 
-class MxColumnSSE {
+class XColumnSSE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnSSE({
+  XColumnSSE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -736,14 +736,14 @@ class MxColumnSSE {
   }
 }
 
-class MxColumnESE {
+class XColumnESE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnESE({
+  XColumnESE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -762,14 +762,14 @@ class MxColumnESE {
   }
 }
 
-class MxColumnCSE {
+class XColumnCSE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnCSE({
+  XColumnCSE({
     this.key,
     this.textBaseline,
     this.textDirection,
@@ -788,14 +788,14 @@ class MxColumnCSE {
   }
 }
 
-class MxColumnBSE {
+class XColumnBSE {
   final Key key;
   final MainAxisSize mainAxisSize;
   final TextBaseline textBaseline;
   final TextDirection textDirection;
   final VerticalDirection verticalDirection;
 
-  MxColumnBSE({
+  XColumnBSE({
     this.key,
     this.textBaseline,
     this.textDirection,

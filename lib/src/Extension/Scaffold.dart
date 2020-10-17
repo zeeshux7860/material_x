@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:material_x/material_x.dart';
 
-extension MxScaffold on Widget {
+extension XScaffold on Widget {
   Widget xScaffold({
     final bool extendBody = false,
     final bool extendBodyBehindAppBar = false,

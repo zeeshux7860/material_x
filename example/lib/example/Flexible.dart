@@ -11,7 +11,7 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
   @override
   Widget build(BuildContext context) {
     List<Widget> menu = [
-      MxCustomStatic(
+      XCustomStatic(
         onTap: () {},
         rounded: 10.0,
         padding: EdgeInsets.all(20.0),
@@ -24,7 +24,7 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
         value: '105.0'.h2TextBold(color: Colors.white),
       ).xFlexableRes(350.0 <= value),
       20.0.sizedHeight(),
-      MxCustomStatic(
+      XCustomStatic(
         onTap: () {},
         rounded: 10.0,
         padding: EdgeInsets.all(20.0),
@@ -37,7 +37,7 @@ class _ExampleFlexibleState extends State<ExampleFlexible> {
         value: '105.0'.h2TextBold(color: Colors.white),
       ).xFlexableRes(350.0 <= value),
       20.0.sizedHeight(),
-      MxCustomStatic(
+      XCustomStatic(
         onTap: () {},
         rounded: 10.0,
         padding: EdgeInsets.all(20.0),

@@ -1,7 +1,7 @@
 import 'package:material_x/material_x.dart';
 import 'package:material_x/src/refresh/main.dart';
 
-extension MxNew on Widget {
+extension XNew on Widget {
   /// The widget below this widget in the tree.
   ///
   /// Typically a [Text] widget. If the [CircleAvatar] is to have an image, use
@@ -270,7 +270,7 @@ extension MxNew on Widget {
     ScrollController scrollController,
     Key key,
   }) {
-    return MxLiquidPullToRefresh(
+    return XLiquidPullToRefresh(
       child: this,
       onRefresh: onRefresh,
       backgroundColor: backgroundColor,

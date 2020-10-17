@@ -10,8 +10,8 @@ enum IconState { first, second }
 ///The [icon] and [onPressed] are required.
 ///[icon] cannot be null.
 ///[duration] is the time taken to animate the transition.
-class MxIconBAnimated extends StatefulWidget {
-  MxIconBAnimated({
+class XIconBAnimated extends StatefulWidget {
+  XIconBAnimated({
     @required this.icon,
     @required this.onPressed,
     Key key,
@@ -33,7 +33,7 @@ class MxIconBAnimated extends StatefulWidget {
   })  : iconState = null,
         super(key: key);
 
-  MxIconBAnimated.externalState({
+  XIconBAnimated.externalState({
     @required this.icon,
     @required this.onPressed,
     @required this.iconState,
@@ -69,10 +69,10 @@ class MxIconBAnimated extends StatefulWidget {
   final IconState iconState;
 
   @override
-  _MxIconBAnimatedState createState() => _MxIconBAnimatedState();
+  _XIconBAnimatedState createState() => _XIconBAnimatedState();
 }
 
-class _MxIconBAnimatedState extends State<MxIconBAnimated>
+class _XIconBAnimatedState extends State<XIconBAnimated>
     with SingleTickerProviderStateMixin {
   AnimationController _animationController;
   bool _isPressed = false;
@@ -99,7 +99,7 @@ class _MxIconBAnimatedState extends State<MxIconBAnimated>
   }
 
   @override
-  void didUpdateWidget(MxIconBAnimated oldWidget) {
+  void didUpdateWidget(XIconBAnimated oldWidget) {
     if (oldWidget.iconState != widget.iconState) {
       if (oldWidget.iconState == IconState.first &&
           widget.iconState == IconState.second) {

@@ -1,6 +1,6 @@
 import 'package:material_x/material_x.dart';
 
-extension MxSliverGrids on Widget Function(
+extension XSliverGrids on Widget Function(
     BuildContext, int, Animation<double>) {
   Widget xSliverGrid(
       {@required ScrollController controller,
@@ -12,7 +12,7 @@ extension MxSliverGrids on Widget Function(
       Duration showItemInterval = const Duration(milliseconds: 100),
       Duration delay = const Duration(milliseconds: 150),
       double visibleFraction = 0.025}) {
-    return MxSliverGrid(
+    return XSliverGrid(
       controller: controller,
       key: key,
       delay: delay,
@@ -27,7 +27,7 @@ extension MxSliverGrids on Widget Function(
   }
 }
 
-extension MxSliverLists on Widget Function(
+extension XSliverLists on Widget Function(
     BuildContext, int, Animation<double>) {
   Widget xSliverList(
       {@required ScrollController controller,
@@ -39,7 +39,7 @@ extension MxSliverLists on Widget Function(
       Duration showItemInterval = const Duration(milliseconds: 100),
       Duration delay = const Duration(milliseconds: 150),
       double visibleFraction = 0.025}) {
-    return MxSliverList(
+    return XSliverList(
       controller: controller,
       key: key,
       delay: delay,
@@ -53,7 +53,7 @@ extension MxSliverLists on Widget Function(
   }
 }
 
-extension SilverpaddinngMx on Widget {
+extension SilverpaddinngX on Widget {
   xsp(
     EdgeInsetsGeometry padding,
   ) {

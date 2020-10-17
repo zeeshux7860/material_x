@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:material_x/src/Text/h_tag.dart';
 import 'package:material_x/src/Extension/Stack.dart';
 
-class MxExpansionTiles extends StatelessWidget {
+class XExpansionTiles extends StatelessWidget {
   final Color expansionTileTitleColor;
   final Color expansionTileSubTitleColor;
   final String expansionTileTitle;
   final String expansionTileSubTitle;
   final List<Widget> expansionchildren;
 
-  const MxExpansionTiles(
+  const XExpansionTiles(
       {Key key,
       this.expansionTileTitleColor,
       this.expansionTileSubTitleColor,
@@ -38,7 +38,7 @@ class MxExpansionTiles extends StatelessWidget {
 /// The widgets that are displayed when the tile expands.
 ///
 /// Typically [ListTile] widgets.
-class MxExpansionTile {
+class XExpansionTile {
   /// A widget to display before the title.
   ///
   /// Typically a [CircleAvatar] widget.
@@ -71,7 +71,7 @@ class MxExpansionTile {
   final bool initiallyExpanded;
   final Key key;
 
-  MxExpansionTile(
+  XExpansionTile(
       this.leading,
       this.title,
       this.subtitle,

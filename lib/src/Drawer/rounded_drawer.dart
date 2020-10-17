@@ -1,13 +1,13 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:material_x/src/Modules/DrawerxuserProfile.dart';
+import 'package:material_x/src/Modules/DrawerMXuserProfile.dart';
 import 'package:material_x/src/Modules/ExpansionTile.dart';
-import 'package:material_x/src/Modules/MxAnimationType.dart';
+import 'package:material_x/src/Modules/MXAnimationType.dart';
 import 'package:material_x/src/Modules/ProgressLoading.dart';
 import '../Modules/Widget.dart';
 
-class MxRoundedCornerDrawer extends StatelessWidget {
+class XRoundedCornerDrawer extends StatelessWidget {
   final String expansionTileTitle;
   final String expansionTileSubTitle;
   final String userName;
@@ -26,7 +26,7 @@ class MxRoundedCornerDrawer extends StatelessWidget {
   final List<Widget> bottomMenu;
   final double elevation;
   final BorderRadius borderRadius;
-  const MxRoundedCornerDrawer(
+  const XRoundedCornerDrawer(
       {Key key,
       this.expansionTileTitle,
       this.expansionTileSubTitle,
@@ -56,7 +56,7 @@ class MxRoundedCornerDrawer extends StatelessWidget {
         child: new ListView(
           padding: EdgeInsets.all(0.0),
           children: <Widget>[
-            // x UserProfile
+            // X UserProfile
             XDrawerUserProfileBlur(
               height: 200,
               margin: EdgeInsets.only(top: 120),
@@ -67,20 +67,20 @@ class MxRoundedCornerDrawer extends StatelessWidget {
             ),
             new Column(
               children: <Widget>[
-                MxExpansionTiles(
+                XExpansionTiles(
                   expansionTileSubTitle: expansionTileSubTitle,
                   expansionTileSubTitleColor: expansionTileSubTitleColor,
                   expansionTileTitle: expansionTileTitle,
                   expansionTileTitleColor: expansionTileTitleColor,
                   expansionchildren: expansionchildren,
-                ).animation(configMap: MxAnimationType.fadeIn, autoPlay: true),
-                MxProgressLoading(
+                ).animation(configMap: XAnimationType.fadeIn, autoPlay: true),
+                XProgressLoading(
                   progressBackgroundColor: progressBackgroundColor,
                   progressColor: progressColor,
                   progressName: progressName,
                   progressNameColor: progressNameColor,
                   progressValue: progressValue,
-                ).animation(configMap: MxAnimationType.fadeIn, autoPlay: true),
+                ).animation(configMap: XAnimationType.fadeIn, autoPlay: true),
                 Divider(
                   color: Colors.grey[300],
                 ),

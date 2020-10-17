@@ -18,14 +18,14 @@ extension RowGridResponsive on List<ResponsiveGridList> {
 }
 
 extension ResponsiveGridRow on List<ResponsiveGridCol> {
-  MxResponsiveGridRow xResponsiveGridRow() {
-    return MxResponsiveGridRow(
+  XResponsiveGridRow xResponsiveGridRow() {
+    return XResponsiveGridRow(
       children: this,
     );
   }
 }
 
-extension MxResponsiveGridCol on Widget {
+extension XResponsiveGridCol on Widget {
   ResponsiveGridCol xResponsiveGridCol(
       {int xs = 12, int sm, int md, int lg, int xl}) {
     return ResponsiveGridCol(

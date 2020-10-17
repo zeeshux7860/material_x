@@ -65,7 +65,7 @@ class _CrowdTileState extends State<CrowdTile> {
               itemBuilder: (context, index) {
                 final scale = max(widget.scalefraction,
                     (widget.scale - (index - page).abs()) + viewPortFraction);
-                return MxCircleView(
+                return XCircleView(
                   borderColor: Colors.grey.shade100,
                   borderWidth: 5,
                   scale: scale,

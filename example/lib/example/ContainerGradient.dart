@@ -4,7 +4,7 @@ class ExampleContainerGradient extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      MxContainerGradient(
+      XContainerGradient(
         height: 200.0,
         width: xwidth(context),
         child: "test".textMaterialColorWhite(fontsize: 25.0).toCenter(),
@@ -14,7 +14,7 @@ class ExampleContainerGradient extends StatelessWidget {
           stops: [0.1, 0.7],
         ),
       ).xap(value: 20.0),
-      MxContainerGradient(
+      XContainerGradient(
         shadowColor: Colors.pink,
         blurRadius: 15.0,
         offset: Offset(0, 10),
@@ -29,7 +29,7 @@ class ExampleContainerGradient extends StatelessWidget {
           stops: [0.1, 0.7],
         ),
       ).xap(value: 20.0),
-      MxContainerGradient(
+      XContainerGradient(
         borderRadius: BorderRadius.only(
             topLeft: Radius.elliptical(100, 100),
             bottomRight: Radius.elliptical(100, 100)),

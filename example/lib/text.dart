@@ -28,12 +28,12 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Padding(
           padding: const EdgeInsets.all(10.0),
           child: <Widget>[
-            MxCardTile(
+            XCardTile(
               backgroundColor: Colors.deepOrangeAccent.shade400,
               boxColor: Colors.deepOrangeAccent.shade100,
               subtitle1: Icons.arrow_forward_ios.xIconTile(),
-            ).animation(configMap: MxAnimationType.fadeIn, autoPlay: true),
-            MxCardTile(
+            ).animation(configMap: XAnimationType.fadeIn, autoPlay: true),
+            XCardTile(
               rounded: 10,
               title: "Zeeshan".xCardTileTitle(),
               subtitle1: "Software Engineer".textMaterialColorWhite(),
@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
             ListTile(
               onTap: () {
-                //  MxRoutePage(context, Drawer()).materialPagePush();
+                //  XRoutePage(context, Drawer()).materialPagePush();
               },
               leading: Icons.book.xListTileIcon(color: Colors.purple),
               title: "Zeeshan".xCardTileTitle(color: Colors.black),
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   fontsize: 30, fontWeight: FontWeight.bold),
               subtitle: "June 18, Thu 04:50".textMaterialColorgrey(),
             ),
-            MxContainer(
+            XContainer(
                 padding: EdgeInsets.all(20.0),
                 margin: EdgeInsets.all(20.0),
                 rounded: 5,
@@ -94,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 )
               ],
             ),
-            MxContainer(
+            XContainer(
                 color: Colors.blue,
                 width: MediaQuery.of(context).size.width,
                 margin: EdgeInsets.all(20.0),
@@ -113,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ],
                 )),
-            MxCardBanner(
+            XCardBanner(
                     onTap: () {},
                     margin: EdgeInsets.all(20),
                     rounded: 10,
@@ -130,10 +130,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             onTap: () {}, buttonColor: Colors.lime))
                 .animation(
                     autoPlay: true,
-                    configMap: MxAnimationType.fadeIn,
+                    configMap: XAnimationType.fadeIn,
                     // delay: Duration(seconds: 10),
                     duration: Duration(seconds: 3)),
-            MxGradientCardBanner(
+            XGradientCardBanner(
                 gradient: [Color(0xFF3C8CE7), Color(0xFF3C8CE7)].xLGrepeated(
                   begin: Alignment.topLeft,
                   end: Alignment(0.8, 0.0),
@@ -150,7 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
             new SizedBox(
               height: 10.0,
             ),
-            MxGradientCardBanner(
+            XGradientCardBanner(
                     gradient: LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment(0.8,
@@ -168,11 +168,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     button: 'know more'
                         .textMaterialColorWhite()
                         .cardBannerButton(onTap: () {}))
-                .animation(configMap: MxAnimationType.fadeIn, autoPlay: true),
+                .animation(configMap: XAnimationType.fadeIn, autoPlay: true),
             new SizedBox(
               height: 10.0,
             ),
-            MxGradientCardBanner(
+            XGradientCardBanner(
                     onTap: () {},
                     spreadRadius: 0.2,
                     rightSideChild: CircleAvatar(
@@ -204,16 +204,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     button: 'know more'
                         .textMaterialColorWhite()
                         .cardBannerButton(onTap: () {}))
-                .animation(configMap: MxAnimationType.fadeIn, autoPlay: true),
+                .animation(configMap: XAnimationType.fadeIn, autoPlay: true),
             //Textmaterial(text: "null"),
             <Widget>[Icon(Icons.ac_unit).bounce()].xRowCSB(),
             <Widget>[
               H1(
                 text: 'aaaaa',
               ),
-              MxContainer(
+              XContainer(
                       onTap: () {
-                        MxRoutePage(context, Drawer()).fadePush();
+                        XRoutePage(context, Drawer()).fadePush();
                       },
                       child: Textmaterial(text: 'text'),
                       height: 100,
@@ -234,7 +234,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       .textMaterialColorBlack(),
             ),
             30.0.sizedHeight(),
-            MxContainerGradient(
+            XContainerGradient(
                 rounded: 5,
                 blurRadius: 15,
                 offset: Offset(0, 8),
@@ -260,10 +260,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   25.0.sizedHeight(),
                 ].xcolumnCC()),
             25.0.sizedHeight(),
-            MxContainer(
+            XContainer(
               padding: EdgeInsets.all(0.0),
               child: <Widget>[
-                MxHeader(
+                XHeader(
                   onTap: () {},
                   child: <Widget>[
                     HeaderTitle(
@@ -273,8 +273,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ].xcolumnSC(),
                 ),
-                MxContainer(
-                    child: MximageBlur(
+                XContainer(
+                    child: XimageBlur(
                       sigmaX: 2,
                       sigmaY: 2,
                     ),

@@ -5,7 +5,7 @@ class RoundedDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: MxRoundedCornerDrawer(
+      drawer: XRoundedCornerDrawer(
         expansionTileTitle: 'Account Setup',
         expansionTileSubTitle: 'Admin',
         emailUpperCase: true,
@@ -43,7 +43,7 @@ class RoundedDrawer extends StatelessWidget {
           ),
         ],
         menuChildren: <Widget>[
-          xListTile(
+          XListTile(
             onTap: () {},
             selectedColor: Colors.pink,
             icon: Icons.dashboard,
@@ -52,7 +52,7 @@ class RoundedDrawer extends StatelessWidget {
             text: "DashBoard",
             unSelectedColor: Colors.grey,
           ),
-          xListTile(
+          XListTile(
             onTap: () {},
             selectedColor: Colors.pink,
             icon: Icons.account_balance,
@@ -61,7 +61,7 @@ class RoundedDrawer extends StatelessWidget {
             text: "My Account",
             unSelectedColor: Colors.grey,
           ),
-          xListTile(
+          XListTile(
             onTap: () {},
             selectedColor: Colors.pink,
             icon: Icons.table_chart,
@@ -70,7 +70,7 @@ class RoundedDrawer extends StatelessWidget {
             text: "Transaction",
             unSelectedColor: Colors.grey,
           ),
-          xListTile(
+          XListTile(
             trailing: new Icon(Icons.adb),
             onTap: () {},
             selectedColor: Colors.pink,
@@ -85,7 +85,7 @@ class RoundedDrawer extends StatelessWidget {
           Divider(
             color: Colors.grey[300],
           ),
-          xListTile(
+          XListTile(
             onTap: () {},
             selectedColor: Colors.pink,
             icon: Icons.dashboard,
@@ -97,7 +97,7 @@ class RoundedDrawer extends StatelessWidget {
           Divider(
             color: Colors.grey[300],
           ),
-          xListTile(
+          XListTile(
             //onTap: (){},
             selectedColor: Colors.pink,
             //icon: Icons.dashboard,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_x/src/Container/Container.dart';
 
-class MxBlogTile extends StatelessWidget {
+class XBlogTile extends StatelessWidget {
   final Function onTap;
   final Widget child;
   final Color backSideBackgroundColor;
@@ -19,7 +19,7 @@ class MxBlogTile extends StatelessWidget {
   final Color color;
   final BorderRadiusGeometry backBorderRadius;
   final double rounded;
-  const MxBlogTile(
+  const XBlogTile(
       {Key key,
       this.onTap,
       this.child,
@@ -41,7 +41,7 @@ class MxBlogTile extends StatelessWidget {
       : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MxContainer(
+    return XContainer(
       rounded: backrounded,
       onTap: () {},
       color: backSideBackgroundColor,
@@ -53,7 +53,7 @@ class MxBlogTile extends StatelessWidget {
         elevation: cardElevation,
         child: Column(
           children: <Widget>[
-            new MxContainer(
+            new XContainer(
               rounded: rounded,
               onTap: onTap,
               child: child,

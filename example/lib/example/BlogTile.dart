@@ -9,7 +9,7 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      MxBlogTile(
+      XBlogTile(
         tileOnTap: () {},
         backSideBackgroundColor: Colors.grey[100],
         cardElevation: 5,
@@ -27,7 +27,7 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
             "https://user-images.githubusercontent.com/55942632/77652902-fedd9980-6f94-11ea-96d5-d31657590893.png"
                 .decorationINToCover(),
       ),
-      MxBlogTile(
+      XBlogTile(
         rounded: 10,
         color: Color(0xFFff1632),
         tileOnTap: () {},
@@ -49,7 +49,7 @@ class _ExampleBlogTileState extends State<ExampleBlogTile> {
             "https://user-images.githubusercontent.com/45489310/78457255-b9d4f980-765d-11ea-8d17-78bb21297de6.png"
                 .decorationINToCover(),
       ),
-      MxBlogTile(
+      XBlogTile(
         color: Colors.orange,
         tileOnTap: () {},
         backSideBackgroundColor: Colors.grey[100],

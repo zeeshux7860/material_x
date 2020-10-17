@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_x/src/Container/Container.dart';
 
-class MxCardTile extends StatelessWidget {
+class XCardTile extends StatelessWidget {
   final Color backgroundColor;
   final EdgeInsetsGeometry margin;
   final Widget title;
@@ -14,7 +14,7 @@ class MxCardTile extends StatelessWidget {
   final Color boxColor;
   final DecorationImage image;
 
-  const MxCardTile(
+  const XCardTile(
       {Key key,
       this.backgroundColor,
       this.margin,
@@ -30,14 +30,14 @@ class MxCardTile extends StatelessWidget {
       : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MxContainer(
+    return XContainer(
       onTap: () {},
       margin: EdgeInsets.all(20),
       rounded: rounded,
       color: backgroundColor,
       child: ListTile(
         title: title,
-        leading: MxContainer(
+        leading: XContainer(
           rounded: boxRounded,
           height: 50,
           width: 50,

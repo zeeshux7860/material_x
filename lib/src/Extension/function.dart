@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:material_x/material_x.dart';
 
-extension MxFunction on Function {
+extension XFunction on Function {
   Widget xFlatButton(
       {bool autofocus = false,
       Clip clipBehavior = Clip.none,
@@ -96,7 +96,7 @@ extension MxFunction on Function {
   }
 }
 
-extension MxApp on bool {
+extension XApp on bool {
   /// Called when the user toggles the switch on or off.
   ///
   /// The switch passes the new value to the callback but does not actually

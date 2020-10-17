@@ -1,6 +1,6 @@
 import 'package:material_x/material_x.dart';
 
-extension AniamtedMx on Widget Function(BuildContext, int, Animation<double>) {
+extension AniamtedX on Widget Function(BuildContext, int, Animation<double>) {
   Widget xGridAnimated({
     /// Start animation after (default zero)
     final Duration delay = Duration.zero,
@@ -153,7 +153,7 @@ extension AniamtedMx on Widget Function(BuildContext, int, Animation<double>) {
     final bool addSemanticIndexes = true,
     final Key key,
   }) {
-    return MxGridAnimated(
+    return XGridAnimated(
       padding: padding,
       showItemInterval: showItemInterval,
       showItemDuration: showItemDuration,
@@ -190,7 +190,7 @@ SliverGridDelegate xSGDWFCC(
   );
 }
 
-extension ZMx on Function(BuildContext, int, Animation<double>) {
+extension ZX on Function(BuildContext, int, Animation<double>) {
   Widget xlbAnimated({
     bool shrinkWrap = false,
     ScrollPhysics physics,
@@ -201,7 +201,7 @@ extension ZMx on Function(BuildContext, int, Animation<double>) {
     Axis scrollDirection: Axis.vertical,
     @required int itemCount,
   }) {
-    return MxlbAnimated(
+    return XlbAnimated(
         shrinkWrap: shrinkWrap,
         physics: physics,
         showItemInterval: showItemInterval,

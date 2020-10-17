@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MxCircleView extends StatelessWidget {
+class XCircleView extends StatelessWidget {
   final double pagerHeight;
   final double scale;
   final double elevation;
@@ -8,7 +8,7 @@ class MxCircleView extends StatelessWidget {
   final double borderWidth;
   final Widget child;
 
-  const MxCircleView(
+  const XCircleView(
       {Key key,
       this.pagerHeight,
       this.scale,

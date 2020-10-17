@@ -939,7 +939,7 @@ extension imageString on String {
   }
 }
 
-extension DecorationMx on DecorationImage {
+extension DecorationX on DecorationImage {
   Widget xContainer({
     final double width,
     final Color color,
@@ -956,7 +956,7 @@ extension DecorationMx on DecorationImage {
     final BorderRadiusGeometry borderRadius,
     final Key key,
   }) {
-    return MxContainer(
+    return XContainer(
       image: this,
       blurRadius: blurRadius,
       borderRadius: borderRadius,

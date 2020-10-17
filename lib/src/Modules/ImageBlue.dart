@@ -2,11 +2,11 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-class MximageBlur extends StatelessWidget {
+class XimageBlur extends StatelessWidget {
   final Widget chlid;
   final double sigmaX;
   final double sigmaY;
-  const MximageBlur({Key key, this.chlid, this.sigmaX = 5.0, this.sigmaY = 5.0})
+  const XimageBlur({Key key, this.chlid, this.sigmaX = 5.0, this.sigmaY = 5.0})
       : super(key: key);
 
   @override

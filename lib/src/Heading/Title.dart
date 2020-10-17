@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_x/material_x.dart';
 
-class MxHeader extends StatelessWidget {
+class XHeader extends StatelessWidget {
   final double rounded;
   final double blurRadius;
   final Offset offset;
@@ -10,7 +10,7 @@ class MxHeader extends StatelessWidget {
   final Color color;
   final Widget child;
   final Function onTap;
-  const MxHeader({
+  const XHeader({
     Key key,
     this.rounded = 5,
     this.blurRadius = 12,
@@ -23,7 +23,7 @@ class MxHeader extends StatelessWidget {
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MxContainer(
+    return XContainer(
         onTap: onTap,
         rounded: rounded,
         blurRadius: blurRadius,

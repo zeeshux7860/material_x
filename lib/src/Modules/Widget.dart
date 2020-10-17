@@ -1,10 +1,10 @@
 import 'package:animated_interpolation/animated_interpolation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:material_x/src/Modules/MxAnimationType.dart';
+import 'package:material_x/src/Modules/MXAnimationType.dart';
 import 'package:material_x/src/Modules/animation/animation_do.dart';
 
-extension MxWidget on Widget {
+extension XWidget on Widget {
   Widget xFlexable({FlexFit fit = FlexFit.loose, int flex = 1, Key key}) {
     return Flexible(fit: fit, flex: flex, key: key, child: this);
   }
@@ -90,7 +90,7 @@ extension MxWidget on Widget {
   Widget animation(
       {from,
       to,
-      @required MxAnimationType configMap,
+      @required XAnimationType configMap,
       curve,
       duration = const Duration(seconds: 1),
       @required autoPlay,

@@ -4,7 +4,7 @@ class ExampleStaticCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      MxStaticCard(
+      XStaticCard(
               onTap: () {},
               rounded: 10.0,
               padding: EdgeInsets.all(20.0),
@@ -16,7 +16,7 @@ class ExampleStaticCard extends StatelessWidget {
               cicleColor: Colors.red)
           .toCenter(),
       30.0.sizedHeight(),
-      MxCustomStatic(
+      XCustomStatic(
         onTap: () {},
         rounded: 10.0,
         padding: EdgeInsets.all(20.0),
@@ -29,7 +29,7 @@ class ExampleStaticCard extends StatelessWidget {
         value: '105.0'.h1TextBold(color: Colors.white),
       ).toCenter(),
       10.0.sizedHeight(),
-      MxCustomStatic(
+      XCustomStatic(
         onTap: () {},
         rounded: 10.0,
         padding: EdgeInsets.all(20.0),

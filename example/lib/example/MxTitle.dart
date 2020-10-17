@@ -1,11 +1,11 @@
 import 'package:material_x/material_x.dart';
 
-class ExampleMxTitle extends StatefulWidget {
+class ExampleXTitle extends StatefulWidget {
   @override
-  _ExampleMxTitleState createState() => _ExampleMxTitleState();
+  _ExampleXTitleState createState() => _ExampleXTitleState();
 }
 
-class _ExampleMxTitleState extends State<ExampleMxTitle> {
+class _ExampleXTitleState extends State<ExampleXTitle> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,9 +17,9 @@ class _ExampleMxTitleState extends State<ExampleMxTitle> {
         title: "Title".textMaterialColorBlack(),
       ),
       body: <Widget>[
-        MxTitle(
+        XTitle(
           leftPadding: 0,
-          title: 'MxTitle',
+          title: 'XTitle',
         ),
         HeaderTitle(
           title: "HeaderWidget title".xCardTileTitle(color: Colors.black),

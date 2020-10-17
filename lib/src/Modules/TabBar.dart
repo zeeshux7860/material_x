@@ -1,9 +1,9 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-MxTabBarView xTabBarView = MxTabBarView();
+XTabBarView xTabBarView = XTabBarView();
 
-class MxTabBarView {
+class XTabBarView {
   final Key key;
 
   /// This widget's selection and animation state.
@@ -26,7 +26,7 @@ class MxTabBarView {
   /// {@macro flutter.widgets.scrollable.dragStartBehavior}
   final DragStartBehavior dragStartBehavior;
 
-  MxTabBarView(
+  XTabBarView(
       {this.key, this.controller, this.physics, this.dragStartBehavior});
 
   Widget list(List<Widget> list) {
@@ -44,7 +44,7 @@ class MxTabBarView {
 ///
 /// The length of this list must match the [controller]'s [TabController.length]
 /// and the length of the [TabBarView.children] list.
-class MxTabBar {
+class XTabBar {
   final Key key;
 
   /// This widget's selection and animation state.
@@ -167,7 +167,7 @@ class MxTabBar {
   /// interfere with the default tap handler.
   final ValueChanged<int> onTap;
 
-  MxTabBar(
+  XTabBar(
       {this.key,
       this.controller,
       this.isScrollable,

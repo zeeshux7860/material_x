@@ -1,6 +1,6 @@
 import 'package:material_x/material_x.dart';
 
-extension BlogTileMx on DecorationImage {
+extension BlogTileX on DecorationImage {
   Widget xBlogTile({
     final Key key,
     final Function onTap,
@@ -19,7 +19,7 @@ extension BlogTileMx on DecorationImage {
     final DecorationImage image,
     final BorderRadiusGeometry backBorderRadius,
   }) {
-    return MxBlogTile(
+    return XBlogTile(
       backBorderRadius: backBorderRadius,
       backSideBackgroundColor: backSideBackgroundColor,
       backrounded: backrounded,

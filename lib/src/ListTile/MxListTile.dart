@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_x/src/Text/text_material.dart';
 
-class xListTile extends StatefulWidget {
+class XListTile extends StatefulWidget {
   final Color selectedColor;
   final Color unSelectedColor;
   final bool selected;
@@ -12,7 +12,7 @@ class xListTile extends StatefulWidget {
   final Function onTap;
   final Widget trailing;
   final Widget subtitle;
-  const xListTile(
+  const XListTile(
       {Key key,
       @required this.selectedColor,
       @required this.unSelectedColor,
@@ -27,10 +27,10 @@ class xListTile extends StatefulWidget {
       : super(key: key);
 
   @override
-  _xListTileState createState() => _xListTileState();
+  _XListTileState createState() => _XListTileState();
 }
 
-class _xListTileState extends State<xListTile> {
+class _XListTileState extends State<XListTile> {
   @override
   Widget build(BuildContext context) {
     return ListTileTheme(

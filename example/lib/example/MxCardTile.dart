@@ -1,15 +1,15 @@
 import 'package:material_x/material_x.dart';
 
-class ExampleMxCardTile extends StatefulWidget {
+class ExampleXCardTile extends StatefulWidget {
   @override
-  _ExampleMxCardTileState createState() => _ExampleMxCardTileState();
+  _ExampleXCardTileState createState() => _ExampleXCardTileState();
 }
 
-class _ExampleMxCardTileState extends State<ExampleMxCardTile> {
+class _ExampleXCardTileState extends State<ExampleXCardTile> {
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      MxCardTile(
+      XCardTile(
         rounded: 10,
         title: "Zeeshan".xCardTileTitle(),
         subtitle1: "Software Engineer".textMaterialColorWhite(),
@@ -18,9 +18,9 @@ class _ExampleMxCardTileState extends State<ExampleMxCardTile> {
         subtitle2: Icons.data_usage.xIconTile().slideInUp(),
         backgroundColor: Colors.pink.shade400,
         boxColor: Colors.pink.shade100,
-      ).animation(configMap: MxAnimationType.fadeIn, autoPlay: true),
+      ).animation(configMap: XAnimationType.fadeIn, autoPlay: true),
       10.0.sizedHeight(),
-      MxCardTile(
+      XCardTile(
         rounded: 2,
         title: "Zeeshan".xCardTileTitle(),
         subtitle1: "Software Engineer".textMaterialColorWhite(),
@@ -29,9 +29,9 @@ class _ExampleMxCardTileState extends State<ExampleMxCardTile> {
         subtitle2: Icons.arrow_drop_down.xIconTile().fadeIn(),
         backgroundColor: Colors.deepOrangeAccent.shade400,
         boxColor: Colors.deepOrangeAccent.shade100,
-      ).animation(configMap: MxAnimationType.fadeIn, autoPlay: true),
+      ).animation(configMap: XAnimationType.fadeIn, autoPlay: true),
       10.0.sizedHeight(),
-      MxCardTile(
+      XCardTile(
         rounded: 10,
         title: "Zeeshan".xCardTileTitle(),
         subtitle1: "Software Engineer".textMaterialColorWhite(),
@@ -47,7 +47,7 @@ class _ExampleMxCardTileState extends State<ExampleMxCardTile> {
             centerTitle: true,
             brightness: Brightness.light,
             backgroundColor: Colors.white,
-            title: "MxCardTile".textMaterialColorBlack(),
+            title: "XCardTile".textMaterialColorBlack(),
           ),
         );
   }

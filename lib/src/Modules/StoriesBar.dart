@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:material_x/src/Container/Container.dart';
 import 'package:material_x/src/Text/text_material.dart';
 
-class MxStorieBar extends StatelessWidget {
+class XStorieBar extends StatelessWidget {
   final Color color;
   final Color circleColor;
   final double circleRadius;
@@ -16,7 +16,7 @@ class MxStorieBar extends StatelessWidget {
   final Function onTap;
   final ImageProvider<dynamic> backgroundImage;
 
-  const MxStorieBar(
+  const XStorieBar(
       {Key key,
       this.color,
       this.circleRadius,
@@ -33,7 +33,7 @@ class MxStorieBar extends StatelessWidget {
       : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MxContainer(
+    return XContainer(
         color: color,
         child: new Column(
           children: <Widget>[

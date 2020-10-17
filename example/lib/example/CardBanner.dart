@@ -4,7 +4,7 @@ class ExampleCardBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return <Widget>[
-      MxCardBanner(
+      XCardBanner(
         onTap: () {},
         margin: EdgeInsets.all(20),
         rounded: 10,
@@ -21,7 +21,7 @@ class ExampleCardBanner extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start),
       ).fadeIn().toCenter(),
-      MxCardBanner(
+      XCardBanner(
         rightSideChild: Icons.add
             .xIcons()
             .xCircleAvatar(radius: 35, backgroundColor: Colors.white),
@@ -41,7 +41,7 @@ class ExampleCardBanner extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start),
       ).fadeIn().toCenter(),
-      MxCardBanner(
+      XCardBanner(
         rightSideChild:
             "https://raw.githubusercontent.com/zeeshux7860/material_x/master/example/logo.png"
                 .xImageNetwork()
@@ -62,7 +62,7 @@ class ExampleCardBanner extends StatelessWidget {
       ).fadeIn().toCenter(),
     ].xListView().xScaffold(
         backgroundColor: Colors.white,
-        appBar: 'MxCardBanner'.textMaterialColorBlack().xAppBar(
+        appBar: 'XCardBanner'.textMaterialColorBlack().xAppBar(
               brightness: Brightness.light,
               centerTitle: true,
               backgroundColor: Colors.white,
